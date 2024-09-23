@@ -1,6 +1,6 @@
 # SA-segundafase
 ### Repositório do grupo FLIPI, para realização da SA da segunda fase, do curso de desenvolvimento de sistemas do SENAI.
-# Requisitos-Funcionais
+##### Requisitos-Funcionais
 Cadastro de Usuários: O sistema deve permitir que novos usuários se cadastrem preenchendo informações solicitados para o processo;
 Autenticação de Usuários: O sistema deve permitir que os usuários façam login usando suas credenciais (cpf & senha);
 Cadastro de Filmes: O sistema deve permitir o cadastro de filmes relacionados aos livros pelo administrador do site;
