@@ -15,5 +15,10 @@ Este projeto é um sistema que permite aos usuários cadastrarem livros que já 
 - **Interface de Fácil Entendimento:** O sistema possui uma interface amigável que facilita a navegação entre páginas.
 - **Restrição de Direitos Autorais:** O sistema não armazenará conteúdo ilegal que viole direitos autorais, disponibilizando apenas links de referência e confiança para o usuário.
 - **Atualização em Tempo Real:** Os dados serão atualizados em tempo real assim que o usuário fizer uma recomendação no site.
+![Proto-pagina-cadastro](https://github.com/user-attachments/assets/ff12d5a2-2df2-4401-b910-0fdd68c880af)
+
+
+![Proto-pagina-login](https://github.com/user-attachments/assets/b35ec9c9-fa4d-45f2-8990-7256f8f7bfdb)
+
  
 ###### MEMBROS-CASSIANO, ABILLIO, JAIME E JOSÉ VITOR
