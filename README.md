@@ -1,6 +1,6 @@
 
 ## Introdução
-	O trabalho a ser desenvolvido pelo nosso grupo, cujo membros estão identificados na capa do presente documento é referente a construção de um site que seu objetivo principal é tanto incentivar pessoas que não tem costume de ler livros, começarem a ler com recomendações de músicas que combinem com o livro, e também para quem já tem o costume de ler, que possa compartilhar seu gosto de livro e música em um só lugar.
+O trabalho a ser desenvolvido pelo nosso grupo, cujo membros estão identificados na capa do presente documento é referente a construção de um site que seu objetivo principal é tanto incentivar pessoas que não tem costume de ler livros, começarem a ler com recomendações de músicas que combinem com o livro, e também para quem já tem o costume de ler, que possa compartilhar seu gosto de livro e música em um só lugar.
 
 
 ### Requisitos Funcionais
