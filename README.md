@@ -39,14 +39,15 @@ Abaixo temos os principais requisitos Não Funcionais que farão parte do nosso 
 *•	Atualização de tempo real de dados*: Os dados serão atualizados em tempo real assim que o usuário fizer uma recomendação no site
 
 
-
-
 **PROTÓTIPO PÁGINA CADÁSTRO**
-![Proto-pagina-cadastro](https://github.com/user-attachments/assets/ff12d5a2-2df2-4401-b910-0fdd68c880af)
+
+![Protótipo-tela-CADASTRO-0 2](https://github.com/user-attachments/assets/85f21700-5042-45f1-8e7c-9775596c3ee2)
 
 
-**PROTÓTIPO PÁGINA LOGIN**
-![Proto-pagina-login](https://github.com/user-attachments/assets/b35ec9c9-fa4d-45f2-8990-7256f8f7bfdb)
+
+**PROTÓTIPO PÁGINA LOGIN
 
  
+![Protótipo-tela-LOGIN-0 2](https://github.com/user-attachments/assets/5b31fb4d-ba0e-4dc0-9508-49406571a3f0)
+
 ###### MEMBROS-CASSIANO, ABILLIO, JAIME E JOSÉ VITOR
