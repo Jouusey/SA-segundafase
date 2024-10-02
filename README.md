@@ -7,16 +7,17 @@ O trabalho desenvolvido pelo nosso grupo, cujo membros são Abílio Alfredo Fran
 ## Requisitos Funcionais
 
 1. **Cadastro de Usuários (RF-01):** O sistema deve permitir que novos usuários se cadastrem preenchendo as informações solicitadas.
-2. **Login e Autenticação de Usuários (RF-02):** O sistema deve permitir que os usuários façam login utilizando suas credenciais.
-3. **Cadastro de Livros (RF-03):** O sistema deve permitir que usuários cadastrados adicionem livros que já leram, caso esses livros não estejam presentes no ISBN.
-4. **Remoção de Livros (RF-04):** O sistema deve permitir que os usuários removam livros cadastrados sem ISBN, garantindo a exclusão de informações desatualizadas ou incorretas.
-5. **Edição de Livros (RF-05):** Usuários devem poder editar informações de livros cadastrados sem ISBN, assegurando que os dados estejam sempre atualizados e corretos.
-6. **Cadastro de Resenhas (RF-06):** O sistema deve permitir que usuários cadastrados escrevam resenhas dos livros registrados.
-7. **Filtragem de Livros (RF-07):** O sistema deve permitir a filtragem de livros por gênero, autor, editora, data de lançamento e título.
-8. **Visualização de Detalhes (RF-08):** O sistema deve permitir a visualização de detalhes completos de um livro selecionado, incluindo todas as informações cadastradas.
-9. **Edição e Exclusão de Conta (RF-09):** O sistema deve permitir que usuários editem os dados do perfil e excluam suas contas, se desejarem.
-10. **Sugestão de Gêneros Musicais (RF-10):** O sistema deve permitir que usuários sugiram gêneros musicais que possam combinar com a leitura dos livros.
-11. **Registro de Filmes Baseados em Livros (RF-11):** O sistema deve permitir que os usuários indiquem se um livro possui uma adaptação em filme.
+2. 
+3. **Login e Autenticação de Usuários (RF-02):** O sistema deve permitir que os usuários façam login utilizando suas credenciais.
+4. **Cadastro de Livros (RF-03):** O sistema deve permitir que usuários cadastrados adicionem livros que já leram, caso esses livros não estejam presentes no ISBN.
+5. **Remoção de Livros (RF-04):** O sistema deve permitir que os usuários removam livros cadastrados sem ISBN, garantindo a exclusão de informações desatualizadas ou incorretas.
+6. **Edição de Livros (RF-05):** Usuários devem poder editar informações de livros cadastrados sem ISBN, assegurando que os dados estejam sempre atualizados e corretos.
+7. **Cadastro de Resenhas (RF-06):** O sistema deve permitir que usuários cadastrados escrevam resenhas dos livros registrados.
+8. **Filtragem de Livros (RF-07):** O sistema deve permitir a filtragem de livros por gênero, autor, editora, data de lançamento e título.
+9. **Visualização de Detalhes (RF-08):** O sistema deve permitir a visualização de detalhes completos de um livro selecionado, incluindo todas as informações cadastradas.
+10. **Edição e Exclusão de Conta (RF-09):** O sistema deve permitir que usuários editem os dados do perfil e excluam suas contas, se desejarem.
+11. **Sugestão de Gêneros Musicais (RF-10):** O sistema deve permitir que usuários sugiram gêneros musicais que possam combinar com a leitura dos livros.
+12. **Registro de Filmes Baseados em Livros (RF-11):** O sistema deve permitir que os usuários indiquem se um livro possui uma adaptação em filme.
 
 ## Requisitos Não Funcionais
 
