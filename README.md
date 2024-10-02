@@ -7,7 +7,7 @@ O trabalho desenvolvido pelo nosso grupo, cujo membros são Abílio Alfredo Fran
 ## Requisitos Funcionais
 
 1. **Cadastro de Usuários (RF-01):** O sistema deve permitir que novos usuários se cadastrem preenchendo as informações solicitadas.
-2. 
+   
 3. **Login e Autenticação de Usuários (RF-02):** O sistema deve permitir que os usuários façam login utilizando suas credenciais.
 4. **Cadastro de Livros (RF-03):** O sistema deve permitir que usuários cadastrados adicionem livros que já leram, caso esses livros não estejam presentes no ISBN.
 5. **Remoção de Livros (RF-04):** O sistema deve permitir que os usuários removam livros cadastrados sem ISBN, garantindo a exclusão de informações desatualizadas ou incorretas.
