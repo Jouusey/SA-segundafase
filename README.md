@@ -22,13 +22,14 @@ O trabalho desenvolvido pelo nosso grupo, cujo membros são Abílio Alfredo Fran
 ## Requisitos Não Funcionais
 
 1. **Desempenho (RNF-01):** O sistema deve processar rapidamente as requisições de registro e consulta de livros, garantindo tempos de resposta inferiores a 3 segundos para a maioria das operações, mesmo com um grande volume de usuários.
-2. **Usabilidade (RNF-02):** O sistema deve disponibilizar uma interface intuitiva, amigável e de fácil navegação, com design responsivo, garantindo uma boa experiência tanto em dispositivos móveis quanto em desktops.
-3. **Escalabilidade (RNF-03):** O sistema deve ser capaz de suportar um aumento significativo no número de usuários e registros de livros, sem comprometer o desempenho.
-4. **Segurança (RNF-04):** O sistema deve proteger os dados dos usuários e as informações dos livros, garantindo a segurança das contas e a proteção contra ataques.
-5. **Atualização de Dados (RNF-05):** As informações devem ser atualizadas imediatamente após qualquer recomendação feita pelos usuários no site.
-6. **Restrição de Direitos Autorais (RNF-06):** O sistema não armazenará nem disponibilizará conteúdo ilegal que viole direitos autorais. Serão disponibilizados apenas links de referência confiáveis.
-7. **Suporte aos Navegadores (RNF-07):** O sistema será compatível com os navegadores Microsoft Edge, Google Chrome, além de dispositivos móveis.
-8. **Moderação (RNF-08):** Todo o conteúdo criado pelos usuários será monitorado e regulado de acordo com as regras estabelecidas, garantindo a segurança do ambiente virtual.
+   
+3. **Usabilidade (RNF-02):** O sistema deve disponibilizar uma interface intuitiva, amigável e de fácil navegação, com design responsivo, garantindo uma boa experiência tanto em dispositivos móveis quanto em desktops.
+4. **Escalabilidade (RNF-03):** O sistema deve ser capaz de suportar um aumento significativo no número de usuários e registros de livros, sem comprometer o desempenho.
+5. **Segurança (RNF-04):** O sistema deve proteger os dados dos usuários e as informações dos livros, garantindo a segurança das contas e a proteção contra ataques.
+6. **Atualização de Dados (RNF-05):** As informações devem ser atualizadas imediatamente após qualquer recomendação feita pelos usuários no site.
+7. **Restrição de Direitos Autorais (RNF-06):** O sistema não armazenará nem disponibilizará conteúdo ilegal que viole direitos autorais. Serão disponibilizados apenas links de referência confiáveis.
+8. **Suporte aos Navegadores (RNF-07):** O sistema será compatível com os navegadores Microsoft Edge, Google Chrome, além de dispositivos móveis.
+9. **Moderação (RNF-08):** Todo o conteúdo criado pelos usuários será monitorado e regulado de acordo com as regras estabelecidas, garantindo a segurança do ambiente virtual.
 
 ## Protótipos
 
