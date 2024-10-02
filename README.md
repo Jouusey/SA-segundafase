@@ -1,44 +1,43 @@
 
+# FliPi - Biblioteca Virtual
+
 ### INTRODUÇÃO
 O trabalho desenvolvido pelo nosso grupo, cujo membros são Abílio Alfredo Francisco (Abivisu2), Cassiano Calazans Coelho Machado (cassianobigodudo), Jaime António Cá (jaime-ac) e José Vitor de Mattos Pinheiro (Jouusey) é referente a construção de um site com caráter de BIBLIOTECA VIRTUAL. A finalidade do site é posssilibitar que usuários cadastrados possam registrar livros que já leram em suas respectivas bibliotecas e com o principal objetivo de compartilhar uma resenha sobre o livro registrado no site, servindo dessa forma como uma ferramenta de recomendação de livros para outros usuários, baseada no compartilhamento de resenhas de livros. 
 
+## Requisitos Funcionais
 
+1. **Cadastro de Usuários (RF-01):** O sistema deve permitir que novos usuários se cadastrem preenchendo as informações solicitadas.
+2. **Login e Autenticação de Usuários (RF-02):** O sistema deve permitir que os usuários façam login utilizando suas credenciais.
+3. **Cadastro de Livros (RF-03):** O sistema deve permitir que usuários cadastrados adicionem livros que já leram, caso esses livros não estejam presentes no ISBN.
+4. **Remoção de Livros (RF-04):** O sistema deve permitir que os usuários removam livros cadastrados sem ISBN, garantindo a exclusão de informações desatualizadas ou incorretas.
+5. **Edição de Livros (RF-05):** Usuários devem poder editar informações de livros cadastrados sem ISBN, assegurando que os dados estejam sempre atualizados e corretos.
+6. **Cadastro de Resenhas (RF-06):** O sistema deve permitir que usuários cadastrados escrevam resenhas dos livros registrados.
+7. **Filtragem de Livros (RF-07):** O sistema deve permitir a filtragem de livros por gênero, autor, editora, data de lançamento e título.
+8. **Visualização de Detalhes (RF-08):** O sistema deve permitir a visualização de detalhes completos de um livro selecionado, incluindo todas as informações cadastradas.
+9. **Edição e Exclusão de Conta (RF-09):** O sistema deve permitir que usuários editem os dados do perfil e excluam suas contas, se desejarem.
+10. **Sugestão de Gêneros Musicais (RF-10):** O sistema deve permitir que usuários sugiram gêneros musicais que possam combinar com a leitura dos livros.
+11. **Registro de Filmes Baseados em Livros (RF-11):** O sistema deve permitir que os usuários indiquem se um livro possui uma adaptação em filme.
 
-### REQUISITOS FUNCIONAIS
-• RF (01) Cadastro de Usuários: O sistema deve permitir que novos usuários se cadastrem preenchendo informações solicitados para o processo;
-• RF (02) Login e Autenticação de Usuários: O sistema deve permitir que os usuários façam login usando suas credenciais;
-• RF (03) Cadastro de Livros: O sistema deve permitir aos usuários cadastrados cadastrar livros que já leram caso não estejam no ISBN;
-• RF (04) Remoção de Livros: O sistema deve permitir que os usuários removam livros que foram cadastrados sem o ISBN, garantindo que informações desatualizadas ou incorretas possam ser excluídas;
-• RF (05) Edição de Livros: Os usuários devem poder editar as informações de livros cadastrados sem ISBN, garantindo que os dados sejam sempre atualizados e verídicos;
-• RF (06) Cadastrar Resenhas: O sistema deve permitir que usuários cadastrados escrevam resenhas sobre livros cadastrados;
-• RF (07) Filtrar Livros: O sistema deve permitir a filtragem de livros por gênero, autor, editora, data de lançamento e título em pesquisas;
-• RF (08) Visualização de Detalhes: O sistema deve permitir que os usuários visualizem detalhes completos de um livro selecionado, incluindo todas as informações cadastradas;
-• RF (09) Editar e Excluir Conta: O sistema deve permitir que usuários cadastrados possam editar dados do seu perfil, assim como excluir suas contas, se assim desejarem;
-• RF (10) Sugestão de Gêneros Musicais: O sistema deve permitir ao usuário sugerir gêneros musicais que possam combinar com a leitura dos livros;
-• RF (11) Registrar Filmes Baseados em Livros: O sistema deve permitir que os usuários possam selecionar no cadastro de livros se o livro tem uma adaptação em filme;
-REQUISITOS NÃO FUNCIONAIS
-•RNF (01) Desempenho: O sistema deve ser capaz de processar requisições de registro e consulta de livros rapidamente, garantindo tempos de resposta inferiores a 3 segundos para a maioria das operações, mesmo com um grande volume de usuários;
-• RNF (02) Usabilidade: O sistema deve disponibilizar uma interface intuitiva, amigável e de fácil navegação, permitindo que os usuários registrem e pesquisem livros com o mínimo de esforço. Possuindo um design deve responsivo para funcionar de forma adequado em dispositivos móveis e desktops.
+## Requisitos Não Funcionais
 
-### REQUISITOS NÃO FUNCIONAIS
-•RNF (01) Desempenho: O sistema deve ser capaz de processar requisições de registro e consulta de livros rapidamente, garantindo tempos de resposta inferiores a 3 segundos para a maioria das operações, mesmo com um grande volume de usuários;
-• RNF (02) Usabilidade: O sistema deve disponibilizar uma interface intuitiva, amigável e de fácil navegação, permitindo que os usuários registrem e pesquisem livros com o mínimo de esforço. Possuindo um design deve responsivo para funcionar de forma adequado em dispositivos móveis e desktops.
-• RNF (03) Escalabilidade: O sistema deve ser projetado para suportar um aumento no número de usuários e registros de livros, permitindo que novos usuários e livros sejam adicionados facilmente sem impactar o desempenho;
-• RNF (04) Segurança: O sistema deve proteger os dados dos usuários e informações dos livros, tendo um sistema seguro que protege a conta e autenticação dos usuários contra-ataques ou invasão de contas;
-• RNF (05) Atualização de dados: Os dados deverão ser atualizados com eficácia e eficiência, assim que o usuário fizer uma recomendação no site;
-• RNF (06) Restrição de direitos autorais: O sistema não disponibilizará nem armazenará conteúdo ilegal que fere os direitos autorais dos autores e artistas, apenas disponibilizará links de referência e confiança para o usuário;
-•RNF (07) Suporte: O sistema estará disponível em Microsoft Edge, Google Chrome e Mobile.;
-•RNF (08) Moderação: Conteúdo feito pelos usuários será monitorado e regulado de acordo as regras locais para manter o espaço virtual do sistema seguro.;
+1. **Desempenho (RNF-01):** O sistema deve processar rapidamente as requisições de registro e consulta de livros, garantindo tempos de resposta inferiores a 3 segundos para a maioria das operações, mesmo com um grande volume de usuários.
+2. **Usabilidade (RNF-02):** O sistema deve disponibilizar uma interface intuitiva, amigável e de fácil navegação, com design responsivo, garantindo uma boa experiência tanto em dispositivos móveis quanto em desktops.
+3. **Escalabilidade (RNF-03):** O sistema deve ser capaz de suportar um aumento significativo no número de usuários e registros de livros, sem comprometer o desempenho.
+4. **Segurança (RNF-04):** O sistema deve proteger os dados dos usuários e as informações dos livros, garantindo a segurança das contas e a proteção contra ataques.
+5. **Atualização de Dados (RNF-05):** As informações devem ser atualizadas imediatamente após qualquer recomendação feita pelos usuários no site.
+6. **Restrição de Direitos Autorais (RNF-06):** O sistema não armazenará nem disponibilizará conteúdo ilegal que viole direitos autorais. Serão disponibilizados apenas links de referência confiáveis.
+7. **Suporte aos Navegadores (RNF-07):** O sistema será compatível com os navegadores Microsoft Edge, Google Chrome, além de dispositivos móveis.
+8. **Moderação (RNF-08):** Todo o conteúdo criado pelos usuários será monitorado e regulado de acordo com as regras estabelecidas, garantindo a segurança do ambiente virtual.
 
+## Protótipos
 
-
-
-
-
-**PROTÓTIPO PÁGINA CADÁSTRO**
+### Página de Cadastro  
 ![Protótipo-tela-CADASTRO-0 2](https://github.com/user-attachments/assets/85f21700-5042-45f1-8e7c-9775596c3ee2)
 
-**PROTÓTIPO PÁGINA LOGIN
+### Página de Login  
 ![Protótipo-tela-LOGIN-0 2](https://github.com/user-attachments/assets/5b31fb4d-ba0e-4dc0-9508-49406571a3f0)
 
-###### MEMBROS: ABILLIO, CASSIANO, JAIME E JOSÉ VITOR
+---
+
+**Membros do Grupo:**  
+Abílio Alfredo Francisco, Cassiano Calazans Coelho Machado, Jaime António Cá, José Vitor de Mattos Pinheiro
