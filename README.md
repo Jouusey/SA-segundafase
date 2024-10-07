@@ -42,6 +42,10 @@ O trabalho desenvolvido pelo nosso grupo, cujo membros são Abílio Alfredo Fran
 ![Protótipo-tela-LOGIN-0 2](https://github.com/user-attachments/assets/5b31fb4d-ba0e-4dc0-9508-49406571a3f0)
 
 ---
+## Paleta de cores
+![image](https://github.com/user-attachments/assets/306015c4-87ee-4e47-8710-8942a2069528)
+
+![image](https://github.com/user-attachments/assets/9405752d-27b6-4a56-be2d-bacaa5008e50)
 
 **Membros do Grupo:**  
 Abílio Alfredo Francisco, Cassiano Calazans Coelho Machado, Jaime António Cá, José Vitor de Mattos Pinheiro
