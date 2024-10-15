@@ -2,8 +2,90 @@ import "./TelaCadastro.css"
 
 export default function TelaCadastro() {
   return (
-    <div className="container-tela-cadastro">
 
+
+
+
+
+
+
+
+
+
+    <div className="container-tela-cadastro">
+ 
+
+        <div className="livro-cadastro-container">
+
+
+            <div className="livro-cadastro-primeiraLayer">
+
+
+                <div className="livro-cadastro-segundaLayer">
+
+
+
+                    <div className="livro-cadastro-ConteudoLayer">
+
+
+
+
+                        
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* 
         <div className="container-conteudo-cadastro">
 
             <div className="parte-formulario">
@@ -67,8 +149,16 @@ export default function TelaCadastro() {
 
             </div>
 
-        </div>
-      
+        </div>  */}
+    
     </div>
+
+
+
+
+
+
+
+
   )
 }

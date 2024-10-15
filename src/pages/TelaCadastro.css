@@ -5,103 +5,36 @@
     flex-direction: column;
     gap: 15px;
     width: 100%;
+    display: flex;
+    background-color: rgb(255, 253, 250);
 }
 
-    .container-conteudo-cadastro{
-        display: flex;
-        width: 100%;
-        margin-top: 40px;
-    }
-    
-    .parte-formulario{
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: solid 2px #000;
-        border-radius: 25px;
-        padding: 15px;
-        margin-left: 200px;
-    }
-    .formulario-cadastro{
-        width: 70%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 15px;
-        border-radius: 20px;
-        border: 1px solid #000;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        padding: 15px;
-    }
-    
-    .label-titulo{
-        margin-top: 20px;
-    }
-    
-    .classe-inputs{
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        flex-direction: column;
-        margin-bottom: 15px;
-        gap: 5px;
-    }
-    .label-inputs{
-        font-size: 18px;
-        font-family: monospace;
-        font-weight: bold;
-        color: var(--laranjaenferrujado);
-    }
-    .inputs-cadastro{
-        height: 40px;
-        width: 250px;
-        border: 1px solid #000;
-        border-radius: 10px;
-        padding-left: 5px;
-    }
-    .classe-botao-cadastro{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 15px;
-        margin-bottom: 25px;
-    }
-    
-    .parte-imagem{
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-color: transparent;
-        border: solid 2px #000;
-        border-radius: 25px;
-        padding: 15px;
-        gap: 20px;
-        margin-right: 200px;
-    }
-        .imagem-parte-cadastro{
-            height: 350px;
-            width: 350px;
-        }
+.livro-cadastro-container{
 
-        .botao-cadastro{
-            height: 30px;
-            width: 150px;
-            border: 4px solid #000;
-            border-style: double;
-            background-color: var(--laranjaenferrujado);
-            color: var(--cor1);
-            cursor: pointer;
-        }
+    height: 90%;
+    width: 80%;
+    background-color: rgb(123, 51, 31);
+    display: flex;
+}
 
-        .label-possuir-conta{
-            font-size: 15px;
-            font-weight: bold;
-            font-family: cursive;
-            cursor: pointer;
-            color: var(--textos);
-        }
+.livro-cadastro-primeiraLayer{
+
+    height: 100%;
+    width: 95%;
+    background-color: rgb(182, 74, 31);
+    display: flex;
+    margin-left: 2.5%;
+    border-radius: 27px;
+
+}
+
+.livro-cadastro-segundaLayer{
+
+    height: 100%;
+    width: 95%;
+    background-color: rgb(182, 74, 31);
+    display: flex;
+    margin-left: 2.5%;
+    border-radius: 27px;
+
+}
