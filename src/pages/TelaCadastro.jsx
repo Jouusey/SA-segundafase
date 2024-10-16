@@ -15,6 +15,9 @@ export default function TelaCadastro() {
     <div className="container-tela-cadastro">
  
 
+
+
+
         <div className="livro-cadastro-container">
 
 
@@ -24,14 +27,35 @@ export default function TelaCadastro() {
                 <div className="livro-cadastro-segundaLayer">
 
 
-
-                    <div className="livro-cadastro-ConteudoLayer">
-
+                    <div className="livro-cadastro-terceiraLayer">
 
 
 
-                        
+                            <div className="livro-cadastro-ConteudoLayer">
+
+
+
+                                <div className="livro-cadastro-conteudoLayerEsquerda">
+                                
+                            
+
+                                </div>
+
+                                <div className="livro-cadastro-conteudoLayerDireita">
+
+
+
+                                </div>
+
+
+
+                            </div>
+
+
                     </div>
+
+
+
                 </div>
             </div>
 
