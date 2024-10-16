@@ -43,12 +43,12 @@ export default function TelaCadastro() {
                                     onChange={(event) => setInputNomeCompleto(event.target.value)}/>
 
                                     <label htmlFor="label-usuario" 
-                                    className="label-inputs">Usuário</label>
+                                    className="label-inputs">Usuario</label>
 
                                     <input type="text" 
                                     id="label-usuario" 
                                     className="inputs-cadastro" 
-                                    placeholder="digite seu nome de usuário"
+                                    placeholder="digite seu nome de usuario"
                                     onChange={(event) => setInputNomeUsuario(event.target.value)}/>
 
                                     <label htmlFor="label-email" 
@@ -57,7 +57,7 @@ export default function TelaCadastro() {
                                     <input type="email" 
                                     id="label-email" 
                                     className="inputs-cadastro" 
-                                    placeholder="digite seu endereço de email"/>
+                                    placeholder="digite seu endereco de email"/>
                                         
                                     <label htmlFor="label-senha" 
                                     className="label-inputs">Senha</label>
@@ -66,11 +66,6 @@ export default function TelaCadastro() {
                                     id="label-senha" 
                                     className="inputs-cadastro" 
                                     placeholder="digite uma senha"/>
-
-                                    {inputNomeCompleto}
-                                    {inputNomeUsuario}
-                                    {inputEmail}
-                                    {inputSenha}
 
                                 </div>
 
@@ -82,7 +77,7 @@ export default function TelaCadastro() {
 
                                 <button className="botao-cadastro">Cadastrar</button>
 
-                                <p className="label-possuir-conta">Já possui uma conta?</p>
+                                <p className="label-possuir-conta">Ja possui uma conta?</p>
                                 
 
 

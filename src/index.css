@@ -15,3 +15,8 @@
   --navbar: #fdfaf3;
   --textos: #40454b;
 }
+
+@font-face {
+  font-family:"fonte-projeto";
+  src: url(C:\Users\jose_vm_pinheiro\Downloads\José\REPOSITORIOS\SA-segundafase\public\ud_thin\Ud Thin.otf);
+}

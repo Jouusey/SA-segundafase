@@ -5,24 +5,25 @@
     flex-direction: column;
     height: 100vh;
     display: flex;
-    background-color: rgb(220, 132, 0);
+    background-color: #fcf6e8;
 }
 
 .livro-cadastro-container{
 
     height: 90%;
     width: 80%;
-    background-color: rgb(123, 51, 31);
+    background-color: #f4e2b4;
+    border-radius: 10px;
     display: flex;
 }
 
 .livro-cadastro-primeiraLayer{
 
     height: 100%;
-    width: 91%;
+    width: 98%;
     background-color: rgb(182, 74, 31);
     display: flex;
-    margin-left: 2.5%;
+    margin-left: 1%;
     border-radius: 27px;
 
 }
@@ -92,17 +93,65 @@
 
 }
 
-.inputs-cadastro{
-
-
-    height: 40px;
-    background-color: var(--navbar)
-
-}
 
 .botao-cadastro{
 
     height: 70px;
     width: 400px;
+    
+    height: 70px;
+    width: 400px;
+    
+    color: var(--corfundo);
+    font-size: 28px;
+    font-family: "fonte-projeto";
+    font-weight: bold;
+    background-color: var(--laranjaenferrujado);
+    border-radius: 20px;
+    width: 380px;
+    margin-bottom: 3%;
+    margin-right: 9%;
 
+
+
+
+}
+
+
+.label-inputs{
+
+
+    color: #40454b;
+    font-size: 28px;
+    font-family: "fonte-projeto";
+   
+    display: flex;
+    font-weight: bold;
+    margin-right: 295px;
+}
+
+.inputs-cadastro{
+
+    color: #c85b34;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 11px;
+    text-align: center;
+    font-family: "fonte-projeto";
+    height: 40px;
+    width: 380px;
+    border-style: solid;
+    border-color: #c85b34;
+    border-width: 2px;
+}
+
+.label-possuir-conta{
+
+
+    
+    color: #40454b;
+    font-size: 23px;
+    font-family: "fonte-projeto";
+    font-weight: bold;
+    margin-right: 1%;
 }
