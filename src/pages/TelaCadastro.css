@@ -70,6 +70,9 @@
     display: flex;
     margin-right: 2%;
     border-radius: 27px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 }
 
@@ -82,7 +85,24 @@
     width: 48%;
     background-color: rgb(255, 244, 230);
     display: flex;
-  
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
     border-radius: 27px;
+
+}
+
+.inputs-cadastro{
+
+
+    height: 40px;
+    background-color: var(--navbar)
+
+}
+
+.botao-cadastro{
+
+    height: 70px;
+    width: 400px;
 
 }

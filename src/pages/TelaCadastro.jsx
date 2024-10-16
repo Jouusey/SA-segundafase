@@ -1,23 +1,17 @@
+import { useState } from "react"
 import "./TelaCadastro.css"
+useState
 
 export default function TelaCadastro() {
+
+    const [inputNomeCompleto, setInputNomeCompleto] = useState()
+    const [inputNomeUsuario, setInputNomeUsuario] = useState()
+    const [inputEmail, setInputEmail] = useState()
+    const [inputSenha, setInputSenha] = useState()
+
   return (
-
-
-
-
-
-
-
-
-
-
     <div className="container-tela-cadastro">
  
-
-
-
-
         <div className="livro-cadastro-container">
 
 
@@ -38,170 +32,67 @@ export default function TelaCadastro() {
                                 <div className="livro-cadastro-conteudoLayerEsquerda">
                                 
 
-{/* 
-                                <label htmlFor="label-nome" className="label-inputs">Nome</label>
 
-                                    <input type="text" id="label-nome" className="inputs-cadastro" placeholder="digite seu nome completo"/>
+                                    <label htmlFor="label-nome" 
+                                    className="label-inputs">Nome</label>
 
-                                    <label htmlFor="label-usuario" className="label-inputs">Usuário</label>
-                                    <input type="text" id="label-usuario" className="inputs-cadastro" placeholder="digite seu nome de usuário"/>
+                                    <input type="text" 
+                                    id="label-nome" 
+                                    className="inputs-cadastro" 
+                                    placeholder="digite seu nome completo"
+                                    onChange={(event) => setInputNomeCompleto(event.target.value)}/>
 
+                                    <label htmlFor="label-usuario" 
+                                    className="label-inputs">Usuário</label>
 
-                                        <label htmlFor="label-email" className="label-inputs">Email</label>
-                                        <input type="email" id="label-email" className="inputs-cadastro" placeholder="digite seu endereço de email"/>
+                                    <input type="text" 
+                                    id="label-usuario" 
+                                    className="inputs-cadastro" 
+                                    placeholder="digite seu nome de usuário"
+                                    onChange={(event) => setInputNomeUsuario(event.target.value)}/>
 
+                                    <label htmlFor="label-email" 
+                                    className="label-inputs">Email</label>
 
+                                    <input type="email" 
+                                    id="label-email" 
+                                    className="inputs-cadastro" 
+                                    placeholder="digite seu endereço de email"/>
                                         
-                                        <label htmlFor="label-senha" className="label-inputs">Senha</label>
-                                        <input type="password" id="label-senha" className="inputs-cadastro" placeholder="digite uma senha"/> */}
+                                    <label htmlFor="label-senha" 
+                                    className="label-inputs">Senha</label>
 
+                                    <input type="password" 
+                                    id="label-senha" 
+                                    className="inputs-cadastro" 
+                                    placeholder="digite uma senha"/>
+
+                                    {inputNomeCompleto}
+                                    {inputNomeUsuario}
+                                    {inputEmail}
+                                    {inputSenha}
 
                                 </div>
 
                                 <div className="livro-cadastro-conteudoLayerDireita">
 
-{/* 
 
-                                <img className="imagem-parte-cadastro" src="./images/imagem-grafico.png" alt="" />
+
+                                {/* <img className="imagem-parte-cadastro" src="./images/imagem-grafico.png" alt="" /> */}
 
                                 <button className="botao-cadastro">Cadastrar</button>
 
                                 <p className="label-possuir-conta">Já possui uma conta?</p>
-                                a
+                                
 
 
- */}
+
                                 </div>
-
-
-
                             </div>
-
-
                     </div>
-
-
-
                 </div>
             </div>
-
-
-
-
-
-
-
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/* 
-        <div className="container-conteudo-cadastro">
-
-            <div className="parte-formulario">
-
-                <div className="formulario-cadastro">
-
-                   <h1 className="label-titulo">Cadastro</h1>
-
-                   <div className="classe-inputs">
-
-                  
-
-                   </div>
-
-                   <div className="classe-inputs">
-
-                     
-                   </div>
-
-                   <div className="classe-inputs">
-
-                     
-
-                   </div>
-
-                   <div className="classe-inputs">
-
-
-                   </div>
-
-                </div>
-
-            </div>
-
-            <div className="parte-imagem">
-
-                <div className="parte-grafico">
-
-
-                </div>
-
-                <div className="classe-botao-cadastro">
-
-                     
-
-                </div>
-
-                <div className="recuperar-conta">
-
-                 
-
-                </div>
-                
-
-            </div>
-
-        </div>  */}
-    
     </div>
-
-
-
-
-
-
-
-
   )
 }
