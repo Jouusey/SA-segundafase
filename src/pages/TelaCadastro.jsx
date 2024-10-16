@@ -37,14 +37,39 @@ export default function TelaCadastro() {
 
                                 <div className="livro-cadastro-conteudoLayerEsquerda">
                                 
-                            
+
+{/* 
+                                <label htmlFor="label-nome" className="label-inputs">Nome</label>
+
+                                    <input type="text" id="label-nome" className="inputs-cadastro" placeholder="digite seu nome completo"/>
+
+                                    <label htmlFor="label-usuario" className="label-inputs">Usuário</label>
+                                    <input type="text" id="label-usuario" className="inputs-cadastro" placeholder="digite seu nome de usuário"/>
+
+
+                                        <label htmlFor="label-email" className="label-inputs">Email</label>
+                                        <input type="email" id="label-email" className="inputs-cadastro" placeholder="digite seu endereço de email"/>
+
+
+                                        
+                                        <label htmlFor="label-senha" className="label-inputs">Senha</label>
+                                        <input type="password" id="label-senha" className="inputs-cadastro" placeholder="digite uma senha"/> */}
+
 
                                 </div>
 
                                 <div className="livro-cadastro-conteudoLayerDireita">
 
+{/* 
+
+                                <img className="imagem-parte-cadastro" src="./images/imagem-grafico.png" alt="" />
+
+                                <button className="botao-cadastro">Cadastrar</button>
+
+                                <p className="label-possuir-conta">Já possui uma conta?</p>
 
 
+ */}
                                 </div>
 
 
@@ -120,29 +145,23 @@ export default function TelaCadastro() {
 
                    <div className="classe-inputs">
 
-                        <label htmlFor="label-nome" className="label-inputs">Nome</label>
-                        <input type="text" id="label-nome" className="inputs-cadastro" placeholder="digite seu nome completo"/>
+                  
 
                    </div>
 
                    <div className="classe-inputs">
 
-                        <label htmlFor="label-usuario" className="label-inputs">Usuário</label>
-                        <input type="text" id="label-usuario" className="inputs-cadastro" placeholder="digite seu nome de usuário"/>
+                     
+                   </div>
+
+                   <div className="classe-inputs">
+
+                     
 
                    </div>
 
                    <div className="classe-inputs">
 
-                        <label htmlFor="label-email" className="label-inputs">Email</label>
-                        <input type="email" id="label-email" className="inputs-cadastro" placeholder="digite seu endereço de email"/>
-
-                   </div>
-
-                   <div className="classe-inputs">
-
-                        <label htmlFor="label-senha" className="label-inputs">Senha</label>
-                        <input type="password" id="label-senha" className="inputs-cadastro" placeholder="digite uma senha"/>
 
                    </div>
 
@@ -154,19 +173,18 @@ export default function TelaCadastro() {
 
                 <div className="parte-grafico">
 
-                    <img className="imagem-parte-cadastro" src="./images/imagem-grafico.png" alt="" />
 
                 </div>
 
                 <div className="classe-botao-cadastro">
 
-                        <button className="botao-cadastro">Cadastrar</button>
+                     
 
                 </div>
 
                 <div className="recuperar-conta">
 
-                    <p className="label-possuir-conta">Já possui uma conta?</p>
+                 
 
                 </div>
                 

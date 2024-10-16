@@ -3,11 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   background-color: transparent;
-  height: 100%;
-  width: 100%;
+  
 }
 
 :root{
+    
+
   --corfundo: #fcf6e8;
   --fundoelementos: #f4e2b4;
   --laranjaenferrujado: #c85b34;
