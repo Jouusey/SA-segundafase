@@ -31,33 +31,33 @@ export default function TelaCadastro() {
                                     <input type="text" 
                                     id="label-nome" 
                                     className="inputs-cadastro" 
-                                    placeholder="digite seu nome completo"
+                                    placeholder="Digite seu nome completo"
                                     onChange={(event) => setInputNomeCompleto(event.target.value)}/>
 
                                     <label htmlFor="label-usuario" 
-                                    className="label-inputs">Usuario</label>
+                                    className="label-inputs">Usuario:</label>
 
                                     <input type="text" 
                                     id="label-usuario" 
                                     className="inputs-cadastro" 
-                                    placeholder="digite seu nome de usuario"
+                                    placeholder="Digite seu nome de usuario"
                                     onChange={(event) => setInputNomeUsuario(event.target.value)}/>
 
                                     <label htmlFor="label-email" 
-                                    className="label-inputs">Email</label>
+                                    className="label-inputs">Email:</label>
 
                                     <input type="email" 
                                     id="label-email" 
                                     className="inputs-cadastro" 
-                                    placeholder="digite seu endereco de email"/>
+                                    placeholder="Digite seu endereco de email"/>
                                         
                                     <label htmlFor="label-senha" 
-                                    className="label-inputs">Senha</label>
+                                    className="label-inputs">Senha:</label>
 
                                     <input type="password" 
                                     id="label-senha" 
                                     className="inputs-cadastro" 
-                                    placeholder="digite uma senha"/>
+                                    placeholder="Digite uma senha"/>
 
                                 </div>
 
