@@ -2,107 +2,190 @@
 
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     height: 100vh;
     display: flex;
-    background-color: rgb(255, 244, 239);
+    background-color: #fcf6e8;
+
+    background-image: url(public\images\Captura de tela_17-10-2024_143040_localhost.jpg);
 }
 
-.livro-cadastro-container{
+.livro-cadastro-container-esquerda{
 
-    height: 90%;
-    width: 80%;
-    background-color: rgb(123, 51, 31);
+    height: 85%;
+    width: 35%;
+    
+    background: linear-gradient(0.25turn, #c85b34, #efc5ae);
+    border-radius: 30px;
     display: flex;
 }
 
-.livro-cadastro-primeiraLayer{
+
+
+.livro-cadastro-primeiraLayer-esquerda{
 
     height: 100%;
-    width: 91%;
-    background-color: rgb(182, 74, 31);
+    width: 98%;
+    background-color: #debeb2;
     display: flex;
-    margin-left: 2.5%;
-    border-radius: 27px;
-
-}
-
-.livro-cadastro-segundaLayer{
-
-    height: 100%;
-    width: 95%;
-    background-color: rgb(182, 74, 31);
-    display: flex;
-    margin-left: 2.5%;
-    border-radius: 27px;
-
-}
-
-.livro-cadastro-terceiraLayer{
-
-    height: 100%;
-    width: 99%;
-    background-color: #df9274;
-    display: flex;
-    margin-left: 0.5%;
-    border-radius: 27px;
-
-}
-
-.livro-cadastro-ConteudoLayer{
-
-    height: 100%;
-    width: 96%;
-    background-color: #df9274;
-    display: flex;
-    margin-left: 2%;
-    border-radius: 27px;
+    border-radius: 30px;
+    margin-left: 8px;
 
 }
 
 .livro-cadastro-conteudoLayerEsquerda{
+  
 
-
-    margin-top: 0.6%;
-    height: 98%;
-    width: 48%;
-    background-color: rgb(255, 246, 229);
+    margin-top: 2%;
+    height: 97.5%;
+    width: 95%;
+    background-color: #fdfaf3;
     display: flex;
-    margin-right: 2%;
+    margin-right: 0.5%;
     border-radius: 27px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-left: 18px;
 
 }
+
+
+
+.label-titulos{
+
+
+    color: #40454b;
+    font-size: 48px;
+    font-family: "fonte-projeto";
+   
+    display: flex;
+    font-weight: bolder;
+    margin-bottom: 45px;
+
+
+}
+
+
+.label-inputs{
+
+
+    color: #40454b;
+    font-size: 38px;
+    font-family: "fonte-projeto";
+   
+    display: flex;
+    font-weight: bold;
+    margin-right: 325px;
+    margin-top: 15px;
+}
+
+.label-inputs-nome{
+
+
+    color: #40454b;
+    font-size: 38px;
+    font-family: "fonte-projeto";
+   
+    display: flex;
+    font-weight: bold;
+    margin-right: 231px;
+    margin-bottom: 15px;
+}
+
+
+.inputs-cadastro{
+
+    color: #c85b34;
+    font-size: 34px;
+    font-weight: bold;
+    border-radius: 11px;
+    text-align: center;
+    font-family: "fonte-projeto";
+    height: 38px;
+    width: 380px;
+    border-style: solid;
+    border-color: #c85b34;
+    border-width: 2px;
+}
+
+.livro-cadastro-container-direita{
+
+    height: 85%;
+    width: 35%;
+    background: linear-gradient(0.25turn, #e0c2b2, #c85b34);
+    border-radius: 30px;
+    display: flex;
+    
+}
+
+
+.livro-cadastro-primeiraLayerDireita{
+
+
+    height: 100%;
+    width: 98%;
+    background-color: #debeb2;
+    display: flex;
+    border-radius: 30px;
+    margin-left: 0.3%;
+
+}
+
 
 .livro-cadastro-conteudoLayerDireita{
 
 
 
-    margin-top: 0.6%;
-    height: 98%;
-    width: 48%;
-    background-color: rgb(255, 244, 230);
+
+
+    margin-top: 2%;
+    height: 97.5%;
+    width: 95%;
+    background-color: #fdfaf3;
     display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: end;
+    margin-right: 0.5%;
     border-radius: 27px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 5px;
 
 }
 
-.inputs-cadastro{
+.imagem-parte-cadastro{
 
 
-    height: 40px;
-    background-color: var(--navbar)
-
+    height: 40%;
+    width: 50%;
+    margin-top: 30%;
 }
 
 .botao-cadastro{
 
-    height: 70px;
-    width: 400px;
 
+    height: 60px;
+    width: 400px;
+    
+    color: var(--corfundo);
+    font-size: 38px;
+    font-family: "fonte-projeto";
+    font-weight: bold;
+    background-color: var(--laranjaenferrujado);
+    border-radius: 10px;
+    width: 280px;
+    border-color: #f4e2b4;
+
+
+}
+
+.label-possuir-conta{
+
+
+    margin-top: 20%;
+    
+    color: #40454b;
+    font-size: 27px;
+    font-family: "fonte-projeto";
+    font-weight: bold;
+    margin-left: 50%;
 }
