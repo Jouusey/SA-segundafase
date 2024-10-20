@@ -59,6 +59,8 @@ export default function TelaCadastro() {
             <div className="livro-cadastro-container-esquerda">
                 <div className="livro-cadastro-primeiraLayer-esquerda">
                     <div className="livro-cadastro-conteudoLayerEsquerda">
+                        
+                        
                         <label htmlFor="label-titulo" className="label-titulos">CADASTRO</label>
                         <label htmlFor="label-nome" className="label-inputs">Nome</label>
                         <input type="text" 
@@ -67,6 +69,7 @@ export default function TelaCadastro() {
                             placeholder="digite seu nome completo"
                             onChange={(event) => setInputNomeCompleto(event.target.value)} 
                             value={inputNomeCompleto} />
+                        
                         <label htmlFor="label-usuario" className="label-inputs">Usuario</label>
                         <input type="text" 
                             id="label-usuario" 
@@ -74,6 +77,7 @@ export default function TelaCadastro() {
                             placeholder="digite seu nome de usuário"
                             onChange={(event) => setInputNomeUsuario(event.target.value)} 
                             value={inputNomeUsuario} />
+                        
                         <label htmlFor="label-email" className="label-inputs">Email</label>
                         <input type="email" 
                             id="label-email" 
@@ -81,6 +85,7 @@ export default function TelaCadastro() {
                             placeholder="digite seu endereço de email"
                             onChange={(event) => setInputEmail(event.target.value)} 
                             value={inputEmail} />
+                        
                         <label htmlFor="label-senha" className="label-inputs">Senha</label>
                         <input type="password" 
                             id="label-senha" 
@@ -88,6 +93,7 @@ export default function TelaCadastro() {
                             placeholder="digite uma senha"
                             onChange={(event) => setInputSenha(event.target.value)} 
                             value={inputSenha} />
+                        
                     </div>
                 </div>
             </div>
@@ -97,9 +103,11 @@ export default function TelaCadastro() {
 
                 <div className="livro-cadastro-primeiraLayerDireita">
                     <div className="livro-cadastro-conteudoLayerDireita">
+                        
                         <img className="imagem-parte-cadastro" src="public\images\Hand holding pen-amico.png" alt=""/>
                         <button className="botao-cadastro" onClick={verificarCadastro}>Cadastrar</button>
                         <Link className="label-possuir-conta" to='/telalogin'>Ja possui uma conta?</Link>
+                        
                     </div>
 
 
