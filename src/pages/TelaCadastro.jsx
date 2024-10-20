@@ -1,5 +1,12 @@
 import { useState } from "react"
+import { useState } from "react"
 import "./TelaCadastro.css"
+import { useEffect } from "react"
+import { Link } from "react-router-dom"
+
+// useState
+
+
 import { useEffect } from "react"
 import { Link } from "react-router-dom"
 
@@ -8,6 +15,83 @@ import { Link } from "react-router-dom"
 
 
 export default function TelaCadastro() {
+    
+
+    const [inputNomeCompleto, setInputNomeCompleto] = useState()
+    const [inputNomeUsuario, setInputNomeUsuario] = useState()
+    const [inputEmail, setInputEmail] = useState()
+    const [inputSenha, setInputSenha] = useState()
+    const [vetorObjetosUsuarios, setVetorObjetosUsuarios] = useState([])
+
+    function verificarUsuarioExistente(){
+        
+        for (let i = 0; i < vetorObjetosUsuarios.length; i++) {
+
+            if (inputEmail == vetorObjetosUsuarios[i].email){
+                return true
+                // setUsuarioExistente(true)
+            }
+
+            if (inputNomeUsuario == vetorObjetosUsuarios[i].usuario){
+                return true
+            }
+
+        }
+
+    return false
+    }
+
+    function verificarInputsRegistrados(){
+
+        if (inputNomeCompleto == null || inputNomeUsuario == null || inputEmail == null || inputSenha == null){
+
+            return true
+
+        }else{
+
+            return false
+        }
+
+    }
+
+
+    function verificarCadastro(){
+
+        if(verificarInputsRegistrados()){
+
+            alert(`Verifique se todos os dados estão cadastrados`)
+
+        }else if(verificarUsuarioExistente()){
+
+            alert('Não foi possível criar sua conta, usuário já existente')
+
+
+        }else{
+
+            let novoUsuario = {
+    
+                nome: inputNomeCompleto,
+                usuario: inputNomeUsuario,
+                email: inputEmail,
+                senha: inputSenha
+        
+            }
+
+            setVetorObjetosUsuarios([...vetorObjetosUsuarios, novoUsuario])
+
+            alert('Usuário registrado com sucesso =)')
+
+        }
+
+    }
+
+    //a cada mudança dentro do vetorObjetosUsuarios, acontecera um console.log
+    useEffect(() => {
+        console.log(vetorObjetosUsuarios);
+    }, [vetorObjetosUsuarios])
+
+    
+  return (
     
 
     const [inputNomeCompleto, setInputNomeCompleto] = useState()
