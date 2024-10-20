@@ -1,0 +1,108 @@
+.container-tela-login{
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+    background-color: rgb(220, 132, 0);
+}
+
+.livro-login-container{
+
+    height: 90%;
+    width: 80%;
+    background-color: rgb(123, 51, 31);
+    display: flex;
+}
+
+.livro-login-primeiraLayer{
+
+    height: 100%;
+    width: 91%;
+    background-color: rgb(182, 74, 31);
+    display: flex;
+    margin-left: 2.5%;
+    border-radius: 27px;
+
+}
+
+.livro-login-segundaLayer{
+
+    height: 100%;
+    width: 95%;
+    background-color: rgb(182, 74, 31);
+    display: flex;
+    margin-left: 2.5%;
+    border-radius: 27px;
+
+}
+
+.livro-login-terceiraLayer{
+
+    height: 100%;
+    width: 99%;
+    background-color: #df9274;
+    display: flex;
+    margin-left: 0.5%;
+    border-radius: 27px;
+
+}
+
+.livro-login-ConteudoLayer{
+
+    height: 100%;
+    width: 96%;
+    background-color: #df9274;
+    display: flex;
+    margin-left: 2%;
+    border-radius: 27px;
+
+}
+
+.livro-login-conteudoLayerEsquerda{
+
+    margin-top: 0.6%;
+    height: 98%;
+    width: 48%;
+    background-color: rgb(255, 244, 230);
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: end;
+    border-radius: 27px;
+
+    
+}
+
+.livro-login-conteudoLayerDireita{
+    
+    margin-top: 0.6%;
+    height: 98%;
+    width: 48%;
+    background-color: rgb(255, 246, 229);
+    display: flex;
+    margin-right: 2%;
+    border-radius: 27px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+
+}
+
+.inputs-login{
+
+
+    height: 40px;
+    background-color: var(--navbar)
+
+}
+
+.botao-login{
+
+    height: 70px;
+    width: 400px;
+
+}

@@ -5,6 +5,7 @@ import Generica from "../pages/Generica";
 import Final from "../pages/Final";
 import Agua from "../pages/Agua";
 import TelaCadastro from "../pages/TelaCadastro"
+import TelaLogin from "../pages/TelaLogin";
 
 const router = createBrowserRouter([
     {path: "/", element: <Home />},
@@ -12,7 +13,8 @@ const router = createBrowserRouter([
     {path: "/generica", element: <Generica />},
     {path: "/final", element: <Final />},
     {path: "/agua", element: <Agua />},
-    {path: "/telacadastro", element: <TelaCadastro />}
+    {path: "/telacadastro", element: <TelaCadastro />},
+    {path: "/telalogin", element: <TelaLogin/>}
 
 ])
 
