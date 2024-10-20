@@ -41,6 +41,22 @@ O trabalho desenvolvido pelo nosso grupo, cujo membros são Abílio Alfredo Fran
 ### Página de Login  
 ![Protótipo-tela-LOGIN-0 2](https://github.com/user-attachments/assets/5b31fb4d-ba0e-4dc0-9508-49406571a3f0)
 
+### Página Principal
+![Pagina-principal-protótipo](https://github.com/user-attachments/assets/443eb6c7-957f-42dc-a302-6b6c9965b469)
+
+### Página Escrivaninha
+![Pagina-escrivaninha-protótipo](https://github.com/user-attachments/assets/cd6e05ca-fe5b-4914-81e1-4bf31a3b7ca7)
+
+### Página de Resenhas
+## Parte 1
+![Pagina-resenhas-parteUm-protótipo](https://github.com/user-attachments/assets/d0bea091-cab3-427f-b26f-5a1cc08af266)
+
+## Parte 2
+![Pagina-resenhas-parteDois-protótipo](https://github.com/user-attachments/assets/61a27777-da06-481a-a2aa-12394a088a4e)
+
+### Página da Conta 
+![Pagina-configuraçõesconta-protótipo](https://github.com/user-attachments/assets/bfbcf96b-9baa-4ff9-a732-5167b1c7a20c)
+
 ---
 ## Paleta de cores
 ![image](https://github.com/user-attachments/assets/306015c4-87ee-4e47-8710-8942a2069528)
