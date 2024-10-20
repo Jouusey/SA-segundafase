@@ -22,42 +22,54 @@ export default function TelaCadastro() {
                                 
 
     
-                                <label htmlFor="label-titulo" 
-                                    className="label-titulos">CADASTRO</label>
+                            
+                            {/* Cassiano: todos os inputs e labels */}
+                            <label htmlFor="label-nome" 
+                            className="label-inputs">Nome</label>
 
-                                    <label htmlFor="label-nome" 
-                                    className="label-inputs-nome">Nome completo:</label>
+                            <input type="text" 
+                            id="label-nome" 
+                            className="inputs-cadastro" 
+                            placeholder="digite seu nome completo"
+                            onChange={(event) => setInputNomeCompleto(event.target.value)}/>
 
-                                    <input type="text" 
-                                    id="label-nome" 
-                                    className="inputs-cadastro" 
-                                    placeholder="Digite seu nome completo"
-                                    onChange={(event) => setInputNomeCompleto(event.target.value)}/>
+                            <label htmlFor="label-usuario" 
+                            className="label-inputs">Usuário</label>
 
-                                    <label htmlFor="label-usuario" 
-                                    className="label-inputs">Usuario:</label>
+                            <input type="text" 
+                            id="label-usuario" 
+                            className="inputs-cadastro" 
+                            placeholder="digite seu nome de usuário"
+                            onChange={(event) => setInputNomeUsuario(event.target.value)}/>
 
-                                    <input type="text" 
-                                    id="label-usuario" 
-                                    className="inputs-cadastro" 
-                                    placeholder="Digite seu nome de usuario"
-                                    onChange={(event) => setInputNomeUsuario(event.target.value)}/>
+                            <label htmlFor="label-email" 
+                            className="label-inputs">Email</label>
 
-                                    <label htmlFor="label-email" 
-                                    className="label-inputs">Email:</label>
+                            <input type="email" 
+                            id="label-email" 
+                            className="inputs-cadastro" 
+                            placeholder="digite seu endereço de email"
+                            onChange={(event) => setInputEmail(event.target.value)}/>
+                                
+                            <label htmlFor="label-senha" 
+                            className="label-inputs">Senha</label>
 
-                                    <input type="email" 
-                                    id="label-email" 
-                                    className="inputs-cadastro" 
-                                    placeholder="Digite seu endereco de email"/>
-                                        
-                                    <label htmlFor="label-senha" 
-                                    className="label-inputs">Senha:</label>
+                            <input type="password" 
+                            id="label-senha" 
+                            className="inputs-cadastro" 
+                            placeholder="digite uma senha"
+                            onChange={(event) => setInputSenha(event.target.value)}/>
 
-                                    <input type="password" 
-                                    id="label-senha" 
-                                    className="inputs-cadastro" 
-                                    placeholder="Digite uma senha"/>
+{/*                                     
+                            {inputNomeCompleto}
+                            <p></p>
+                            {inputNomeUsuario}
+                            <p></p>
+                            {inputEmail}
+                            <p></p>
+                            {inputSenha} */}
+
+
 
                                 </div>
 
@@ -77,10 +89,13 @@ export default function TelaCadastro() {
                     <div className="livro-cadastro-conteudoLayerDireita">
 
             <img className="imagem-parte-cadastro" src="./images/imagem-grafico.png" alt="" /> 
+/}
 
-            <button className="botao-cadastro">Cadastrar</button>
-
-            <p className="label-possuir-conta">Ja possui uma conta?</p>
+                        <button className="botao-cadastro"
+                        onClick={verificarCadastro}>Cadastrar</button>
+                        {/* Cassiano: uso de router para transicionar para a tela de login */}
+                        <Link to= '/telalogin'>Já possui uma conta?</Link>
+                        
 
 
                     </div>
@@ -92,6 +107,7 @@ export default function TelaCadastro() {
             
         </div>
     </div>
+
 
   )
 }
