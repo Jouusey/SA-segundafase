@@ -49,7 +49,13 @@ export default function TelaCadastro() {
     }, [vetorObjetosUsuarios]);
 
     return (
+
+
         <div className="container-tela-cadastro">
+
+
+
+
             <div className="livro-cadastro-container-esquerda">
                 <div className="livro-cadastro-primeiraLayer-esquerda">
                     <div className="livro-cadastro-conteudoLayerEsquerda">
@@ -85,13 +91,18 @@ export default function TelaCadastro() {
                     </div>
                 </div>
             </div>
+
+
             <div className="livro-cadastro-container-direita">
+
                 <div className="livro-cadastro-primeiraLayerDireita">
                     <div className="livro-cadastro-conteudoLayerDireita">
                         <img className="imagem-parte-cadastro" src="./images/imagem-grafico.png" alt="" />
                         <button className="botao-cadastro" onClick={verificarCadastro}>Cadastrar</button>
-                        <Link className="label-possuir-conta" to='/telalogin'>Já possui uma conta?</Link>
+                        <Link className="label-possuir-conta" to='/telalogin'>Ja possui uma conta?</Link>
                     </div>
+
+
                 </div>
             </div>
         </div>
