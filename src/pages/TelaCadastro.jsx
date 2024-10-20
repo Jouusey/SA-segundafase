@@ -11,8 +11,7 @@ export default function TelaCadastro() {
 
     function verificarUsuarioExistente() {
         for (let i = 0; i < vetorObjetosUsuarios.length; i++) {
-            if (inputEmail === vetorObjetosUsuarios[i].email || 
-                inputNomeUsuario === vetorObjetosUsuarios[i].usuario) {
+            if (inputEmail === vetorObjetosUsuarios[i].email || inputNomeUsuario === vetorObjetosUsuarios[i].usuario) {
                 return true;
             }
         }
@@ -35,9 +34,9 @@ export default function TelaCadastro() {
                 email: inputEmail,
                 senha: inputSenha
             };
-
             setVetorObjetosUsuarios([...vetorObjetosUsuarios, novoUsuario]);
             alert('Usuário registrado com sucesso =)');
+
             setInputNomeCompleto("");
             setInputNomeUsuario("");
             setInputEmail("");
@@ -56,53 +55,42 @@ export default function TelaCadastro() {
                     <div className="livro-cadastro-conteudoLayerEsquerda">
                         <label htmlFor="label-titulo" className="label-titulos">CADASTRO</label>
                         <label htmlFor="label-nome" className="label-inputs">Nome</label>
-                        <input 
-                            type="text" 
+                        <input type="text" 
                             id="label-nome" 
                             className="inputs-cadastro" 
                             placeholder="digite seu nome completo"
                             onChange={(event) => setInputNomeCompleto(event.target.value)} 
-                            value={inputNomeCompleto}
-                        />
+                            value={inputNomeCompleto} />
                         <label htmlFor="label-usuario" className="label-inputs">Usuario</label>
-                        <input 
-                            type="text" 
+                        <input type="text" 
                             id="label-usuario" 
                             className="inputs-cadastro" 
                             placeholder="digite seu nome de usuário"
                             onChange={(event) => setInputNomeUsuario(event.target.value)} 
-                            value={inputNomeUsuario}
-                        />
+                            value={inputNomeUsuario} />
                         <label htmlFor="label-email" className="label-inputs">Email</label>
-                        <input 
-                            type="email" 
+                        <input type="email" 
                             id="label-email" 
                             className="inputs-cadastro" 
                             placeholder="digite seu endereço de email"
                             onChange={(event) => setInputEmail(event.target.value)} 
-                            value={inputEmail}
-                        />
+                            value={inputEmail} />
                         <label htmlFor="label-senha" className="label-inputs">Senha</label>
-                        <input 
-                            type="password" 
+                        <input type="password" 
                             id="label-senha" 
                             className="inputs-cadastro" 
                             placeholder="digite uma senha"
                             onChange={(event) => setInputSenha(event.target.value)} 
-                            value={inputSenha}
-                        />
+                            value={inputSenha} />
                     </div>
                 </div>
             </div>
-
             <div className="livro-cadastro-container-direita">
                 <div className="livro-cadastro-primeiraLayerDireita">
                     <div className="livro-cadastro-conteudoLayerDireita">
-                        <img className="imagem-parte-cadastro" src="./images/imagem-grafico.png" alt="" /> 
-                        <button className="botao-cadastro" onClick={verificarCadastro}>
-                            Cadastrar
-                        </button>
-                        <Link className="label-possuir-conta" to='/telalogin'>Ja possui uma conta?</Link>
+                        <img className="imagem-parte-cadastro" src="./images/imagem-grafico.png" alt="" />
+                        <button className="botao-cadastro" onClick={verificarCadastro}>Cadastrar</button>
+                        <Link className="label-possuir-conta" to='/telalogin'>Já possui uma conta?</Link>
                     </div>
                 </div>
             </div>
