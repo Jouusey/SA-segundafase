@@ -97,7 +97,7 @@ export default function TelaCadastro() {
 
                 <div className="livro-cadastro-primeiraLayerDireita">
                     <div className="livro-cadastro-conteudoLayerDireita">
-                        <img className="imagem-parte-cadastro" src="./images/imagem-grafico.png" alt="" />
+                        <img className="imagem-parte-cadastro" src="public\images\Hand holding pen-amico.png" alt=""/>
                         <button className="botao-cadastro" onClick={verificarCadastro}>Cadastrar</button>
                         <Link className="label-possuir-conta" to='/telalogin'>Ja possui uma conta?</Link>
                     </div>

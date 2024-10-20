@@ -4,7 +4,8 @@
     height: 100vh;
     display: flex;
     background-color: #fcf6e8;
-    background-image: url(public/images/Captura de tela_17-10-2024_143040_localhost.jpg);
+    
+    background-image: url(C:\Users\mrbus\Downloads\Repositorios\SA-segundafase\public\images\Captura de tela_20-10-2024_19117_localhost.jpeg);
 }
 
 .livro-login-container-esquerda {
@@ -103,9 +104,9 @@
 }
 
 .imagem-parte-login {
-    height: 40%;
-    width: 50%;
-    margin-top: 30%;
+    height: 70%;
+    width: 60%;
+    margin-top: 20%;
 }
 
 .botao-login {

@@ -6,7 +6,7 @@
     display: flex;
     background-color: #fcf6e8;
 
-    background-image: url(public\images\Captura de tela_17-10-2024_143040_localhost.jpg);
+    background-image: url(C:\Users\mrbus\Downloads\Repositorios\SA-segundafase\public\images\Captura de tela_20-10-2024_19117_localhost.jpeg);
 }
 
 .livro-cadastro-container-esquerda{
@@ -155,9 +155,9 @@
 .imagem-parte-cadastro{
 
 
-    height: 40%;
-    width: 50%;
-    margin-top: 30%;
+    height: 60%;
+    width: 70%;
+    margin-top: 10%;
 }
 
 .botao-cadastro{

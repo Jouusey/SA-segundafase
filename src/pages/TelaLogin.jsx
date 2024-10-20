@@ -48,7 +48,7 @@ function TelaLogin() {
     <div className="livro-login-container-direita">
         <div className="livro-login-primeiraLayerDireita">
             <div className="livro-login-conteudoLayerDireita">
-                <img className="imagem-parte-login" src="./images/imagem-grafico.png" alt="" />
+                <img className="imagem-parte-login" src="public\images\Creative writing-pana (1).png" alt="" />
                 <button className="botao-login" onClick={verificarLogin}>Entrar</button>
                 <Link className="label-nao-tem-conta" to="/telacadastro">Nao tem uma conta?</Link>
             </div>
