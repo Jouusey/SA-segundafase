@@ -118,6 +118,9 @@ export default function TelaCadastro() {
                         
                         <img className="imagem-parte-cadastro" src="public\images\Hand holding pen-amico.png" alt=""/>
                         <button className="botao-cadastro" onClick={verificarCadastro}>Cadastrar</button>
+
+                        
+                        {/* Cassiano: uso de router para transicionar para a tela de login */}
                         <Link className="label-possuir-conta" to='/telalogin'>Ja possui uma conta?</Link>
                         
                     </div>
