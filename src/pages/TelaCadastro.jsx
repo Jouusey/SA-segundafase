@@ -66,7 +66,7 @@ export default function TelaCadastro() {
                         <input type="text" 
                             id="label-nome" 
                             className="inputs-cadastro" 
-                            placeholder="digite seu nome completo"
+                            placeholder="Digite seu nome completo"
                             onChange={(event) => setInputNomeCompleto(event.target.value)} 
                             value={inputNomeCompleto} />
                         
@@ -74,7 +74,7 @@ export default function TelaCadastro() {
                         <input type="text" 
                             id="label-usuario" 
                             className="inputs-cadastro" 
-                            placeholder="digite seu nome de usuario"
+                            placeholder="Digite seu nome de usuario"
                             onChange={(event) => setInputNomeUsuario(event.target.value)} 
                             value={inputNomeUsuario} />
                         
@@ -82,7 +82,7 @@ export default function TelaCadastro() {
                         <input type="email" 
                             id="label-email" 
                             className="inputs-cadastro" 
-                            placeholder="digite seu endereco de email"
+                            placeholder="Digite seu endereco de email"
                             onChange={(event) => setInputEmail(event.target.value)} 
                             value={inputEmail} />
                         
@@ -90,7 +90,7 @@ export default function TelaCadastro() {
                         <input type="password" 
                             id="label-senha" 
                             className="inputs-cadastro" 
-                            placeholder="digite uma senha"
+                            placeholder="Digite uma senha"
                             onChange={(event) => setInputSenha(event.target.value)} 
                             value={inputSenha} />
                         

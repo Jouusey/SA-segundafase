@@ -30,7 +30,7 @@ function TelaLogin() {
                     type="text" 
                     id="label-usuario" 
                     className="inputs-login" 
-                    placeholder="digite seu nome de usuario"
+                    placeholder="Digite seu nome de usuario"
                     onChange={(event) => setInputNomeUsuario(event.target.value)} 
                     value={inputNomeUsuario} />
                 <label htmlFor="label-senha" className="label-inputs">Senha</label>
@@ -38,7 +38,7 @@ function TelaLogin() {
                     type="password" 
                     id="label-senha" 
                     className="inputs-login" 
-                    placeholder="digite uma senha"
+                    placeholder="Digite uma senha"
                     onChange={(event) => setInputSenha(event.target.value)} 
                     value={inputSenha} />
             </div>
