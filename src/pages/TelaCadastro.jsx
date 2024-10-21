@@ -74,7 +74,7 @@ export default function TelaCadastro() {
                         <input type="text" 
                             id="label-usuario" 
                             className="inputs-cadastro" 
-                            placeholder="digite seu nome de usuário"
+                            placeholder="digite seu nome de usuario"
                             onChange={(event) => setInputNomeUsuario(event.target.value)} 
                             value={inputNomeUsuario} />
                         
@@ -82,7 +82,7 @@ export default function TelaCadastro() {
                         <input type="email" 
                             id="label-email" 
                             className="inputs-cadastro" 
-                            placeholder="digite seu endereço de email"
+                            placeholder="digite seu endereco de email"
                             onChange={(event) => setInputEmail(event.target.value)} 
                             value={inputEmail} />
                         
