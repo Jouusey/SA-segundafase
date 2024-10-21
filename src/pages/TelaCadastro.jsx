@@ -1,52 +1,64 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import "./TelaCadastro.css";
+import { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
+import "./TelaCadastro.css"
 
 export default function TelaCadastro() {
-    const [inputNomeCompleto, setInputNomeCompleto] = useState("");
-    const [inputNomeUsuario, setInputNomeUsuario] = useState("");
-    const [inputEmail, setInputEmail] = useState("");
-    const [inputSenha, setInputSenha] = useState("");
-    const [vetorObjetosUsuarios, setVetorObjetosUsuarios] = useState([]);
+    const [inputNomeCompleto, setInputNomeCompleto] = useState()
+    const [inputNomeUsuario, setInputNomeUsuario] = useState()
+    const [inputEmail, setInputEmail] = useState()
+    const [inputSenha, setInputSenha] = useState()
+    const [vetorObjetosUsuarios, setVetorObjetosUsuarios] = useState([])
 
     function verificarUsuarioExistente() {
         for (let i = 0; i < vetorObjetosUsuarios.length; i++) {
-            if (inputEmail === vetorObjetosUsuarios[i].email || inputNomeUsuario === vetorObjetosUsuarios[i].usuario) {
-                return true;
+
+            if (inputEmail == vetorObjetosUsuarios[i].email || inputNomeUsuario == vetorObjetosUsuarios[i].usuario) {
+                return true
             }
         }
-        return false;
+        return false
     }
 
     function verificarInputsRegistrados() {
-        return !inputNomeCompleto || !inputNomeUsuario || !inputEmail || !inputSenha;
+        
+        if (inputNomeCompleto == null || inputNomeUsuario == null || inputEmail == null || inputSenha == null){
+
+            return true
+
+        }
+
+        return false
+        
     }
 
     function verificarCadastro() {
+
         if (verificarInputsRegistrados()) {
-            alert(`Verifique se todos os dados estão cadastrados`);
+
+            alert(`Verifique se todos os dados estão cadastrados`)
+
         } else if (verificarUsuarioExistente()) {
-            alert('Não foi possível criar sua conta, usuário já existente');
+
+            alert('Não foi possível criar sua conta, usuário já existente')
+
         } else {
+
             let novoUsuario = {
                 nome: inputNomeCompleto,
                 usuario: inputNomeUsuario,
                 email: inputEmail,
                 senha: inputSenha
-            };
-            setVetorObjetosUsuarios([...vetorObjetosUsuarios, novoUsuario]);
-            alert('Usuário registrado com sucesso =)');
+            }
+            setVetorObjetosUsuarios([...vetorObjetosUsuarios, novoUsuario])
 
-            setInputNomeCompleto("");
-            setInputNomeUsuario("");
-            setInputEmail("");
-            setInputSenha("");
+            alert('Usuário registrado com sucesso =)')
         }
     }
 
+     //a cada mudança dentro do vetorObjetosUsuarios, acontecera um console.log
     useEffect(() => {
-        console.log(vetorObjetosUsuarios);
-    }, [vetorObjetosUsuarios]);
+        console.log(vetorObjetosUsuarios)
+    }, [vetorObjetosUsuarios])
 
     return (
 
@@ -60,7 +72,7 @@ export default function TelaCadastro() {
                 <div className="livro-cadastro-primeiraLayer-esquerda">
                     <div className="livro-cadastro-conteudoLayerEsquerda">
                         
-                        
+                        {/* Cassiano: todos os inputs e labels */}
                         <label htmlFor="label-titulo" className="label-titulos">CADASTRO</label>
                         <label htmlFor="label-nome" className="label-inputs">Nome</label>
                         <input type="text" 
