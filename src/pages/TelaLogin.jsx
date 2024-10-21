@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import "./TelaLogin.css"
 import { Link } from "react-router-dom"
+import{ GlobalContext } from '../contexts/GlobalContext'
+import { useContext } from 'react'
 useState
 
 function TelaLogin() {
@@ -8,16 +10,44 @@ function TelaLogin() {
     
     const [inputNomeUsuario, setInputNomeUsuario] = useState()
     const [inputSenha, setInputSenha] = useState()
-    const [vetorObjetosUsuarios, setVetorObjetosUsuarios] = useState([])
+    const {vetorObjetosUsuarios} = useContext(GlobalContext)
+    const {setVetorObjetosUsuarios} = useContext(GlobalContext)
 
+
+
+    function verificarInputsRegistrados() {
+        
+        if (inputNomeUsuario == null || inputSenha == null){
+
+            return true
+
+        }
+
+        return false
+    }
+
+    function verificarCadastroCorreto(){
+
+
+        
+    }
 
 
     function verificarLogin(){
 
+        if (verificarInputsRegistrados()) {
+            
+            alert('Verifique se todos os campos estão preenchidos')
 
-    
+        }else if(verificarCadastroCorreto){
+
+            
+
+        }
+        
 
     }
+    
 
 
   return (<div className="container-tela-login">
