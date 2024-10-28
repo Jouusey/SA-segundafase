@@ -1,13 +1,15 @@
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import "./TelaCadastro.css"
+import{ GlobalContext } from '../contexts/GlobalContext'
+import { useContext } from 'react'
 
 export default function TelaCadastro() {
     const [inputNomeCompleto, setInputNomeCompleto] = useState()
     const [inputNomeUsuario, setInputNomeUsuario] = useState()
     const [inputEmail, setInputEmail] = useState()
     const [inputSenha, setInputSenha] = useState()
-    const [vetorObjetosUsuarios, setVetorObjetosUsuarios] = useState([])
+    const {vetorObjetosUsuarios, setVetorObjetosUsuarios} = useContext(GlobalContext)
 
     function verificarUsuarioExistente() {
         for (let i = 0; i < vetorObjetosUsuarios.length; i++) {
@@ -35,7 +37,7 @@ export default function TelaCadastro() {
 
         if (verificarInputsRegistrados()) {
 
-            alert(`Verifique se todos os dados estão cadastrados`)
+            alert(`Verifique se todos os campos estão preenchidos.`)
 
         } else if (verificarUsuarioExistente()) {
 
@@ -73,7 +75,7 @@ export default function TelaCadastro() {
                     <div className="livro-cadastro-conteudoLayerEsquerda">
                         
                         {/* Cassiano: todos os inputs e labels */}
-                        <label htmlFor="label-titulo" className="label-titulos">CADASTRO</label>
+                        <label htmlFor="label-titulo" className="label-titulos">Cadastro</label>
                         <label htmlFor="label-nome" className="label-inputs">Nome</label>
                         <input type="text" 
                             id="label-nome" 

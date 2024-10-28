@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import "./TelaLogin.css"
 import { Link } from "react-router-dom"
+import{ GlobalContext } from '../contexts/GlobalContext'
+import { useContext } from 'react'
 useState
 
 function TelaLogin() {
@@ -8,16 +10,84 @@ function TelaLogin() {
     
     const [inputNomeUsuario, setInputNomeUsuario] = useState()
     const [inputSenha, setInputSenha] = useState()
-    const [vetorObjetosUsuarios, setVetorObjetosUsuarios] = useState([])
+    const {vetorObjetosUsuarios, usuarioLogado, setUsuarioLogado, posicaoUsuario, setPosicaoUsuario} = useContext(GlobalContext)
 
+
+
+    function verificarInputsRegistrados() {
+        
+        if (inputNomeUsuario == null || inputSenha == null){
+
+            return true
+
+        }
+
+        return false
+    }
+
+    function verificarCadastroInexistente(){
+
+        // console.log('Antes de iniciar o for')
+        for (let i = 0; i < vetorObjetosUsuarios.length; i++){
+
+            // console.log('índice número '+ i)
+            if(vetorObjetosUsuarios[i].usuario == inputNomeUsuario){
+
+                setPosicaoUsuario(i)
+                // console.log('oi eu passei aqui')
+                return false
+            }
+
+        }
+        return true
+        
+    }
+
+    function verificarLoginIncorreto(){
+
+        if (inputSenha == vetorObjetosUsuarios[posicaoUsuario].senha){
+
+            return false
+        }else{
+            return true
+        }
+
+    }
 
 
     function verificarLogin(){
 
+        switch (true){
 
-    
+            case verificarInputsRegistrados():
+                alert('Verifique se todos os campos estão preenchidos.')
+                break;
+            case verificarCadastroInexistente():
+                alert('Nome de usuário inexistente.')
+                break;
+            case verificarLoginIncorreto():
+                alert('Login Incorreto.')
+                break;
+            default:
+                alert('Login feito com sucesso!')
+                setUsuarioLogado(true)
+
+        }
+
+        // if (verificarInputsRegistrados()) {
+            
+        //     alert('Verifique se todos os campos estão preenchidos.')
+
+        // }else if(verificarCadastroInexistente()){
+
+        //     alert('Nome de usuário inexistente.')
+
+        // }else{
+        //     alert("boa")
+        // }
 
     }
+    
 
 
   return (<div className="container-tela-login">
