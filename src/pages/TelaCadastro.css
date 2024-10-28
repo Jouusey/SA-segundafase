@@ -177,6 +177,11 @@
 
 
 }
+.botao-cadastro:hover{
+
+    cursor: pointer;
+
+}
 
 .label-possuir-conta{
 

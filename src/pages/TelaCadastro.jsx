@@ -9,8 +9,7 @@ export default function TelaCadastro() {
     const [inputNomeUsuario, setInputNomeUsuario] = useState()
     const [inputEmail, setInputEmail] = useState()
     const [inputSenha, setInputSenha] = useState()
-    const {vetorObjetosUsuarios} = useContext(GlobalContext)
-    const {setVetorObjetosUsuarios} = useContext(GlobalContext)
+    const {vetorObjetosUsuarios, setVetorObjetosUsuarios} = useContext(GlobalContext)
 
     function verificarUsuarioExistente() {
         for (let i = 0; i < vetorObjetosUsuarios.length; i++) {

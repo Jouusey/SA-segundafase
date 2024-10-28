@@ -121,6 +121,12 @@
     border-color: #f4e2b4;
 }
 
+.botao-login:hover{
+
+    cursor: pointer;
+
+}
+
 .label-nao-tem-conta {
     margin-top: 20%;
     color: #40454b;
