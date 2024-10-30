@@ -1,0 +1,94 @@
+
+.container-tela-principal{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    
+}
+
+.retangulo-um{
+    height: 85%;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(179, 151, 116);
+    border-radius: 10px;
+}
+
+.retangulo-dois{
+    height: 100%;
+    width: 96%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(105, 104, 102);
+    border-radius: 10px;
+    
+}
+
+.retangulo-tres{
+    height: 100%;
+    width: 97%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    border-radius: 10px;
+}
+
+    .div-elementos{
+        height: 100%;
+        width: 6%;
+        background-color: aqua;
+    }
+
+    .div-livros-esquerda{
+        height: 100%;
+        width: 44%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 3px;
+        background-color: aquamarine;
+    }
+
+        .div-barra-de-pesquisa{
+            height: 15%;
+            width: 100%;
+            background-color: rgb(117, 255, 170);
+        }
+
+        .div-Fila-livros-um{
+            height: 35%;
+            width: 100%;
+            background-color: rgb(51, 105, 72);
+        }
+
+        .div-Fila-livros-dois{
+            height: 35%;
+            width: 100%;
+            background-color: rgb(180, 219, 195);
+        }
+
+        .div-contatos{
+            height: 15%;
+            width: 100%;
+            background-color: rgb(16, 250, 106);
+        }
+
+    .div-livros-direita{
+        height: 100%;
+        width: 44%;
+        margin-left: 3px;
+        background-color: aliceblue;
+    }
+
+    .div-espaco-vazio{
+        height: 100%;
+        width: 6%;
+        background-color: rgb(121, 150, 150);
+    }
