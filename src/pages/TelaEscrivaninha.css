@@ -1,0 +1,312 @@
+.tela-escrivaninha-container{
+
+    display: flex;
+
+    background-color: azure;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.escrivaninha-mesa{
+
+    display: flex;
+
+    height: 92%;
+    width: 90%;
+    
+    background-color: var(--fundoDivs);
+        border-radius: 3px;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 20px;
+        border-style: solid;
+        border-color: rgb(140, 93, 71);
+}
+
+.escrivaninha-documento{
+
+    display: flex;
+    height: 100%;
+    width: 41%;
+    background-color: rgb(94, 147, 180);
+    justify-content: center;
+    align-items: center;
+}
+
+.documento-folha{
+    
+    margin-left: 3%;
+    height: 90%;
+    width: 95%;
+    background-color: var(--navbar);
+}
+
+.folha-topo{
+    display: flex;
+    background-color: aqua;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.inpt-tituloResenha{
+
+    display: flex;
+    
+    margin-right: 5%;
+    margin-top: 2%;
+    font-size: 40px;
+    font-family: "fonte-projeto";
+    font-weight: 900;
+    text-align: center;
+    border: navajowhite;
+    background: none;
+
+}
+.inpt-tituloResenha:focus{
+
+
+    outline-width: 0px;
+}
+
+.img-lixo-escrivaninha{
+    width: 7%;
+}
+
+
+.folha-conteudo{
+    background-color: bisque;
+    height: 85%;
+}
+
+.inpt-resenha{
+
+
+    resize: none;
+    font-weight: 400;
+    font-size: 28px;
+    font-family: "fonte-projeto";
+    padding: 20px;
+    text-align: start;
+    font-weight: 500;
+    height: 100%;
+    width: 100%;
+
+}
+
+.inpt-resenha:focus{
+
+    outline-width: 0px;
+}
+
+
+
+
+
+
+.folha-desfecho{
+    
+    display: flex;
+    background-color: rgb(109, 91, 64);
+    height: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.lbl-desfecho{
+    
+    font-family: "fonte-projeto";
+    font-size: 30px;
+    color: rgb(107, 78, 58);
+    font-style: italic;
+}
+
+
+
+
+
+
+.escrivaninha-container-generoIsbn{
+
+    display: flex;
+
+    
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 60%;
+    background-color: rgb(104, 104, 128);
+}
+
+.container-generoIsnb{
+
+    height: 95%;
+    width: 90%;
+
+    background-color: aquamarine;
+
+    border-radius: 5px;
+    
+}
+
+.genetoIsbn-topo{
+    
+    margin-top: 7%;
+    height: 10%;
+    width: 100%;
+    border-radius: 3px;
+
+    background-color: rgb(220, 186, 141);
+
+}
+
+.generoIsbn-conteudo{
+    margin-left: 2.5%;
+    height: 65%;
+    width: 95%;
+    
+    background-color: var(--navbar)
+}
+
+.conteudo-titulos{
+    display: flex;
+    flex-direction:row;
+    background-color: rgb(100, 100, 188);
+    height: 15%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lbl-generoIsbn-titulos{
+ 
+    margin-top: 2%;
+    font-family: "fonte-projeto";
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(107, 78, 58);
+
+}
+
+.conteudo-janela{
+    display: flex;
+    background-color: blue;
+    height: 75%;
+    width: 100%;
+}
+
+
+.conteudo-escolhaGenero{
+    background-color: rgb(139, 139, 179);
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
+
+.lbl-escolhaGenero{
+    
+    display: flex;
+    font-family: "fonte-projeto";
+    font-size: 28px;
+    font-weight: bolder;
+    margin-top: 17%;
+    height: 10.8%;
+    
+    color: rgb(107, 78, 58);
+
+}
+    
+.escolhaGenero-colunaEsquerda{
+
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 100%;
+    width: 50%;
+}
+
+
+.colunaEsquerda-generos{
+    height: 100%;
+    width: 80%;
+}
+
+.colunaEsquerda-Checkbox{
+    height: 100%;
+    width: 15%;
+    margin-top: 2%;
+}
+.escolhaGenero-checkbox{
+    margin-top: 126%;
+}
+
+
+
+.escolhaGenero-colunaDireita{
+
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 100%;
+    width: 50%;
+}
+
+.colunaDireita-generos{
+    
+    height: 100%;
+    width: 80%;
+}
+
+.colunaDireita-checkbox{
+    height: 100%;
+    width: 15%;
+    margin-top: 2%;
+
+}
+
+.conteudo-informacoesIsbn{
+    background-color: rgb(157, 186, 96);
+    height: 100%;
+    width: 50%;}
+
+
+
+
+.generoIsbn-desfecho{
+    display: flex;
+    height: 13%;
+    width: 105%;
+    
+    background-color: brown;
+    justify-content: end;
+    align-items: center;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+}
+.btn-escrivaninha{
+
+    margin-right: 2%;
+    height: 40%;
+    width: 26%;
+    background-color: antiquewhite;
+    border-radius: 2px;
+    border: none;
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    font-family: "fonte-projeto";
+    rotate: 10deg;
+}
+
+.escrivaninha-navbarVertical{
+
+    height: 100%;
+    width: 7%;
+  
+    background-color: antiquewhite;
+}
