@@ -32,23 +32,49 @@ function TelaPrincipal() {
 
                         <div className="div-Fila-livros-um">
 
-                            <div className="box"></div>
-                                {/* <p className='titulos-livros'>Título 1</p> */}
-                            <div className="box"></div>
-                                {/* <p className='titulos-livros'>Título 2</p> */}
-                            <div className="box"></div>
-                                {/* <p className='titulos-livros'>Título 3</p> */}
-                            <div className="box"></div>
-                                {/* <p className='titulos-livros'>Título 4</p> */}
+                            <div className="div-box-titulo">
+                                <div className="box"></div>
+                                <p className='titulos-livros'>Título 1</p>
+                            </div>
+
+                            <div className="div-box-titulo">
+                                <div className="box"></div>
+                                <p className='titulos-livros'>Título 2</p>
+                            </div>
+
+                            <div className="div-box-titulo">
+                                <div className="box"></div>
+                                <p className='titulos-livros'>Título 3</p>
+                            </div>
+
+                            <div className="div-box-titulo">
+                                <div className="box"></div>
+                                <p className='titulos-livros'>Título 4</p>
+                            </div>
                             
                         </div>
 
                         <div className="div-Fila-livros-dois">
 
-                            <div className="box"></div>
-                            <div className="box"></div>
-                            <div className="box"></div>
-                            <div className="box"></div>
+                            <div className="div-box-titulo">
+                                <div className="box"></div>
+                                <p className='titulos-livros'>Título 4</p>
+                            </div>
+
+                            <div className="div-box-titulo">
+                                <div className="box"></div>
+                                <p className='titulos-livros'>Título 4</p>
+                            </div>
+
+                            <div className="div-box-titulo">
+                                <div className="box"></div>
+                                <p className='titulos-livros'>Título 4</p>
+                            </div>
+
+                            <div className="div-box-titulo">
+                                <div className="box"></div>
+                                <p className='titulos-livros'>Título 4</p>
+                            </div>
 
                         </div>
 
@@ -70,19 +96,49 @@ function TelaPrincipal() {
 
                         <div className="div-Fila-livros-um">
 
-                            <div className="box"></div>
-                            <div className="box"></div>
-                            <div className="box"></div>
-                            <div className="box"></div>
+                            <div className="div-box-titulo">
+                                <div className="box"></div>
+                                <p className='titulos-livros'>Título 4</p>
+                            </div>
+
+                            <div className="div-box-titulo">
+                                <div className="box"></div>
+                                <p className='titulos-livros'>Título 4</p>
+                            </div>
+
+                            <div className="div-box-titulo">
+                                <div className="box"></div>
+                                <p className='titulos-livros'>Título 4</p>
+                            </div>
+
+                            <div className="div-box-titulo">
+                                <div className="box"></div>
+                                <p className='titulos-livros'>Título 4</p>
+                            </div>
     
                         </div>
 
                         <div className="div-Fila-livros-dois">
 
-                            <div className="box"></div>
-                            <div className="box"></div>
-                            <div className="box"></div>
-                            <div className="box"></div>
+                            <div className="div-box-titulo">
+                                <div className="box"></div>
+                                <p className='titulos-livros'>Título 4</p>
+                            </div>
+
+                            <div className="div-box-titulo">
+                                <div className="box"></div>
+                                <p className='titulos-livros'>Título 4</p>
+                            </div>
+
+                            <div className="div-box-titulo">
+                                <div className="box"></div>
+                                <p className='titulos-livros'>Título 4</p>
+                            </div>
+
+                            <div className="div-box-titulo">
+                                <div className="box"></div>
+                                <p className='titulos-livros'>Título 4</p>
+                            </div>
 
                         </div>
 

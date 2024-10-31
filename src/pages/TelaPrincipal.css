@@ -77,12 +77,23 @@
             background-color: #fdfaf3;
         }
 
+
             .inpt-pesquisa{
                 height: 25px;
                 width: 250px;
                 border: solid #d7beb1;
                 border-radius: 10px;
                 padding-left: 10px;
+                font-size: 20px;
+                font-family: "fonte-projeto";
+                color:  #40454b;
+                
+            }
+            
+            .inpt-pesquisa:focus{
+
+            outline-width: 0px;
+
             }
 
         .div-Fila-livros-um{
@@ -92,24 +103,35 @@
             justify-content: center;
             align-items: center;
             flex-direction: row;
-            gap: 30px;
             background-color: #fdfaf3;
             
         }
 
-            .box{
-                height: 105px;
-                width: 85px;
-                background-color: rgb(189, 142, 142);
-                position: relative;
-            }
+            .div-box-titulo{
 
-            /* .titulos-livros{
-                text-align: center;
-                margin-top: 6px;
-                font-size: 14px;
+                height: 100%;
+                width: 25%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: #fdfaf3;
                 
-            } */
+
+            }
+                .box{
+                    height: 105px;
+                    width: 85px;
+                    background-color: rgb(189, 142, 142);
+                    
+                }
+
+                .titulos-livros{
+                 text-align: center;
+                 margin-top: 6px;
+                 font-size: 14px;
+                
+                }
 
         .div-Fila-livros-dois{
             height: 35%;
@@ -118,7 +140,6 @@
             justify-content: center;
             align-items: center;
             flex-direction: row;
-            gap: 30px;
             background-color: #fdfaf3;
         }
 
