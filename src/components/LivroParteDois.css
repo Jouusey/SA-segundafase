@@ -1,0 +1,65 @@
+.container-mae-resenhas{
+    display: flex;
+    background-color: rgb(143, 42, 42);
+}
+
+.container-resenhas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #c89b7a;
+    min-height: 90vh;
+    width: 180vh;
+}
+    .container-resenha-usuarios{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        gap: 40px;
+        padding: 35px;
+        height: 95%;
+        width: 93%;
+        background-color: #fcf6e8;
+        border-radius: 15px;
+    }
+        .box-resenha{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 170px;
+            width: 800px;
+            background-color: #fff;
+        }
+            .parte-foto-nome{
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 15px;
+                padding: 25px;
+                height: 20%;
+                width: 100%;
+                background-color: darkcyan;
+            }
+                .foto-perfil{
+                    margin-bottom: 30px;
+                    height: 60px;
+                    width: 80px;
+                    background-color: #fff;
+                }
+            .parte-resenha{
+                display: flex;
+                justify-content: start;
+                align-items: start;
+                padding: 25px;
+                height: 60%;
+                width: 100%;
+                background-color: rgb(119, 189, 189);
+            }
+            .parte-curtida{
+                height: 20%;
+                width: 100%;
+                background-color: rgb(89, 97, 97);
+            }
