@@ -15,6 +15,9 @@ function TelaPrincipal() {
                 <div className='retangulo-tres'>
 
                     <div className='div-elementos'>
+                        
+                        <img className='icons' src="../public/icons/ant-design--home-outlined.svg" alt="icon-home" />
+                        <img className='icons' src="../public/icons/vscode-icons--file-type-light-config.svg" alt="icon-config" />
 
                     </div>
 
@@ -22,17 +25,38 @@ function TelaPrincipal() {
 
                         <div className="div-barra-de-pesquisa">
 
+                            <img className='icons' src="../public/icons/lsicon--search-outline.svg" alt="" />
+                            <input className='inpt-pesquisa' type="text" placeholder='Pesquise um livro em específico'/>
+
                         </div>
 
                         <div className="div-Fila-livros-um">
+
+                            <div className="box"></div>
+                                {/* <p className='titulos-livros'>Título 1</p> */}
+                            <div className="box"></div>
+                                {/* <p className='titulos-livros'>Título 2</p> */}
+                            <div className="box"></div>
+                                {/* <p className='titulos-livros'>Título 3</p> */}
+                            <div className="box"></div>
+                                {/* <p className='titulos-livros'>Título 4</p> */}
                             
                         </div>
 
                         <div className="div-Fila-livros-dois">
 
+                            <div className="box"></div>
+                            <div className="box"></div>
+                            <div className="box"></div>
+                            <div className="box"></div>
+
                         </div>
 
                         <div className="div-contatos">
+
+                            <div className="div-divisao-um"></div>
+                            <div className="div-divisao-dois"></div>
+                            <label className='labels' htmlFor="">Contact Us</label>
 
                         </div>
                     
@@ -45,16 +69,33 @@ function TelaPrincipal() {
                         </div>
 
                         <div className="div-Fila-livros-um">
+
+                            <div className="box"></div>
+                            <div className="box"></div>
+                            <div className="box"></div>
+                            <div className="box"></div>
     
                         </div>
 
                         <div className="div-Fila-livros-dois">
 
+                            <div className="box"></div>
+                            <div className="box"></div>
+                            <div className="box"></div>
+                            <div className="box"></div>
+
                         </div>
 
-                        <div className="div-contatos">
+                        <div className="div-next-page">
 
-                    </div>
+                            <div className="div-divisao-um"></div>
+                            <div className="div-divisao-dois"></div>
+
+                            <div className="div-label-next-page">
+                                <label className='label-next' htmlFor="">Next Page</label>
+                            </div>
+
+                        </div>
 
                     </div>
 

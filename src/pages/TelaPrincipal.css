@@ -4,17 +4,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: #ffffff;
     
 }
 
 .retangulo-um{
-    height: 85%;
-    width: 85%;
+    height: 90%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(179, 151, 116);
+    background-color: #eddbb3;
     border-radius: 10px;
 }
 
@@ -24,7 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(105, 104, 102);
+    background-color: #c69877;
     border-radius: 10px;
     
 }
@@ -35,15 +35,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: brown;
+    background-color:#f8ebce;
     border-radius: 10px;
 }
 
     .div-elementos{
         height: 100%;
         width: 6%;
-        background-color: aqua;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fdfaf3;
+        margin-right: 4px;
     }
+
+        .icons{
+            height: 35px;
+            width: 35px;
+            margin: 25px;
+        }
 
     .div-livros-esquerda{
         height: 100%;
@@ -53,42 +64,128 @@
         align-items: center;
         flex-direction: column;
         margin-right: 3px;
-        background-color: aquamarine;
+        background-color: #fdfaf3;
     }
 
         .div-barra-de-pesquisa{
             height: 15%;
             width: 100%;
-            background-color: rgb(117, 255, 170);
+            display: flex;
+            justify-content: start;
+            /* flex-direction: row; */
+            align-items: center;
+            background-color: #fdfaf3;
         }
+
+            .inpt-pesquisa{
+                height: 25px;
+                width: 250px;
+                border: solid #d7beb1;
+                border-radius: 10px;
+                padding-left: 10px;
+            }
 
         .div-Fila-livros-um{
             height: 35%;
             width: 100%;
-            background-color: rgb(51, 105, 72);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 30px;
+            background-color: #fdfaf3;
+            
         }
+
+            .box{
+                height: 105px;
+                width: 85px;
+                background-color: rgb(189, 142, 142);
+                position: relative;
+            }
+
+            /* .titulos-livros{
+                text-align: center;
+                margin-top: 6px;
+                font-size: 14px;
+                
+            } */
 
         .div-Fila-livros-dois{
             height: 35%;
             width: 100%;
-            background-color: rgb(180, 219, 195);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 30px;
+            background-color: #fdfaf3;
         }
 
         .div-contatos{
             height: 15%;
             width: 100%;
-            background-color: rgb(16, 250, 106);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #fdfaf3;
         }
+
+            .div-divisao-um{
+                height: 3px;
+                width: 90%;
+                border-radius: 5px;
+                margin-top: 15px;
+                background-color: #d7beb1;
+            }
+
+            .div-divisao-dois{
+                height: 3px;
+                width: 70%;
+                border-radius: 5px;
+                margin-top: 8px;
+                background-color: #d7beb1; 
+            }
+
+            .labels{
+                font-size: 15px;
+                margin-top: 6px;
+            }
 
     .div-livros-direita{
         height: 100%;
         width: 44%;
-        margin-left: 3px;
-        background-color: aliceblue;
+        margin-left: 6px;
+        background-color: #fdfaf3;
     }
 
     .div-espaco-vazio{
         height: 100%;
         width: 6%;
-        background-color: rgb(121, 150, 150);
+        background-color: #fdfaf3;
     }
+
+        .div-next-page{
+            height: 15%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #fdfaf3;
+        }
+
+            .div-label-next-page{
+                height: 30%;
+                width: 100%;
+                display: flex;
+                justify-content: end;
+                
+            }
+
+            .label-next{
+                font-size: 15px;
+                margin-top: 6px;
+                
+            }
