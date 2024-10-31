@@ -9,7 +9,6 @@ function App() {
 
       <div className='app-container'>
 
-        <TelaCadastro />
 
       </div>
 
