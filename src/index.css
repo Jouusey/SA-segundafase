@@ -19,7 +19,7 @@
 
 ::-webkit-scrollbar{
 
-  background-color: #ffebe3;
+  width: 13px;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -35,5 +35,5 @@
 
 @font-face {
   font-family: "fonte-projeto";
-  src: url(./font/Handwrittening-Regular.ttf);
+  src: url(./font/Amatic_SC/AmaticSC-Bold.ttf);
 }

@@ -2,7 +2,6 @@
 
     display: flex;
 
-    background-color: azure;
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -31,7 +30,6 @@
     display: flex;
     height: 100%;
     width: 41%;
-    background-color: rgb(94, 147, 180);
     justify-content: center;
     align-items: center;
 }
@@ -41,23 +39,41 @@
     margin-left: 3%;
     height: 90%;
     width: 95%;
-    background-color: var(--navbar);
+    background-color: var(--corfundo);
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 5px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-color: rgb(201, 176, 151);
+    box-shadow: 0px 5px 15px rgb(150, 101, 67);
 }
 
 .folha-topo{
     display: flex;
-    background-color: aqua;
     height: 10%;
     justify-content: center;
     align-items: center;
 }
 
+.folha-topo-btn{
+    height: 70%;
+    width: 10%;
+    margin-right: 5%;
+    border: none;
+}
+
+
+.img-lixo-escrivaninha{
+    height: 90%;
+}
 
 .inpt-tituloResenha{
 
     display: flex;
     
-    margin-right: 5%;
+    margin-right: 14%;
     margin-top: 2%;
     font-size: 40px;
     font-family: "fonte-projeto";
@@ -69,23 +85,20 @@
 }
 .inpt-tituloResenha:focus{
 
-
     outline-width: 0px;
 }
 
-.img-lixo-escrivaninha{
-    width: 7%;
-}
 
 
 .folha-conteudo{
-    background-color: bisque;
+    background-color: var(--corfundo);
     height: 85%;
+    
 }
 
 .inpt-resenha{
 
-
+    
     resize: none;
     font-weight: 400;
     font-size: 28px;
@@ -95,6 +108,7 @@
     font-weight: 500;
     height: 100%;
     width: 100%;
+    border: none;
 
 }
 
@@ -111,7 +125,6 @@
 .folha-desfecho{
     
     display: flex;
-    background-color: rgb(109, 91, 64);
     height: 5%;
     justify-content: center;
     align-items: center;
@@ -120,7 +133,8 @@
 .lbl-desfecho{
     
     font-family: "fonte-projeto";
-    font-size: 30px;
+    font-size: 26px;
+    margin-bottom: 2%;
     color: rgb(107, 78, 58);
     font-style: italic;
 }
@@ -140,28 +154,44 @@
 
     height: 100%;
     width: 60%;
-    background-color: rgb(104, 104, 128);
+
+
 }
+
+
 
 .container-generoIsnb{
 
     height: 95%;
     width: 90%;
-
-    background-color: aquamarine;
-
     border-radius: 5px;
+    
     
 }
 
-.genetoIsbn-topo{
+
+.generoIsbn-espacoEsquerda{
+    height: 100%;
+    width: 3%;
+}
+
+.generoIsbn-linha{
+    
+    height: 90%;
+    width: 0.4%;
+    background-color: #352c21;
+    border-radius: 4px;
+}
+
+.generoIsbn-topo{
     
     margin-top: 7%;
     height: 10%;
     width: 100%;
     border-radius: 3px;
+    
+    background-color: rgb(244, 216, 181);
 
-    background-color: rgb(220, 186, 141);
 
 }
 
@@ -170,13 +200,17 @@
     height: 65%;
     width: 95%;
     
-    background-color: var(--navbar)
+    
+    background-color: var(--corfundo);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    
+    box-shadow: 0px 5px 15px rgb(150, 101, 67);
 }
 
 .conteudo-titulos{
     display: flex;
     flex-direction:row;
-    background-color: rgb(100, 100, 188);
     height: 15%;
     justify-content: space-around;
     align-items: center;
@@ -184,42 +218,27 @@
 
 .lbl-generoIsbn-titulos{
  
-    margin-top: 2%;
+    margin-top: 3%;
     font-family: "fonte-projeto";
-    font-size: 30px;
-    font-weight: bolder;
-    color: rgb(107, 78, 58);
+    font-size: 33px;
+    margin-right: 4%;
+    color: var(--laranjaenferrujado);
 
 }
 
 .conteudo-janela{
     display: flex;
-    background-color: blue;
-    height: 75%;
+    height: 80%;
     width: 100%;
 }
 
 
 .conteudo-escolhaGenero{
-    background-color: rgb(139, 139, 179);
     height: 100%;
     width: 50%;
     display: flex;
 }
 
-.lbl-escolhaGenero{
-    
-    display: flex;
-    font-family: "fonte-projeto";
-    font-size: 28px;
-    font-weight: bolder;
-    margin-top: 17%;
-    height: 10.8%;
-    
-    color: rgb(107, 78, 58);
-
-}
-    
 .escolhaGenero-colunaEsquerda{
 
     display: flex;
@@ -227,6 +246,7 @@
     align-items: start;
     height: 100%;
     width: 50%;
+    
 }
 
 
@@ -235,14 +255,39 @@
     width: 80%;
 }
 
+.lbl-escolhaGenero{
+    
+    margin-left: 12%;
+    display: flex;
+    font-family: "fonte-projeto";
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 10%;
+    height: 9%;
+    
+    color: rgb(107, 78, 58);
+
+}
+    
+
 .colunaEsquerda-Checkbox{
     height: 100%;
     width: 15%;
-    margin-top: 2%;
+    margin-top: 5%;
 }
+
+
+
 .escolhaGenero-checkbox{
-    margin-top: 126%;
+
+    margin-top: 60%;
+    accent-color: rgb(184, 137, 115);
+    border-radius: 5px;
+    zoom: 1.6;
+
+
 }
+
 
 
 
@@ -262,18 +307,168 @@
 }
 
 .colunaDireita-checkbox{
+    
     height: 100%;
     width: 15%;
-    margin-top: 2%;
+    margin-top: 5%;
 
 }
 
 .conteudo-informacoesIsbn{
-    background-color: rgb(157, 186, 96);
     height: 100%;
-    width: 50%;}
+    width: 50%;
+}
+
+.informacoesIsbn-topo{
+    display: flex;
+    height: 15%;
+    width: 100%;
+}
+
+.inpt-codigoIsbn{
+
+    
+
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 3%;
+    height: 55%;
+    width: 80%;
+    font-weight: 400;
+    font-size: 22px;
+    font-family: "fonte-projeto";
+    font-weight: 500;
+    border-radius: 35px;
+    border-style: solid;
+
+}
 
 
+.inpt-codigoIsbn:focus{
+
+    outline-width: 0px;
+
+}
+
+.btnPesquisa-insformacoesIsbn-topo{
+
+    margin-top: 1%;
+    height: 55%;
+    width: 10%;
+    border: none;
+    margin-right: 3%;
+
+}
+
+.informacoesIsbn-topo-lupaImg{
+    width: 100%;
+}
+
+
+.informacoesIsbn-meio{
+    display: flex;
+    height: 60%;
+    width: 100%;
+}
+
+.informacoesIsbn-meio-parteCapa{
+    height: 100%;
+    width: 50%;
+}
+
+
+.parteCapa-divCapa{
+
+    margin-left: 6%;
+    margin-top: 5%;
+    height: 80%;
+    width: 90%;
+    background: linear-gradient(rgb(243, 222, 199), rgb(118, 73, 73));
+    border-radius: 1px;
+}
+
+.informacoesIsbn-meio-bio{
+    height: 100%;
+    width: 80%;
+}
+
+    
+.meio-titulo{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 7%;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: "fonte-projeto";
+    font-weight: 600;
+    font-style: italic;
+    color: var(--laranjaenferrujado
+    );
+
+}
+
+.meio-sinopse{
+
+   
+    height: 80%;
+    width: 100%;
+
+}
+
+.sinopse-textArea{
+    
+    font-size: 19px;
+    font-family: "fonte-projeto";
+    font-style: italic;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    border: none;
+
+}
+
+
+.sinopse-textArea:focus{
+
+    outline-width: 0px;
+}
+
+.informacoesIsbn-lbl{
+    
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: "fonte-projeto";
+    font-weight: 500;
+}
+
+
+.informacoesIsbn-credito{
+    height: 9%;
+    width: 100%;
+    
+     
+    margin-left: 5%;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "fonte-projeto";
+    font-weight: 500;
+}
+
+
+.informacoesIsbn-desfecho{
+    height: 7%;
+    width: 100%;
+    
+    margin-left: 33%;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "fonte-projeto";
+    font-weight: 500;
+}
 
 
 .generoIsbn-desfecho{
@@ -281,7 +476,6 @@
     height: 13%;
     width: 105%;
     
-    background-color: brown;
     justify-content: end;
     align-items: center;
     border-bottom-left-radius: 3px;
@@ -290,23 +484,49 @@
 }
 .btn-escrivaninha{
 
+    margin-top: 5%;
     margin-right: 2%;
     height: 40%;
     width: 26%;
-    background-color: antiquewhite;
-    border-radius: 2px;
+    background-color: var(--laranjaenferrujado);
     border: none;
     text-align: center;
     font-size: 27px;
     font-weight: bold;
     font-family: "fonte-projeto";
     rotate: 10deg;
+
+    color: var(--navbar);
+    
+    box-shadow: 0px 2px 15px rgb(150, 101, 67);
 }
 
 .escrivaninha-navbarVertical{
 
+    display: flex;
     height: 100%;
-    width: 7%;
+    width: 6%;
+    flex-direction: column;
   
-    background-color: antiquewhite;
+}
+
+
+.navbarVertical-btn{
+
+    margin-top: 10%;
+    
+    margin-bottom: 20%;
+    height: 10%;
+    border: none;
+}
+
+.navbarVertical-btn:active{
+
+    background-color: rgb(241, 225, 207);
+    border-radius: 30px;
+
+}
+
+.navbarVertical-img{
+    height: 100%;
 }

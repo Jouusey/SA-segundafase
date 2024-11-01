@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./TelaEscrivaninha.css"
 
 function TelaEscrivaninha() {
 
 
 
+  const[tituloIsbn, setTitutloIsbn] = useState('Titulo')
+ 
+  const[sinopseIsbn, setSinopseIsbn] = useState('"The Adventures of Sherlock Holmes" by Arthur Conan Doyle is a collection of detective stories written during the late 19th century. The book introduces the legendary detective Sherlock Holmes and his loyal companion, Dr. John Watson, as they embark on various intriguing cases, filled with mystery and clever deductions.')
+
+  const[autorIsbn, setAutorIsbn] = useState('Doyle, Arthur Conan')
+  const[editoraIsbn, setEditoraIsbn] = useState('Rayzen')
+  const[dataIsbn, setDataIsbn] = useState('1859-1930')
   return (
     
     
@@ -20,14 +27,17 @@ function TelaEscrivaninha() {
 
             <div className="folha-topo">
 
-              <img className='img-lixo-escrivaninha' src="public\images\octicon--trashcan-16.svg" alt="" />
+              <button className='folha-topo-btn'>
+                <img className='img-lixo-escrivaninha' src="public\images\output-onlinepngtools.png" alt="" /> 
+              </button>
+            
               <input maxLength={18} className='inpt-tituloResenha' placeholder='TITULO' type="text" />
 
 
             </div>
             <div className="folha-conteudo">
 
-              <textarea maxLength={800} className='inpt-resenha' name="resenha" id="" cols="10" rows="10">AH</textarea>
+              <textarea maxLength={800} className='inpt-resenha' name="resenha" id="" cols="10" rows="10" ></textarea>
 
              
             </div>
@@ -47,7 +57,7 @@ function TelaEscrivaninha() {
 
           <div className="container-generoIsnb">
 
-            <div className="genetoIsbn-topo"></div>
+            <div className="generoIsbn-topo"></div>
 
             <div className="generoIsbn-conteudo">
 
@@ -59,6 +69,11 @@ function TelaEscrivaninha() {
               </div>
 
               <div className="conteudo-janela">
+
+
+                <div className="generoIsbn-espacoEsquerda"></div>
+
+                <div className="generoIsbn-linha"></div>
 
                   <div className="conteudo-escolhaGenero">
 
@@ -113,16 +128,83 @@ function TelaEscrivaninha() {
 
                   
                   </div>
+
+                  
+                <div className="generoIsbn-linha"></div>
                 
+                <div className="generoIsbn-espacoEsquerda"></div>
+
              
               </div>
 
-              <div className="conteudo-informacoesIsbn">
 
 
 
 
-              </div>
+                <div className="conteudo-informacoesIsbn">
+
+                  <div className="informacoesIsbn-topo">
+
+                    <input maxLength={40} placeholder='Digite o codigo ISBN' className='inpt-codigoIsbn' type="text" /> 
+                    <button className='btnPesquisa-insformacoesIsbn-topo' >  
+                    <img className='informacoesIsbn-topo-lupaImg' src="public\images\lets-icons--search.svg" alt="" />
+                    </button>
+
+                  </div>
+                  
+                  <div className="informacoesIsbn-meio">
+
+
+                    <div className="informacoesIsbn-meio-parteCapa">
+
+                      <div className="parteCapa-divCapa"></div>
+
+
+                    </div>
+
+
+                    <div className="informacoesIsbn-meio-bio">
+
+
+                      <div className="meio-titulo">
+                      {tituloIsbn}
+                      </div>
+
+                      <div className="meio-sinopse">
+
+
+<textarea className='sinopse-textArea' value={sinopseIsbn} name="" id="" cols="30" rows="10" readOnly></textarea>
+                    
+    
+                      </div>
+
+                    
+
+
+                    </div>
+
+                  </div>
+
+                  <div className="informacoesIsbn-credito">
+
+                    <label className='informacoesIsbn-lbl' htmlFor="">AUTOR-</label>  {autorIsbn}
+
+                  </div>
+
+                  <div className="informacoesIsbn-credito">
+                    
+                  <label className='informacoesIsbn-lbl' htmlFor="">EDITORA-</label> {editoraIsbn}
+
+                  </div>
+
+                  <div className="informacoesIsbn-desfecho">
+
+                  <label className='informacoesIsbn-lbl' htmlFor="">Data</label>  {dataIsbn}
+
+                  </div>
+
+
+                </div>
 
               </div>
 
@@ -132,7 +214,7 @@ function TelaEscrivaninha() {
 
             <div className="generoIsbn-desfecho">
 
-              <button className='btn-escrivaninha'>ENVIAR</button>
+              <button className='btn-escrivaninha'>ENVIAR -> </button>
             </div>
 
 
@@ -144,7 +226,16 @@ function TelaEscrivaninha() {
 
 
 
-        <div className="escrivaninha-navbarVertical"></div>
+        <div className="escrivaninha-navbarVertical">
+
+
+            <button className='navbarVertical-btn' > <img className='navbarVertical-img' src="public\images\mynaui--home.svg" alt="" /> </button>
+            
+
+            <button className='navbarVertical-btn'> <img className='navbarVertical-img' src="public\images\healthicons--ui-user-profile.svg" alt="" /></button>
+
+
+        </div>
 
 
 
