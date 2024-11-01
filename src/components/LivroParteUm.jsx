@@ -38,10 +38,8 @@ function LivroParteUm() {
 
                         <div className="sinopse-livro">
 
-                            <h3>Sinopse:</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla sapiente magni, ea non voluptates est dolorum vero aperiam necessitatibus tempora consectetur animi modi provident amet, deleniti qui. Quidem, corrupti.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla sapiente magni, ea non voluptates est dolorum vero aperiam necessitatibus tempora consectetur animi modi provident amet, deleniti qui. Quidem, corrupti.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla sapiente magni, ea non voluptates est dolorum vero aperiam necessitatibus tempora consectetur animi modi provident amet, deleniti qui. Quidem, corrupti.</p>
+                            <h3>RESUMO:</h3>
+                            <label htmlFor="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nesciunt accusamus autem vel voluptates animi, libero ea, deserunt esse commodi fugiat maiores non quos accusantium! Hic nihil deleniti totam asperiores?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nesciunt accusamus autem vel voluptates animi, libero ea, deserunt esse commodi fugiat maiores non quos accusantium! Hic nihil deleniti totam asperiores?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nesciunt accusamus autem vel voluptates animi, libero ea, deserunt esse commodi fugiat maiores non quos accusantium! Hic nihil deleniti totam asperiores?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nesciunt accusamus autem vel voluptates animi, libero ea, deserunt esse commodi fugiat maiores non quos accusantium! Hic nihil deleniti totam asperiores?Lorem ipsum dolor sit, amet consectetur adipisicing elit.</label>
 
                         </div>
 

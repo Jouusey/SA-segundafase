@@ -1,6 +1,6 @@
 .container-mae-resenhas{
     display: flex;
-    background-color: rgb(143, 42, 42);
+    background-color: whitesmoke;
 }
 
 .container-resenhas{
@@ -17,21 +17,22 @@
         justify-content: start;
         align-items: start;
         flex-direction: column;
-        gap: 40px;
         padding: 35px;
-        height: 95%;
+        height: fit-content;
         width: 93%;
-        background-color: #fcf6e8;
+        background-color: #ffeddf;
         border-radius: 15px;
+        margin-bottom: 2%;
     }
         .box-resenha{
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            height: 170px;
-            width: 800px;
+            height: fit-content;
             background-color: #fff;
+            margin: 2% 5% 4% 5%;
+            border-radius: 10px;
         }
             .parte-foto-nome{
                 display: flex;
@@ -39,27 +40,62 @@
                 align-items: center;
                 gap: 15px;
                 padding: 25px;
-                height: 20%;
+                height: 50px;
                 width: 100%;
-                background-color: darkcyan;
+                background-color: #fff;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
             }
                 .foto-perfil{
                     margin-bottom: 30px;
                     height: 60px;
                     width: 80px;
-                    background-color: #fff;
+                    background-color: #c85b34;
+                    border-radius: 50%;
+                    margin-bottom: 40px;
                 }
+
             .parte-resenha{
                 display: flex;
                 justify-content: start;
                 align-items: start;
+                flex-direction: column;
                 padding: 25px;
-                height: 60%;
-                width: 100%;
-                background-color: rgb(119, 189, 189);
+                height: fit-content;
+                width: fit-content;
+                block-size: fit-content;
+                background-color: #fff;
             }
+                .texto-resenha{
+                    font-size: 15px;
+                    font-family: monospace;
+                    font-style: oblique;
+                }
+
             .parte-curtida{
-                height: 20%;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                gap: 15px;
+                padding-right: 15px;
+                height: 30px;
                 width: 100%;
-                background-color: rgb(89, 97, 97);
+                background-color: #fff;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
             }
+                .botao-curtida{
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                }
+                .icone-curtida{
+                    height: 20px;
+                    width: 20px;
+                }
+                .label-curtidas{
+                    font-size: 15px;
+                    font-weight: bold;
+                    font-family: monospace;
+                    font-style: italic;
+                }

@@ -10,7 +10,8 @@
     height: 80%;
     width: 100%;
     background-color:#ecd9b1;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
    }
 
     .parte-capa-livro{
@@ -30,6 +31,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             margin: 10px;
+            border-radius: 5px;
         }
 
     .parte-textos{
@@ -41,8 +43,6 @@
     }
         .textos{
             display: flex;
-            /* justify-content: center;
-            align-items: center; */
             flex-direction: column;
             gap: 10px;
             padding: 10px;
@@ -58,6 +58,7 @@
                 height: 15%;
                 width: 75%;
                 background-color: #c85b34;
+                border-radius: 5px;
             }
             .descricao-livro{
                 display: flex;
@@ -68,6 +69,7 @@
                 height: 8%;
                 width: 75%;
                 background-color: #c69877;
+                border-radius: 5px;
             }
             .sinopse-livro{
                 display: flex;
@@ -78,6 +80,7 @@
                 height: 65%;
                 width: 100%;
                 background-color:#fcf6e8;
+                border-radius: 5px;
             }
 
             .genero-livro{
@@ -85,7 +88,6 @@
                 justify-content: start;
                 align-items: center;
                 gap: 10px;
-                /* padding: 10px; */
                 height: 12%;
                 width: 100%;
                 background-color: transparent;
@@ -97,6 +99,7 @@
                     height: 30px;
                     width: 150px;
                     background-color: #c85b34;
+                    border-radius: 5px;
                 }
 
     .parte-menus{
@@ -142,6 +145,8 @@
         font-size: 20px;
         font-style: italic;
         font-weight: bold;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
     }
     .botao-icone{
         height: 50px;
@@ -149,6 +154,8 @@
         border: none;
         background-color: #c85b34;
         cursor: pointer;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
     }
         .botao-icone:hover{
             background-color: #ecd9b1;
@@ -159,5 +166,6 @@
         }
 .container-parte-resenhas{
     display: flex;
-    background-color: rgb(179, 86, 86);
+    background-color: whitesmoke;
+    height: fit-content;
 }

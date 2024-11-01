@@ -8,7 +8,6 @@ function TelaLivro() {
       
       <LivroParteUm />
       
-      
     </div>
 
   )
