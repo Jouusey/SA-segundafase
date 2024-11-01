@@ -50,11 +50,36 @@
         margin-right: 4px;
     }
 
-        .icons{
-            height: 35px;
-            width: 35px;
-            margin: 25px;
+    
+        .div-home-escrivaninha{
+            height: 33%;
+            width: 100%;
+            background-color: #fdfaf3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
+
+            .btns{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                width: 50px;
+                margin-bottom: 25px;
+                border-radius: 50%;
+                border: none;
+                cursor: pointer;
+
+            }
+                .icons{
+                    height: 35px;
+                    width: 35px;
+                    margin: 10%;
+                    background-color: #fdfaf3;
+                }
+
 
     .div-livros-esquerda{
         height: 100%;
@@ -75,18 +100,42 @@
             /* flex-direction: row; */
             align-items: center;
             background-color: #fdfaf3;
+            margin-left: 10%;
+
         }
 
+            .btn-pesquisar{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 40px;
+                width: 40px;
+                margin: 0% 0% 0% 1%;
+                border-radius: 100%;
+                border: none;
+                cursor: pointer;
+                margin-left: -40px;
+                
+            }
+
+                .icons-pesquisar{
+                    height: 20px;
+                    width: 20px;
+                    /* margin: 1% 1% 0% 10%; */
+                    background-color: #fdfaf3;
+                }
 
             .inpt-pesquisa{
-                height: 25px;
+                height: 30px;
                 width: 250px;
                 border: solid #d7beb1;
                 border-radius: 10px;
-                padding-left: 10px;
-                font-size: 20px;
+                padding-left: 20px;
+                padding-right: 35px;
+                color: #40454b;
                 font-family: "fonte-projeto";
-                color:  #40454b;
+                font-size: 20px;
+                font-weight: 700
                 
             }
             
@@ -96,7 +145,7 @@
 
             }
 
-        .div-Fila-livros-um{
+        .div-Fila-livros{
             height: 35%;
             width: 100%;
             display: flex;
@@ -133,7 +182,7 @@
                 
                 }
 
-        .div-Fila-livros-dois{
+        /* .div-Fila-livros-dois{
             height: 35%;
             width: 100%;
             display: flex;
@@ -141,7 +190,7 @@
             align-items: center;
             flex-direction: row;
             background-color: #fdfaf3;
-        }
+        } */
 
         .div-contatos{
             height: 15%;
@@ -169,10 +218,19 @@
                 background-color: #d7beb1; 
             }
 
-            .labels{
-                font-size: 15px;
-                margin-top: 6px;
+            .btn-contacts{
+                height: 30px;
+                width: 90px;
+                margin-top: 1%;
+                border: solid #d7beb1;
+                border-radius: 10px;
+                cursor: pointer;
+                color: #40454b;
+                font-family: "fonte-projeto";
+                font-size: 20px;
+                font-weight: 700;
             }
+
 
     .div-livros-direita{
         height: 100%;
@@ -205,8 +263,16 @@
                 
             }
 
-            .label-next{
-                font-size: 15px;
-                margin-top: 6px;
+                .btn-next-page{
+                    height: 30px;
+                    width: 90px;
+                    margin-top: 1%;
+                    border: solid #d7beb1;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    color: #40454b;
+                    font-family: "fonte-projeto";
+                    font-size: 20px;
+                    font-weight: 700;
                 
-            }
+                }
