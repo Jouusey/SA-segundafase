@@ -118,7 +118,7 @@ export default function TelaCadastro() {
                 <div className="livro-cadastro-primeiraLayerDireita">
                     <div className="livro-cadastro-conteudoLayerDireita">
                         
-                        <img className="imagem-parte-cadastro" src="public\images\Hand holding pen-amico.png" alt=""/>
+                        <img className="imagem-parte-cadastro" src="public\images\Creative writing-pana (1).png" alt=""/>
                         <button className="botao-cadastro" onClick={verificarCadastro}>Cadastrar</button>
 
                         
