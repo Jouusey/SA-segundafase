@@ -7,11 +7,16 @@ function TelaEscrivaninha() {
 
   const[tituloIsbn, setTitutloIsbn] = useState('Titulo')
  
+  const[capaIsbn, setCapaIsbn] = useState('')
+
   const[sinopseIsbn, setSinopseIsbn] = useState('"The Adventures of Sherlock Holmes" by Arthur Conan Doyle is a collection of detective stories written during the late 19th century. The book introduces the legendary detective Sherlock Holmes and his loyal companion, Dr. John Watson, as they embark on various intriguing cases, filled with mystery and clever deductions.')
 
   const[autorIsbn, setAutorIsbn] = useState('Doyle, Arthur Conan')
+
   const[editoraIsbn, setEditoraIsbn] = useState('Rayzen')
+
   const[dataIsbn, setDataIsbn] = useState('1859-1930')
+
   return (
     
     
@@ -37,7 +42,7 @@ function TelaEscrivaninha() {
             </div>
             <div className="folha-conteudo">
 
-              <textarea maxLength={800} className='inpt-resenha' name="resenha" id="" cols="10" rows="10" ></textarea>
+              <textarea placeholder='Começe sua resenha aqui...' maxLength={800} className='inpt-resenha' name="resenha" id="" cols="10" rows="10" ></textarea>
 
              
             </div>
@@ -84,9 +89,9 @@ function TelaEscrivaninha() {
                   <div className="colunaEsquerda-generos">
                         
                      <label className='lbl-escolhaGenero' htmlFor="">Aventura</label>
-                     <label className='lbl-escolhaGenero' htmlFor="">Acao</label>
+                     <label className='lbl-escolhaGenero' htmlFor="">Açao</label>
                      <label className='lbl-escolhaGenero' htmlFor="">Romance</label>
-                     <label className='lbl-escolhaGenero' htmlFor="">Misterio</label>
+                     <label className='lbl-escolhaGenero' htmlFor="">Mistério</label>
                      <label className='lbl-escolhaGenero' htmlFor="">Suspense</label>
   
                   </div>
@@ -113,7 +118,7 @@ function TelaEscrivaninha() {
                   <div className="colunaDireita-generos">
 
                   <label className='lbl-escolhaGenero' htmlFor="">Sci-fi</label>
-                  <label className='lbl-escolhaGenero' htmlFor="">Instrucao</label>
+                  <label className='lbl-escolhaGenero' htmlFor="">Instrução</label>
                   <label className='lbl-escolhaGenero' htmlFor="">Escolares</label>
 
                   </div>
@@ -157,7 +162,11 @@ function TelaEscrivaninha() {
 
                     <div className="informacoesIsbn-meio-parteCapa">
 
-                      <div className="parteCapa-divCapa"></div>
+                      <div className="parteCapa-divCapa">
+
+                        {capaIsbn}
+
+                      </div>
 
 
                     </div>

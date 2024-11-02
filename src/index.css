@@ -20,14 +20,19 @@
 ::-webkit-scrollbar{
 
   width: 13px;
+  
+  transition: 1s;
 }
+
 
 ::-webkit-scrollbar-thumb{
 
   border-radius: 2px;
 
+  
   background-color: #c85b34;
 }
+
 
 
 

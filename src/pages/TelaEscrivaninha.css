@@ -16,18 +16,21 @@
     width: 90%;
     
     background-color: var(--fundoDivs);
+    background-image: url(./images/3 Sem Título_20241101231159.png);
+    
         border-radius: 3px;
         border-top: 0px;
         border-left: 0px;
         border-right: 0px;
         border-bottom: 20px;
         border-style: solid;
-        border-color: rgb(140, 93, 71);
+        border-color: #8c5d47;
 }
 
 .escrivaninha-documento{
 
     display: flex;
+    position: relative;
     height: 100%;
     width: 41%;
     justify-content: center;
@@ -48,6 +51,7 @@
     border-bottom: 0px;
     border-color: rgb(201, 176, 151);
     box-shadow: 0px 5px 15px rgb(150, 101, 67);
+
 }
 
 .folha-topo{
@@ -61,6 +65,7 @@
     height: 70%;
     width: 10%;
     margin-right: 5%;
+    cursor: pointer;
     border: none;
 }
 
@@ -79,7 +84,7 @@
     font-family: "fonte-projeto";
     font-weight: 900;
     text-align: center;
-    border: navajowhite;
+    border: none;
     background: none;
 
 }
@@ -91,7 +96,6 @@
 
 
 .folha-conteudo{
-    background-color: var(--corfundo);
     height: 85%;
     
 }
@@ -206,6 +210,7 @@
     border-bottom-right-radius: 3px;
     
     box-shadow: 0px 5px 15px rgb(150, 101, 67);
+    
 }
 
 .conteudo-titulos{
@@ -273,18 +278,20 @@
 .colunaEsquerda-Checkbox{
     height: 100%;
     width: 15%;
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 
 
 .escolhaGenero-checkbox{
 
-    margin-top: 60%;
+    
+    margin-top: 62%;
     accent-color: rgb(184, 137, 115);
     border-radius: 5px;
     zoom: 1.6;
 
+    cursor: pointer;
 
 }
 
@@ -310,7 +317,7 @@
     
     height: 100%;
     width: 15%;
-    margin-top: 5%;
+    margin-top: 7%;
 
 }
 
@@ -486,15 +493,15 @@
 
     margin-top: 5%;
     margin-right: 2%;
-    height: 40%;
+    height: 48%;
     width: 26%;
     background-color: var(--laranjaenferrujado);
     border: none;
     text-align: center;
-    font-size: 27px;
-    font-weight: bold;
+    font-size: 30px;
     font-family: "fonte-projeto";
     rotate: 10deg;
+    cursor: pointer;
 
     color: var(--navbar);
     
@@ -513,6 +520,7 @@
 
 .navbarVertical-btn{
 
+    cursor: pointer;
     margin-top: 10%;
     
     margin-bottom: 20%;
