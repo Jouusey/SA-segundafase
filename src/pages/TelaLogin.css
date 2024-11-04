@@ -41,11 +41,10 @@
 
 .label-titulos {
     color: #40454b;
-    font-size: 68px;
+    font-size: 58px;
     font-family: "fonte-projeto";
     display: flex;
     font-weight: bolder;
-    margin-bottom: 45px;
 }
 
 .label-inputs {
@@ -55,7 +54,6 @@
     display: flex;
     font-weight: bold;
     margin-right: 325px;
-    margin-top: 15px;
 }
 
 .inputs-login {
@@ -112,7 +110,7 @@
 .botao-login {
    
     
-    height: 70px;
+    height: 80px;
     width: 400px;
     
     color: var(--corfundo);
