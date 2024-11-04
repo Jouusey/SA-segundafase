@@ -276,3 +276,9 @@
                     font-weight: 700;
                 
                 }
+
+                
+                .btn-livro-home{
+                    border: none;
+                    cursor: pointer;
+                }
