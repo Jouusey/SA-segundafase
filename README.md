@@ -18,8 +18,6 @@ O trabalho desenvolvido pelo nosso grupo, cujo membros são Abílio Alfredo Fran
 9. **Filtragem de Livros (RF-09):** O sistema deve permitir a filtragem de livros por gênero, autor, editora, data de lançamento e título.
 10. **Visualização de Detalhes (RF-10):** O sistema deve permitir a visualização de detalhes completos de um livro selecionado, incluindo todas as informações cadastradas.
 11. **Edição e Exclusão de Conta (RF-11):** O sistema deve permitir que usuários editem os dados do perfil e excluam suas contas, se desejarem.
-12. **Sugestão de Gêneros Musicais (RF-12):** O sistema deve permitir que usuários sugiram gêneros musicais que possam combinar com a leitura dos livros.
-13. **Registro de Filmes Baseados em Livros (RF-13):** O sistema deve permitir que os usuários indiquem se um livro possui uma adaptação em filme.
 
 ## Requisitos Não Funcionais
 
