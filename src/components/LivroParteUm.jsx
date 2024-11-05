@@ -4,6 +4,18 @@ import LivroParteDois from "./LivroParteDois"
 
 function LivroParteUm() {
     const [resenhas, setResenhas] = useState(false)
+
+    function home(){
+        alert("Home")
+    }
+
+    function configuracoes(){
+        alert("Configurações")
+    }
+
+    function escrivania(){
+        alert("Escrever Resenha")
+    }
   return (
     <div>
 
@@ -57,9 +69,9 @@ function LivroParteUm() {
 
                 <div className="parte-menus">
 
-                    <button className="botao-menu"><img src="./images/home.svg" alt="" className="icone-botao"/></button>
-                    <button className="botao-menu"><img src="./images/setting.svg" alt="" className="icone-botao"/></button>
-                    <button className="botao-menu"><img src="./images/pen.svg" alt="" className="icone-botao"/></button>
+                    <button className="botao-menu" onClick={home}><img src="./images/home.svg" alt="" className="icone-botao"/></button>
+                    <button className="botao-menu" onClick={configuracoes}><img src="./images/setting.svg" alt="" className="icone-botao"/></button>
+                    <button className="botao-menu" onClick={escrivania}><img src="./images/pen.svg" alt="" className="icone-botao"/></button>
 
                 </div>
 

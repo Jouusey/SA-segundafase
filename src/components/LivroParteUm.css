@@ -96,7 +96,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    height: 30px;
+                    height: 25px;
                     width: 150px;
                     background-color: #c85b34;
                     border-radius: 5px;
@@ -121,6 +121,9 @@
             cursor: pointer;
             margin-right: 5px;
         }
+            .botao-menu:hover{
+                background-color: #fff;
+            }
         .icone-botao{
             height: 30px;
             width: 30px;
