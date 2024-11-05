@@ -483,16 +483,51 @@
     height: 13%;
     width: 105%;
     
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
 
 }
+
+.desfecho-lbl{
+
+    height: 7%;
+    width: 20%;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "fonte-projeto";
+    font-weight: 500;
+    color: var(--navbar);
+}
+
+.generoIsbn-desfecho-btn{
+
+    margin-left: 2%;
+    margin-top: 5%;
+    height: 48%;
+    width: 6%;
+    background-color: var(--laranjaenferrujado);
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: 30px;
+    font-family: "fonte-projeto";
+    cursor: pointer;
+    box-shadow: 0px 2px 15px rgb(150, 101, 67);
+
+
+}
+
+.btn-desfecho-img{
+
+    height: 99%;
+    width: 100%;
+}
 .btn-escrivaninha{
 
-    margin-top: 5%;
-    margin-right: 2%;
+    margin-left: 7%;
+    margin-top: 8%;
     height: 48%;
     width: 26%;
     background-color: var(--laranjaenferrujado);

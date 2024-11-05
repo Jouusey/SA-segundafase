@@ -223,6 +223,14 @@ function TelaEscrivaninha() {
 
             <div className="generoIsbn-desfecho">
 
+              <label className='desfecho-lbl' htmlFor="">Nota do livro: </label>
+              
+              <button className='generoIsbn-desfecho-btn'><img className='btn-desfecho-img' src="public\images\streamline--star-2.svg" alt="" /></button>
+              <button className='generoIsbn-desfecho-btn'><img className='btn-desfecho-img' src="public\images\streamline--star-2.svg" alt="" /></button>
+              <button className='generoIsbn-desfecho-btn'><img className='btn-desfecho-img' src="public\images\streamline--star-2.svg" alt="" /></button>
+              <button className='generoIsbn-desfecho-btn'><img className='btn-desfecho-img' src="public\images\streamline--star-2.svg" alt="" /></button>
+              <button className='generoIsbn-desfecho-btn'><img className='btn-desfecho-img' src="public\images\streamline--star-2.svg" alt="" /></button>
+
               <button className='btn-escrivaninha'>ENVIAR -> </button>
             </div>
 
