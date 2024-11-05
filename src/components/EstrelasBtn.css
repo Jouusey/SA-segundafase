@@ -1,0 +1,32 @@
+.div{
+
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+}
+
+
+.generoIsbn-desfecho-btn{
+
+    margin-left: 2%;
+    margin-top: 5%;
+    height: 48%;
+    width: 100%;
+    background-color: var(--laranjaenferrujado);
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: 30px;
+    font-family: "fonte-projeto";
+    cursor: pointer;
+    box-shadow: 0px 2px 15px rgb(150, 101, 67);
+
+
+}
+
+
+.btn-desfecho-img{
+
+    height: 100%;
+    width: 100%;
+}

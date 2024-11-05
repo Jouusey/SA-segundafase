@@ -519,6 +519,12 @@
 
 }
 
+.estrelas-div{
+
+    display: flex;
+    flex-direction: row;
+}
+
 .btn-desfecho-img{
 
     height: 99%;

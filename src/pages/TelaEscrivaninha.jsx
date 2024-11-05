@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./TelaEscrivaninha.css"
+import EstrelasBtn from '../components/EstrelasBtn'
 
 function TelaEscrivaninha() {
 
@@ -224,16 +225,17 @@ function TelaEscrivaninha() {
             <div className="generoIsbn-desfecho">
 
               <label className='desfecho-lbl' htmlFor="">Nota do livro: </label>
-              
-              <button className='generoIsbn-desfecho-btn'><img className='btn-desfecho-img' src="public\images\streamline--star-2.svg" alt="" /></button>
-              <button className='generoIsbn-desfecho-btn'><img className='btn-desfecho-img' src="public\images\streamline--star-2.svg" alt="" /></button>
-              <button className='generoIsbn-desfecho-btn'><img className='btn-desfecho-img' src="public\images\streamline--star-2.svg" alt="" /></button>
-              <button className='generoIsbn-desfecho-btn'><img className='btn-desfecho-img' src="public\images\streamline--star-2.svg" alt="" /></button>
-              <button className='generoIsbn-desfecho-btn'><img className='btn-desfecho-img' src="public\images\streamline--star-2.svg" alt="" /></button>
 
+              <div className="estrelas-div">
+
+
+              <EstrelasBtn />
+
+              </div>
+
+           
               <button className='btn-escrivaninha'>ENVIAR -> </button>
             </div>
-
 
           </div>
           

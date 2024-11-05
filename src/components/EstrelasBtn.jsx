@@ -1,24 +1,25 @@
 import React, { useState } from 'react'
+import "./EstrelasBtn.css"
 
 function EstrelasBtn() {
 
 
 
-    const [notaUm, setNotaUm] = useState('')
-    const [notaDois, setNotaDois] = useState('')
+    const [notaUm, setNotaUm] = useState(<img className='btn-desfecho-img' src="public\images\streamline--star-2.svg" alt="" />)
+    const [notaDois, setNotaDois] = useState(<img className='btn-desfecho-img' src="public\images\streamline--star-2.svg" alt="" />)
 
 
     function mudarNotaUm() {
 
-        setNotaUm(<img className='btn-desfecho-img' src="public\images\streamline--star-2.svg" alt="" />)
-        setNotaDois('')
+        setNotaUm(<img className='btn-desfecho-img' src="public\images\streamline--star-2-solid.svg" alt="" />)
+        setNotaDois(<img className='btn-desfecho-img' src="public\images\streamline--star-2.svg" alt="" />)
         
     }
 
     function mudarNotaDois() {
 
-        setNotaUm(<img className='btn-desfecho-img' src="public\images\streamline--star-2.svg" alt="" />)
-        setNotaDois(<img className='btn-desfecho-img' src="public\images\streamline--star-2.svg" alt="" />)
+        setNotaUm(<img className='btn-desfecho-img' src="public\images\streamline--star-2-solid.svg" alt="" />)
+        setNotaDois(<img className='btn-desfecho-img' src="public\images\streamline--star-2-solid.svg" alt="" />)
         
         
     }
