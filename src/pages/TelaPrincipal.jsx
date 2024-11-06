@@ -1,7 +1,10 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './TelaPrincipal.css'
 
 function TelaPrincipal() {
+
+    const [irparacadastro, setIParaCadastro] = useState()
+
 
 //    function name(params) {
 //      function(){
@@ -103,7 +106,7 @@ function TelaPrincipal() {
 
                         <div className="div-Fila-livros">
 
-                            <button>Cadastrar-se</button>
+                            <button onClick={() => setIParaCadastro(<TelaCadastro/>)}>Cadastrar-se</button>
 
                             <button>Entrar</button>
 
