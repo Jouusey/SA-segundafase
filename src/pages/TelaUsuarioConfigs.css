@@ -1,0 +1,78 @@
+.usuarioConfigs-container{
+
+    display: flex;
+
+    height: 100vh;
+    background-color: var(--corfundo);
+
+}
+
+    .usuarioConfigs-div-esquerda{
+
+        height: 100%;
+        width: 5%;
+        background-color: var(--corfundo);
+
+
+    }
+
+    .usuarioConfigs-body{
+
+        height: 100%;
+        width: 87%;
+        background-color: var(--corfundo)
+
+    }
+        .usuarioConfigs-body-cima{
+
+            height: 5%;
+            width: 100%;
+            background-color: var(--corfundo);
+            
+        }
+        .usuarioConfigs-body-meio{
+
+            height: 90%;
+            width: 100%;
+            background-color: var(--fundoDivs);
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            
+        }
+        .usuarioConfigs-body-baixo{
+
+            height: 5%;
+            width: 100%;
+            background-color: var(--corfundo);   
+            
+        }
+
+    .usuarioConfigs-navbar-container{
+
+        height: 100%;
+        width: 8%;
+        background-color: black
+
+    }
+
+        .usuarioConfigs-navbar-cima{
+
+            height: 5%;
+            width: 100%;
+            background-color: var(--corfundo);
+        }
+
+        .usuarioConfigs-navbar-meio{
+
+            height: 90%;
+            width: 100%;
+            background: linear-gradient(to right, var(--fundoDivs), var(--laranjaenferrujado))
+        }
+
+        .usuarioConfigs-navbar-baixo{
+
+            height: 5%;
+            width: 100%;
+            background-color: var(--corfundo);
+        }
+
