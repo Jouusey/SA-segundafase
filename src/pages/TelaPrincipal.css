@@ -39,18 +39,12 @@
     border-radius: 10px;
 }
 
-    .div-elementos{
+    .div-espaco-vazio{
         height: 100%;
         width: 6%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
         background-color: #fdfaf3;
-        margin-right: 4px;
     }
-
-    
+   
         .div-home-escrivaninha{
             height: 33%;
             width: 100%;
@@ -97,7 +91,6 @@
             width: 100%;
             display: flex;
             justify-content: start;
-            /* flex-direction: row; */
             align-items: center;
             background-color: #fdfaf3;
             margin-left: 10%;
@@ -182,15 +175,6 @@
                 
                 }
 
-        /* .div-Fila-livros-dois{
-            height: 35%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            background-color: #fdfaf3;
-        } */
 
         .div-contatos{
             height: 15%;
@@ -239,10 +223,15 @@
         background-color: #fdfaf3;
     }
 
-    .div-espaco-vazio{
+    .div-elementos{
         height: 100%;
         width: 6%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
         background-color: #fdfaf3;
+        margin-left: 4px;
     }
 
         .div-next-page{
