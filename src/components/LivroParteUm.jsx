@@ -4,18 +4,16 @@ import LivroParteDois from "./LivroParteDois"
 
 function LivroParteUm() {
     const [resenhas, setResenhas] = useState(false)
+    const [resenhaNova, setResenhaNova] = useState(false)
 
     function home(){
         alert("Home")
     }
 
-    function configuracoes(){
-        alert("Configurações")
+    function salvarResenha(){  
+        setResenhaNova(false)
     }
 
-    function escrivania(){
-        alert("Escrever Resenha")
-    }
   return (
     <div>
 
@@ -25,7 +23,19 @@ function LivroParteUm() {
 
                 <div className="parte-capa-livro">
 
-                    <div className="capa-livro"></div>
+                    <div className="capa-livro">
+                        <img src="./images/capa-livro.png" alt="" />
+                    </div>
+
+                    <div className="parte-classificacao">
+
+                        <img src="./images/star.svg" alt="" className="icone-estrela"/>
+                        <img src="./images/star.svg" alt="" className="icone-estrela"/>
+                        <img src="./images/star.svg" alt="" className="icone-estrela"/>
+                        <img src="./images/star.svg" alt="" className="icone-estrela"/>
+                        <img src="./images/star.svg" alt="" className="icone-estrela"/>
+
+                    </div>
 
                 </div>
 
@@ -70,8 +80,8 @@ function LivroParteUm() {
                 <div className="parte-menus">
 
                     <button className="botao-menu" onClick={home}><img src="./images/home.svg" alt="" className="icone-botao"/></button>
-                    <button className="botao-menu" onClick={configuracoes}><img src="./images/setting.svg" alt="" className="icone-botao"/></button>
-                    <button className="botao-menu" onClick={escrivania}><img src="./images/pen.svg" alt="" className="icone-botao"/></button>
+                    {/* <button className="botao-menu" onClick={configuracoes}><img src="./images/setting.svg" alt="" className="icone-botao"/></button> */}
+                    <button className="botao-menu" onClick={() => setResenhaNova(true)}><img src="./images/pen.svg" alt="" className="icone-botao"/></button>
 
                 </div>
 
@@ -91,6 +101,20 @@ function LivroParteUm() {
             </div>
 
         </div>
+
+            <dialog open={resenhaNova}>
+
+                <div className="div-textarea">
+
+                    <textarea name="" id="resenha-nova" cols="30" rows="10" className="escrever-resenha" placeholder="Escreva nesse espaço a sua resenha...">
+                    </textarea>
+
+                    <button className="botao-cadastrar-resenha" onClick={salvarResenha}>Salvar Resenha</button>
+
+                </div>
+
+
+            </dialog>
             
     </div>
   )
