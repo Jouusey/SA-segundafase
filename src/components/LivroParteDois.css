@@ -9,7 +9,7 @@
     align-items: center;
     flex-direction: column;
     background-color: #c89b7a;
-    min-height: 90vh;
+    min-height: 75vh;
     width: 180vh;
 }
     .container-resenha-usuarios{
@@ -17,7 +17,7 @@
         justify-content: start;
         align-items: start;
         flex-direction: column;
-        padding: 35px;
+        padding: 25px;
         height: fit-content;
         width: 93%;
         background-color: #ffeddf;
@@ -50,10 +50,17 @@
                     margin-bottom: 30px;
                     height: 60px;
                     width: 80px;
-                    background-color: #c85b34;
+                    background-color: #c89b7a;
                     border-radius: 50%;
                     margin-bottom: 40px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
                 }
+                    .imagem-perfil{
+                        height: 60px;
+                        width: 80px;
+                        border-radius: 50%;
+                    }
 
             .parte-resenha{
                 display: flex;
