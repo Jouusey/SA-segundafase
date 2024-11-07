@@ -7,7 +7,7 @@ function LandingPage() {
 
   return (
 
-    <div className='container-tela-principal'>
+    <div className='container-landing-page'>
 
         <div className='retangulo-um'>
 
@@ -19,7 +19,7 @@ function LandingPage() {
 
                     </div>
 
-                    <div className="div-livros-esquerda">
+                    <div className="div-esquerda">
 
                         <div className="div-barra-de-pesquisa">
 
@@ -31,35 +31,37 @@ function LandingPage() {
 
                         </div>
 
-                        <div className="div-Fila-livros">
+                        <div className="container-logo-nome">
 
                             <div className="div-nome-do-site">
-                                <h1>Resenha na casa</h1>
+                                <h1>Nome do site</h1>
                             </div>
 
-                            <div className='logo-site'>logo site</div>
+                            <div className='div-logo-site'>logo site</div>
 
-                            <div className="div-slogan">
-                              <p> Você que gosta de ler e se perder ao navegar na opinião de outros leitores sobre os teus livros preferidos?
-                              </p>
-                              <p>Esse é o espaço ideial para você, leia e compartilhe as tuas resenhas na nossa plataforma!</p>
-                            </div>
                             
                         </div>
 
-                        <div className="div-Fila-livros">
+                        <div className="div-informacoes">
 
-                            <button onClick={() => setIParaCadastro(<TelaCadastro/>)}>Cadastrar-se</button>
+                            <div className="div-slogan">
+                              <p> Gosta de ler e se perder ao navegar na opinião de outros leitores sobre os teus livros preferidos?
+                              </p>
+                              <p>Esse é o espaço ideial para você, leia e compartilhe as suas resenhas na nossa plataforma!</p>
+                            </div>
 
-                            <button>Entrar</button>
+                            <div className="div-btns">
+                                <button className='btns-landing'>Cadastrar-se</button>
+                                <button className='btns-landing'>Entrar</button>
+                            </div>
 
 
                         </div>
 
-                        <div className="div-contatos">
+                        <div className="container-contatos">
 
-                            <div className="div-divisao-um"></div>
-                            <div className="div-divisao-dois"></div>
+                            <div className="divisao-um"></div>
+                            <div className="divisao-dois"></div>
 
                             <button className="btn-contacts">Contact Us</button>
 
@@ -67,13 +69,13 @@ function LandingPage() {
                     
                     </div>
 
-                    <div className="div-livros-direita">
+                    <div className="container-livros-direita">
 
-                        <div className="div-barra-de-pesquisa">
+                        <div className="div-espaco-vazio-landing">
 
                         </div>
 
-                        <div className="div-Fila-livros">
+                        <div className="div-Fila-livros-landing">
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
@@ -105,7 +107,7 @@ function LandingPage() {
     
                         </div>
 
-                        <div className="div-Fila-livros">
+                        <div className="div-Fila-livros-landing">
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
@@ -148,7 +150,7 @@ function LandingPage() {
 
                     <div className="div-elementos">
 
-                    <div className="div-home-escrivaninha">
+                        <div className="div-home-escrivaninha">
                             
                             <button className="btns">
                                 <img className='icons' src="../public/icons/ant-design--home-outlined.svg" alt="icon-home" />

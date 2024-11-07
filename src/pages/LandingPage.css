@@ -1,5 +1,5 @@
 
-.container-tela-principal{
+.container-landing-page{
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -39,50 +39,20 @@
   border-radius: 10px;
 }
 
-  .div-espaco-vazio{
-      height: 100%;
-      width: 6%;
-      background-color: #fdfaf3;
-  }
- 
-      .div-home-escrivaninha{
-          height: 33%;
-          width: 100%;
-          background-color: #fdfaf3;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-      }
+    .div-espaco-vazio{
+        height: 100%;
+        width: 6%;
+        background-color: #fdfaf3;
+    }
 
-          .btns{
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              height: 50px;
-              width: 50px;
-              margin-bottom: 25px;
-              border-radius: 50%;
-              border: none;
-              cursor: pointer;
-
-          }
-              .icons{
-                  height: 35px;
-                  width: 35px;
-                  margin: 10%;
-                  background-color: #fdfaf3;
-              }
-
-
-  .div-livros-esquerda{
+  .div-esquerda{
       height: 100%;
       width: 44%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      /* margin-right: 3px; */
+      margin-right: 6px;
       background-color: #fdfaf3;
   }
 
@@ -138,8 +108,8 @@
 
           }
 
-      .div-Fila-livros{
-          height: 35%;
+      .container-logo-nome{
+          height: 25%;
           width: 100%;
           display: flex;
           justify-content: center;
@@ -149,42 +119,73 @@
           
       }
 
-          .div-box-titulo{
+            .div-nome-do-site{
+                height: 100%;
+                width: 60%;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                
+            }
 
-              height: 100%;
-              width: 25%;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              flex-direction: column;
-              background-color: #fdfaf3;
-              
-          }
-              .box{
-                  height: 105px;
-                  width: 85px;
-                  background-color: rgb(189, 142, 142);
-                  
-              }
+            .div-logo-site{
+                height: 100%;
+                width: 40%;
+                display: flex;
+                justify-content: start;
+                align-items: center;
 
-              .titulos-livros{
-               text-align: center;
-               margin-top: 6px;
-               font-size: 14px;
-              
-              }
+            }
 
-      .div-contatos{
+        .div-informacoes{
+            height: 45%;
+            width: 100%;
+            background-color:  #fdfaf3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+            .div-slogan{
+                height: 60%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                
+            }
+
+            .div-btns{
+                height: 40%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #fdfaf3;
+                
+            }
+
+                .btns-landing{
+                    height: 50px;
+                    width: 200px;
+                    margin: 10px;
+
+                }
+
+      .container-contatos{
           height: 15%;
           width: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
-          background-color: #fdfaf3;
+          /* background-color: #fdfaf3; */
+          
       }
 
-          .div-divisao-um{
+          .divisao-um{
               height: 3px;
               width: 90%;
               border-radius: 5px;
@@ -192,7 +193,7 @@
               background-color: #d7beb1;
           }
 
-          .div-divisao-dois{
+          .divisao-dois{
               height: 3px;
               width: 70%;
               border-radius: 5px;
@@ -214,36 +215,95 @@
           }
 
 
-  .div-livros-direita{
+  .container-livros-direita{
       height: 100%;
       width: 44%;
       /* margin-left: 6px; */
       background-color: #fdfaf3;
   }
 
-  .div-elementos{
-      height: 100%;
-      width: 6%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: column;
-      background-color: #fdfaf3;
-      margin-left: 4px;
-  }
+       .div-espaco-vazio-landing{
+            height: 15%;
+            width: 90%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            background-color: #fdfaf3;
+            /* margin-left: 10%; */
+       } 
 
-      .div-next-page{
-          height: 15%;
-          width: 100%;
-          display: flex;
-          justify-content: start;
-          align-items: center;
-          flex-direction: column;
-          background-color: #fdfaf3;
-          margin-top: 10px;
-      }
-             
-          .btn-livro-home{
-            border: none;
-            cursor: pointer;
-          }
+       .div-Fila-livros-landing{
+            height: 35%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            background-color: #fdfaf3;
+       }
+
+
+            .div-box-titulo{
+
+                height: 100%;
+                width: 25%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: #fdfaf3;
+                
+            }
+                .box{
+                    height: 105px;
+                    width: 85px;
+                    background-color: rgb(189, 142, 142);
+                    
+                }
+
+                .titulos-livros{
+                text-align: center;
+                margin-top: 6px;
+                font-size: 14px;
+                
+                }
+
+    .div-elementos{
+        height: 100%;
+        width: 6%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fdfaf3;
+        margin-left: 4px;
+    }
+   
+        .div-home-escrivaninha{
+            height: 33%;
+            width: 100%;
+            background-color: #fdfaf3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+  
+            .btns{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                width: 50px;
+                margin-bottom: 25px;
+                border-radius: 50%;
+                border: none;
+                cursor: pointer;
+  
+            }
+                .icons{
+                    height: 35px;
+                    width: 35px;
+                    margin: 10%;
+                    background-color: #fdfaf3;
+                }   
