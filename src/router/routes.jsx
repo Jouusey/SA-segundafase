@@ -7,6 +7,7 @@ import Agua from "../pages/Agua";
 import TelaCadastro from "../pages/TelaCadastro";
 import TelaLogin from "../pages/TelaLogin";
 import TelaPrincipal from "../pages/TelaPrincipal";
+import LandingPage from "../pages/LandingPage";
 
 const router = createBrowserRouter([
     {path: "/", element: <Home />},
@@ -16,7 +17,8 @@ const router = createBrowserRouter([
     {path: "/agua", element: <Agua />},
     {path: "/telacadastro", element: <TelaCadastro />},
     {path: "/telalogin", element: <TelaLogin/>},
-    {path: "/telaprincipal", element: <TelaPrincipal />}
+    {path: "/telaprincipal", element: <TelaPrincipal />},
+    {path: "/landingpage", element: <LandingPage />}
 
 ])
 

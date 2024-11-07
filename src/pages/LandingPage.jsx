@@ -1,21 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import './TelaPrincipal.css'
+import React from 'react'
+import './LandingPage.css'
 
-function TelaPrincipal() {
+function LandingPage() {
 
-    // const [irparacadastro, setIParaCadastro] = useState()
-
-
-//    function name(params) {
-//      function(){
-         
-//      }
-//    }
-
-
-    // useEffect(() => {
-    //     alert("oi")
-    // }, [])
 
 
   return (
@@ -28,7 +15,7 @@ function TelaPrincipal() {
 
                 <div className='retangulo-tres'>
 
-                    <div className='div-espaco-vazio'>                     
+                    <div className='div-espaco-vazio'>
 
                     </div>
 
@@ -46,65 +33,26 @@ function TelaPrincipal() {
 
                         <div className="div-Fila-livros">
 
-                            <div className="div-box-titulo">
-                                <button className="btn-livro-home">
-                                    <div className="box"></div>
-                                    <p className='titulos-livros'>Título 1</p>
-                                </button>
+                            <div className="div-nome-do-site">
+                                <h1>Resenha na casa</h1>
                             </div>
 
-                            <div className="div-box-titulo">
-                                <button className="btn-livro-home">
-                                    <div className="box"></div>
-                                    <p className='titulos-livros'>Título 2</p>
-                                </button>
-                            </div>
+                            <div className='logo-site'>logo site</div>
 
-                            <div className="div-box-titulo">
-                                <button className="btn-livro-home">
-                                    <div className="box"></div>
-                                    <p className='titulos-livros'>Título 3</p>
-                                </button>
-                            </div>
-
-                            <div className="div-box-titulo">
-                                <button className="btn-livro-home">
-                                    <div className="box"></div>
-                                    <p className='titulos-livros'>Título 4</p>
-                                </button>
+                            <div className="div-slogan">
+                              <p> Você que gosta de ler e se perder ao navegar na opinião de outros leitores sobre os teus livros preferidos?
+                              </p>
+                              <p>Esse é o espaço ideial para você, leia e compartilhe as tuas resenhas na nossa plataforma!</p>
                             </div>
                             
                         </div>
 
                         <div className="div-Fila-livros">
 
-                            <div className="div-box-titulo">
-                                <button className="btn-livro-home">
-                                    <div className="box"></div>
-                                    <p className='titulos-livros'>Título 5</p>
-                                </button>
-                            </div>
+                            <button onClick={() => setIParaCadastro(<TelaCadastro/>)}>Cadastrar-se</button>
 
-                            <div className="div-box-titulo">
-                                <button className="btn-livro-home">
-                                    <div className="box"></div>
-                                    <p className='titulos-livros'>Título 6</p>
-                                </button>
-                            </div>
+                            <button>Entrar</button>
 
-                            <div className="div-box-titulo">
-                                <button className="btn-livro-home">
-                                    <div className="box"></div>
-                                    <p className='titulos-livros'>Título 7</p>
-                                </button>
-                            </div>
-
-                            <div className="div-box-titulo">
-                                <button className="btn-livro-home">
-                                    <div className="box"></div>
-                                    <p className='titulos-livros'>Título 8</p>
-                                </button>
-                            </div>
 
                         </div>
 
@@ -194,12 +142,6 @@ function TelaPrincipal() {
                             <div className="div-divisao-um"></div>
                             <div className="div-divisao-dois"></div>
 
-                            <div className="div-label-next-page">
-                                
-                                <button className='btn-next-page'>Next Page</button>
-
-                            </div>
-
                         </div>
 
                     </div>
@@ -235,5 +177,4 @@ function TelaPrincipal() {
   )
 }
 
-
-export default TelaPrincipal
+export default LandingPage

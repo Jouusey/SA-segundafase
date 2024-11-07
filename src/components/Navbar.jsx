@@ -7,6 +7,7 @@ function Navbar() {
         <Link to="/telacadastro">Cadastro</Link>
         <Link to="/telalogin">Login</Link>
         <Link to="/telaprincipal">Home</Link>
+        <Link to="/LandingPage">Landing page</Link>
     </nav>
   )
 }

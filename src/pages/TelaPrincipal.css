@@ -16,6 +16,7 @@
     align-items: center;
     background-color: #eddbb3;
     border-radius: 10px;
+   
 }
 
 .retangulo-dois{
@@ -37,6 +38,7 @@
     align-items: center;
     background-color:#f8ebce;
     border-radius: 10px;
+
 }
 
     .div-espaco-vazio{
@@ -82,8 +84,8 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-right: 3px;
         background-color: #fdfaf3;
+        margin-left: 6px;
     }
 
         .div-barra-de-pesquisa{
@@ -93,7 +95,7 @@
             justify-content: start;
             align-items: center;
             background-color: #fdfaf3;
-            margin-left: 10%;
+            /* margin-left: 8px; */
 
         }
 
@@ -219,7 +221,7 @@
     .div-livros-direita{
         height: 100%;
         width: 44%;
-        margin-left: 6px;
+        margin-left: 8px;
         background-color: #fdfaf3;
     }
 
@@ -255,7 +257,7 @@
                 .btn-next-page{
                     height: 30px;
                     width: 90px;
-                    margin-top: 1%;
+                    margin-top: 1% ;
                     border: solid #d7beb1;
                     border-radius: 10px;
                     cursor: pointer;
@@ -263,6 +265,7 @@
                     font-family: "fonte-projeto";
                     font-size: 20px;
                     font-weight: 700;
+                    margin-right: 10px;
                 
                 }
 
