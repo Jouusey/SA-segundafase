@@ -33,12 +33,92 @@
         .usuarioConfigs-body-meio{
 
             height: 90%;
-            width: 100%;
+            width: 99%;
             background-color: var(--fundoDivs);
-            border-top-left-radius: 30px;
-            border-bottom-left-radius: 30px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
             
         }
+
+            .usuarioConfigs-body-meio-papel{
+
+                background-color: var(--navbar);
+                height: 95%;
+                width: 95%;
+                border-radius: 10px;
+                display: flex;
+
+            }
+
+                .usuarioConfigs-body-meio-papel-conta{
+
+                    height: 100%;
+                    /* background-color: red; */
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+
+                }
+
+                .usuarioConfigs-bmpc-titulo{
+                    background-color: red;
+                    height: 32%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+
+
+
+                }
+                    .lbl-titulos{
+
+                        font-family: "fonte-projeto";
+                        font-size: 30px;
+                        color: var(--textos);
+                    }
+
+                    .lbl-nome-usuario{
+
+                        font-family: "fonte-projeto";
+                        font-size: 40px;
+
+                    }
+
+                .usuarioConfigs-bmpc-infos{
+
+                    background-color: blue;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                }
+
+                    .lbl-infos{
+
+                        font-family: "fonte-projeto";
+                        font-size: 30px;
+                        padding-left: 10px;
+
+                    }
+
+                .usuarioConfigs-body-meio-papel-resenhas{
+
+                    height: 100%;
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+
+                }
+
+
+
         .usuarioConfigs-body-baixo{
 
             height: 5%;
@@ -51,28 +131,8 @@
 
         height: 100%;
         width: 8%;
-        background-color: black
+        background-color: var(--navbar)
 
     }
 
-        .usuarioConfigs-navbar-cima{
-
-            height: 5%;
-            width: 100%;
-            background-color: var(--corfundo);
-        }
-
-        .usuarioConfigs-navbar-meio{
-
-            height: 90%;
-            width: 100%;
-            background: linear-gradient(to right, var(--fundoDivs), var(--laranjaenferrujado))
-        }
-
-        .usuarioConfigs-navbar-baixo{
-
-            height: 5%;
-            width: 100%;
-            background-color: var(--corfundo);
-        }
 

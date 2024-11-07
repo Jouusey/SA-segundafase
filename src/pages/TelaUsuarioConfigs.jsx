@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import "./TelaUsuarioConfigs.css"
 import{ GlobalContext } from '../contexts/GlobalContext'
 import { useContext } from 'react'
+import IconUserCircle from "../components/IconUserCircle"
 
 function TelaUsuarioConfigs() {
   return (
@@ -20,6 +21,38 @@ function TelaUsuarioConfigs() {
 
         <div className="usuarioConfigs-body-meio">
 
+          <div className="usuarioConfigs-body-meio-papel">
+
+            <div className="usuarioConfigs-body-meio-papel-conta">
+
+              <div className="usuarioConfigs-bmpc-titulo">
+
+                <label className="lbl-titulos">Configurações de usuário</label>
+                <IconUserCircle/>
+                <label className="lbl-nome-usuario" >Nome de Usuário</label>
+
+              </div>
+
+              <div className="usuarioConfigs-bmpc-infos">
+
+              <label className="lbl-infos" >Nome Completo</label>
+              <label className="lbl-infos" >Email</label>
+              <label className="lbl-infos" >Senha</label>
+
+              </div>
+
+            </div>
+
+            <div className="usuarioConfigs-body-meio-papel-resenhas">
+
+              
+              <label className="lbl-titulos">Minha resenhas</label>
+              <label className="lbl-titulos">Minhas resenhas</label>
+
+            </div>
+
+          </div>
+
         </div>
 
         <div className="usuarioConfigs-body-baixo">
@@ -30,11 +63,7 @@ function TelaUsuarioConfigs() {
 
       <div className="usuarioConfigs-navbar-container">
 
-        <div className="usuarioConfigs-navbar-cima"></div>
-
-        <div className="usuarioConfigs-navbar-meio"></div>
-
-        <div className="usuarioConfigs-navbar-baixo"></div>
+    
 
       </div>
       
