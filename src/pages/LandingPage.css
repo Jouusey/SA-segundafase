@@ -52,7 +52,7 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      margin-right: 6px;
+      margin-left: 4px;
       background-color: #fdfaf3;
   }
 
@@ -123,7 +123,7 @@
                 height: 100%;
                 width: 60%;
                 display: flex;
-                justify-content: start;
+                justify-content: center;
                 align-items: center;
                 
             }
@@ -132,7 +132,7 @@
                 height: 100%;
                 width: 40%;
                 display: flex;
-                justify-content: start;
+                justify-content: center;
                 align-items: center;
 
             }
@@ -145,6 +145,8 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            /* margin: 0% 5% 0% 5%; */
+            
         }
 
             .div-slogan{
@@ -168,9 +170,19 @@
             }
 
                 .btns-landing{
-                    height: 50px;
+                    height: 60px;
                     width: 200px;
                     margin: 10px;
+                    border-radius: 5px;
+                    margin-top: 1%;
+                    border: solid #d7beb1;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    color: #40454b;
+                    font-family: "fonte-projeto";
+                    font-size: 40px;
+                    font-weight: 700;
+                    
 
                 }
 
@@ -181,7 +193,7 @@
           justify-content: center;
           align-items: center;
           flex-direction: column;
-          /* background-color: #fdfaf3; */
+          background-color: #fdfaf3;
           
       }
 
@@ -218,7 +230,7 @@
   .container-livros-direita{
       height: 100%;
       width: 44%;
-      /* margin-left: 6px; */
+      margin-left: 8px;
       background-color: #fdfaf3;
   }
 
@@ -229,7 +241,7 @@
             justify-content: start;
             align-items: center;
             background-color: #fdfaf3;
-            /* margin-left: 10%; */
+            
        } 
 
        .div-Fila-livros-landing{
@@ -258,7 +270,20 @@
                     height: 105px;
                     width: 85px;
                     background-color: rgb(189, 142, 142);
+                    transition: 0.3s ease;
                     
+                }
+
+                .div-Fila-livros-landing:hover .div-box-titulo {
+                    filter: blur(5px);
+                    opacity: 0.9;
+                    background-color: #dfdcd9;
+                }
+
+                .div-Fila-livros-landing .div-box-titulo:hover{
+                    filter: none;
+                    opacity: 1;
+                    background-color: rgb(189, 142, 142);
                 }
 
                 .titulos-livros{
@@ -267,6 +292,19 @@
                 font-size: 14px;
                 
                 }
+
+    
+    .div-divisoes-direita{
+        height: 15%;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fdfaf3;
+        margin-top: 2%;
+        
+    }
 
     .div-elementos{
         height: 100%;

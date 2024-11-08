@@ -85,7 +85,7 @@
         align-items: center;
         flex-direction: column;
         background-color: #fdfaf3;
-        margin-left: 6px;
+        margin-left: 4px;
     }
 
         .div-barra-de-pesquisa{
@@ -95,7 +95,6 @@
             justify-content: start;
             align-items: center;
             background-color: #fdfaf3;
-            /* margin-left: 8px; */
 
         }
 

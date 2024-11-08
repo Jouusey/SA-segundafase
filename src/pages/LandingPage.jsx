@@ -139,7 +139,7 @@ function LandingPage() {
 
                         </div>
 
-                        <div className="div-next-page">
+                        <div className="div-divisoes-direita">
 
                             <div className="div-divisao-um"></div>
                             <div className="div-divisao-dois"></div>
