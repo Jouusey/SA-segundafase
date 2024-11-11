@@ -10,6 +10,7 @@ import TelaEscrivaninha from "../pages/TelaEscrivaninha";
 import TelaUsuarioConfigs from "../pages/TelaUsuarioConfigs";
 import TelaPrincipal from "../pages/TelaPrincipal";
 import LandingPage from "../pages/LandingPage";
+import TelaLivro from "../pages/TelaLivro";
 
 const router = createBrowserRouter([
     {path: "/", element: <Home />},
@@ -22,7 +23,8 @@ const router = createBrowserRouter([
     {path: "/telaescrivaninha", element: <TelaEscrivaninha/>},
     {path: "/telausuarioconfigs", element: <TelaUsuarioConfigs/>},
     {path: "/telaprincipal", element: <TelaPrincipal />},
-    {path: "/landingpage", element: <LandingPage />}
+    {path: "/landingpage", element: <LandingPage />},
+    {path: "/telalivro", element: <TelaLivro/>}
 
 ])
 
