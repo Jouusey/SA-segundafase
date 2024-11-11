@@ -152,19 +152,19 @@ function LandingPage() {
 
                         <div className="div-home-escrivaninha">
                             
-                            <button className="btns">
+                            {/* <button className="btns">
                                 <img className='icons' src="../public/icons/ant-design--home-outlined.svg" alt="icon-home" />
                             </button>
 
                             <button className="btns">
                                 <img className='icons' src="public/icons/escrita.png" alt="icon-escrivaninha" />
-                            </button>
+                            </button> */}
                             
                         </div>
 
-                        <button className="btns">
+                        {/* <button className="btns">
                             <img className='icons' src="public/icons/barra-de-menu.png" alt="menu-hamburg" />
-                        </button>
+                        </button> */}
 
                     </div>
 
