@@ -3,18 +3,32 @@ import "./LivroParteUm.css"
 import LivroParteDois from "./LivroParteDois"
 
 function LivroParteUm() {
+    // Estado para armazenar a lista de resenhas
+    const [resenhasLivro, setResenhasLivro] = useState([])
+
+    // Estado para armazenar o valor do textarea
+    const [texto, setTexto] = useState("")
+
+    const salvarResenha = () => {
+
+        // let nome = prompt("Digite seu nome: ")
+        // Adiciona o valor atual do textarea na lista e reseta o textarea
+        setResenhasLivro([...resenhasLivro, texto]);
+        alert("Resenha salva com sucesso!")
+        setTexto(""); // Limpa o textarea
+
+        console.log({resenhasLivro})
+        setResenhaNova(false)  
+      };
+
     const [resenhas, setResenhas] = useState(false) // este serve para chamar o componente da parte dois do livro que contém todas as resenhas do referido livro...
 
     const [resenhaNova, setResenhaNova] = useState(false) //este useState é para controlar a caixa de digitar a resenha do livro...
 
+
     function home(){
         // quando este botão for clicado, tem que direcionar o usuário a página inicial...
         alert("Home")
-    }
-
-    function salvarResenha(){  
-        // preciso de um comando aqui que adicione automaticamente a resenha digitada na lista de resenhas do livro e, atualizar a quantidade de resenhas...
-        setResenhaNova(false)
     }
 
   return (
@@ -97,14 +111,14 @@ function LivroParteUm() {
 
             <div className="parte-baixo">
 
-                <button className="botao-resenha">Resenhas  |  02</button>
+                <button className="botao-resenha">Resenhas  |  {resenhasLivro.length}</button>
                 <button className="botao-icone" onClick={ () => setResenhas(!resenhas)}><img src="./images/down.svg" alt="" className="icone-down"/></button>
 
             </div>
 
             <div className="container-parte-resenhas">
 
-                {resenhas && <LivroParteDois/>}
+                {resenhas && <LivroParteDois nomeUsuario={"Jaime"} resenhaDoLivro={resenhasLivro[0]}/>}
 
             </div>
 
@@ -114,13 +128,15 @@ function LivroParteUm() {
 
                 <div className="div-textarea">
 
-                    <textarea name="" id="resenha-nova" cols="30" rows="10" className="escrever-resenha" placeholder="Escreva nesse espaço a sua resenha...">
+                    <textarea name="" id="resenha-nova" cols="30" rows="10" className="escrever-resenha" placeholder="Escreva nesse espaço a sua resenha..."
+                    value={texto}
+                    onChange={(event) => setTexto(event.target.value)}
+                    >
                     </textarea>
 
                     <button className="botao-cadastrar-resenha" onClick={salvarResenha}>Salvar Resenha</button>
 
                 </div>
-
 
             </dialog>
             

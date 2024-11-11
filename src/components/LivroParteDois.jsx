@@ -1,6 +1,8 @@
 import "./LivroParteDois.css"
+import { useState } from "react"
 
-function LivroParteDois() {
+function LivroParteDois(props) {
+    
   return (
     <div className="container-mae-resenhas">
 
@@ -18,13 +20,13 @@ function LivroParteDois() {
 
                         </div>
 
-                        <h3>nome do perfil</h3>
+                        <h3>{props.nomeUsuario}</h3>
 
                     </div>
 
                     <div className="parte-resenha">
 
-                        <label htmlFor="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusamus placeat in laborum quia distinctio fugiat numquam ipsam mollitia praesentium culpa, unde quos natus necessitatibus eveniet dolorem? Quam, quas repellat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusamus placeat in laborum quia distinctio fugiat numquam ipsam mollitia praesentium culpa, unde quos natus necessitatibus eveniet dolorem? Quam, quas repellat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusamus placeat in laborum quia distinctio fugiat numquam ipsam mollitia praesentium culpa, unde quos natus necessitatibus eveniet dolorem? Quam, quas repellat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusamus placeat in laborum quia distinctio fugiat numquam ipsam mollitia praesentium culpa, unde quos natus necessitatibus eveniet dolorem? Quam, quas repellat!Architecto accusamus placeat in laborum quia distinctio fugiat numquam ipsam mollitia praesentium culpa, unde quos natus necessitatibus eveniet dolorem? Quam, quas repellat!Lorem ipsum dolor sit amet consectetur adipisicing elit.</label>
+                        <label htmlFor="" className="texto-resenha">{props.resenhaDoLivro}</label>
 
                     </div>
 

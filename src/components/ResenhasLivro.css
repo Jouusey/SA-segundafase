@@ -1,30 +1,4 @@
-.container-mae-resenhas{
-    display: flex;
-    background-color: whitesmoke;
-}
-
-.container-resenhas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #c89b7a;
-    min-height: 35vh;
-    width: 180vh;
-}
-    .container-resenha-usuarios{
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        flex-direction: column;
-        padding: 20px;
-        height: fit-content;
-        width: 93%;
-        background-color: #ffeddf;
-        border-radius: 15px;
-        margin-bottom: 1%;
-    }
-        .box-resenha{
+.box-resenha{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -69,7 +43,7 @@
                 flex-direction: column;
                 padding: 25px;
                 height: fit-content;
-                width: 930px;
+                width: 900px;
                 block-size: fit-content;
                 background-color: #fff;
             }
