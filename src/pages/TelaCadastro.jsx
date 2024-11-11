@@ -1,14 +1,16 @@
 import { useState, useEffect } from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import "./TelaCadastro.css"
 import{ GlobalContext } from '../contexts/GlobalContext'
 import { useContext } from 'react'
+
 
 export default function TelaCadastro() {
     const [inputNomeCompleto, setInputNomeCompleto] = useState()
     const [inputNomeUsuario, setInputNomeUsuario] = useState()
     const [inputEmail, setInputEmail] = useState()
     const [inputSenha, setInputSenha] = useState()
+    const navigate = useNavigate()
     const {vetorObjetosUsuarios, setVetorObjetosUsuarios} = useContext(GlobalContext)
 
     function verificarUsuarioExistente() {
@@ -54,6 +56,7 @@ export default function TelaCadastro() {
             setVetorObjetosUsuarios([...vetorObjetosUsuarios, novoUsuario])
 
             alert('Usuário registrado com sucesso =)')
+            navigate("/telalogin")
         }
     }
 
@@ -84,11 +87,11 @@ export default function TelaCadastro() {
                             onChange={(event) => setInputNomeCompleto(event.target.value)} 
                             value={inputNomeCompleto} />
                         
-                        <label htmlFor="label-usuario" className="label-inputs">Usuario</label>
+                        <label htmlFor="label-usuario" className="label-inputs">Usuário</label>
                         <input type="text" 
                             id="label-usuario" 
                             className="inputs-cadastro" 
-                            placeholder="Digite seu nome de usuario"
+                            placeholder="Digite seu nome de usuário"
                             onChange={(event) => setInputNomeUsuario(event.target.value)} 
                             value={inputNomeUsuario} />
                         
@@ -96,7 +99,7 @@ export default function TelaCadastro() {
                         <input type="email" 
                             id="label-email" 
                             className="inputs-cadastro" 
-                            placeholder="Digite seu endereco de email"
+                            placeholder="Digite seu endereço de email"
                             onChange={(event) => setInputEmail(event.target.value)} 
                             value={inputEmail} />
                         
@@ -123,7 +126,7 @@ export default function TelaCadastro() {
 
                         
                         {/* Cassiano: uso de router para transicionar para a tela de login */}
-                        <Link className="label-possuir-conta" to='/telalogin'>Ja possui uma conta?</Link>
+                        <Link className="label-possuir-conta" to='/telalogin'>Já possui uma conta?</Link>
                         
                     </div>
 

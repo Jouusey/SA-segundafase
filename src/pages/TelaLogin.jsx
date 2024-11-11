@@ -95,12 +95,12 @@ function TelaLogin() {
         <div className="livro-login-primeiraLayer-esquerda">
             <div className="livro-login-conteudoLayerEsquerda">
                 <label htmlFor="label-titulo" className="label-titulos">LOGIN</label>
-                <label htmlFor="label-usuario" className="label-inputs">Usuario</label>
+                <label htmlFor="label-usuario" className="label-inputs">Usuário</label>
                 <input 
                     type="text" 
                     id="label-usuario" 
                     className="inputs-login" 
-                    placeholder="Digite seu nome de usuario"
+                    placeholder="Digite seu nome de usuário"
                     onChange={(event) => setInputNomeUsuario(event.target.value)} 
                     value={inputNomeUsuario} />
                 <label htmlFor="label-senha" className="label-inputs">Senha</label>
@@ -120,7 +120,7 @@ function TelaLogin() {
             <div className="livro-login-conteudoLayerDireita">
                 <img className="imagem-parte-login" src="public\images\Hand holding pen-amico.png" alt="" />
                 <button className="botao-login" onClick={verificarLogin}>Entrar</button>
-                <Link className="label-nao-tem-conta" to="/telacadastro">Nao tem uma conta?</Link>
+                <Link className="label-nao-tem-conta" to="/telacadastro">Não tem uma conta?</Link>
             </div>
         </div>
     </div>

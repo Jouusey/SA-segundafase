@@ -1,7 +1,14 @@
 import React from 'react'
+import { Link, useNavigate } from "react-router-dom"
 import './LandingPage.css'
 
 function LandingPage() {
+
+    const navigate = useNavigate()
+
+    // function IrParaCadastro() {
+        
+    // }
 
 
 
@@ -45,14 +52,14 @@ function LandingPage() {
                         <div className="div-informacoes">
 
                             <div className="div-slogan">
-                              <p> Gosta de ler e se perder ao navegar na opinião de outros leitores sobre os teus livros preferidos?
+                              <p> Gostas de ler e se perder ao navegar na opinião de outros leitores sobre os teus livros preferidos?
                               </p>
-                              <p>Esse é o espaço ideial para você, leia e compartilhe as suas resenhas na nossa plataforma!</p>
+                              <p>Esse é o espaço ideial para você, leia e compartilhe suas resenhas na nossa plataforma!</p>
                             </div>
 
                             <div className="div-btns">
-                                <button className='btns-landing'>Cadastrar-se</button>
-                                <button className='btns-landing'>Entrar</button>
+                                <button className='btns-landing'onClick={() => {navigate("/telacadastro")}}>Cadastrar-se</button>
+                                <button className='btns-landing' onClick={() => {navigate("/telalogin")}}>Entrar</button>
                             </div>
 
 
