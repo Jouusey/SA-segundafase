@@ -4,10 +4,12 @@ import Contato from "../pages/Contato";
 import Generica from "../pages/Generica";
 import Final from "../pages/Final";
 import Agua from "../pages/Agua";
-import TelaCadastro from "../pages/TelaCadastro"
+import TelaCadastro from "../pages/TelaCadastro";
 import TelaLogin from "../pages/TelaLogin";
 import TelaEscrivaninha from "../pages/TelaEscrivaninha";
 import TelaUsuarioConfigs from "../pages/TelaUsuarioConfigs";
+import TelaPrincipal from "../pages/TelaPrincipal";
+import LandingPage from "../pages/LandingPage";
 
 const router = createBrowserRouter([
     {path: "/", element: <Home />},
@@ -18,8 +20,9 @@ const router = createBrowserRouter([
     {path: "/telacadastro", element: <TelaCadastro />},
     {path: "/telalogin", element: <TelaLogin/>},
     {path: "/telaescrivaninha", element: <TelaEscrivaninha/>},
-    {path: "/telausuarioconfigs", element: <TelaUsuarioConfigs/>}
-
+    {path: "/telausuarioconfigs", element: <TelaUsuarioConfigs/>},
+    {path: "/telaprincipal", element: <TelaPrincipal />},
+    {path: "/landingpage", element: <LandingPage />}
 
 ])
 
