@@ -1,0 +1,182 @@
+import React from 'react'
+import './LandingPage.css'
+
+function LandingPage() {
+
+
+
+  return (
+
+    <div className='container-landing-page'>
+
+        <div className='retangulo-um'>
+
+            <div className='retangulo-dois'>
+
+                <div className='retangulo-tres'>
+
+                    <div className='div-espaco-vazio'>
+
+                    </div>
+
+                    <div className="div-esquerda">
+
+                        <div className="div-barra-de-pesquisa">
+
+                            <input className='inpt-pesquisa' type="text" placeholder='Pesquise um livro em específico'/>
+
+                            <button className="btn-pesquisar">
+                                <img className='icons-pesquisar' src="public/icons/big-search-len.png" alt="" />
+                            </button>
+
+                        </div>
+
+                        <div className="container-logo-nome">
+
+                            <div className="div-nome-do-site">
+                                <h1>Nome do site</h1>
+                            </div>
+
+                            <div className='div-logo-site'>logo site</div>
+
+                            
+                        </div>
+
+                        <div className="div-informacoes">
+
+                            <div className="div-slogan">
+                              <p> Gosta de ler e se perder ao navegar na opinião de outros leitores sobre os teus livros preferidos?
+                              </p>
+                              <p>Esse é o espaço ideial para você, leia e compartilhe as suas resenhas na nossa plataforma!</p>
+                            </div>
+
+                            <div className="div-btns">
+                                <button className='btns-landing'>Cadastrar-se</button>
+                                <button className='btns-landing'>Entrar</button>
+                            </div>
+
+
+                        </div>
+
+                        <div className="container-contatos">
+
+                            <div className="divisao-um"></div>
+                            <div className="divisao-dois"></div>
+
+                            <button className="btn-contacts">Contact Us</button>
+
+                        </div>
+                    
+                    </div>
+
+                    <div className="container-livros-direita">
+
+                        <div className="div-espaco-vazio-landing">
+
+                        </div>
+
+                        <div className="div-Fila-livros-landing">
+
+                            <div className="div-box-titulo">
+                                <button className="btn-livro-home">
+                                    <div className="box"></div>
+                                    <p className='titulos-livros'>Título 1</p>
+                                </button>
+                            </div>
+
+                            <div className="div-box-titulo">
+                                <button className="btn-livro-home">
+                                    <div className="box"></div>
+                                    <p className='titulos-livros'>Título 2</p>
+                                </button>
+                            </div>
+
+                            <div className="div-box-titulo">
+                                <button className="btn-livro-home">
+                                    <div className="box"></div>
+                                    <p className='titulos-livros'>Título 3</p>
+                                </button>
+                            </div>
+
+                            <div className="div-box-titulo">
+                                <button className="btn-livro-home">
+                                    <div className="box"></div>
+                                    <p className='titulos-livros'>Título 4</p>
+                                </button>
+                            </div>
+    
+                        </div>
+
+                        <div className="div-Fila-livros-landing">
+
+                            <div className="div-box-titulo">
+                                <button className="btn-livro-home">
+                                    <div className="box"></div>
+                                    <p className='titulos-livros'>Título 5</p>
+                                </button>
+                            </div>
+
+                            <div className="div-box-titulo">
+                                <button className="btn-livro-home">
+                                    <div className="box"></div>
+                                    <p className='titulos-livros'>Título 6</p>
+                                </button>
+                            </div>
+
+                            <div className="div-box-titulo">
+                                <button className="btn-livro-home">
+                                    <div className="box"></div>
+                                    <p className='titulos-livros'>Título 7</p>
+                                </button>
+                            </div>
+
+                            <div className="div-box-titulo">
+                                <button className="btn-livro-home">
+                                    <div className="box"></div>
+                                    <p className='titulos-livros'>Título 8</p>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <div className="div-divisoes-direita">
+
+                            <div className="div-divisao-um"></div>
+                            <div className="div-divisao-dois"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div className="div-elementos">
+
+                        <div className="div-home-escrivaninha">
+                            
+                            {/* <button className="btns">
+                                <img className='icons' src="../public/icons/ant-design--home-outlined.svg" alt="icon-home" />
+                            </button>
+
+                            <button className="btns">
+                                <img className='icons' src="public/icons/escrita.png" alt="icon-escrivaninha" />
+                            </button> */}
+                            
+                        </div>
+
+                        {/* <button className="btns">
+                            <img className='icons' src="public/icons/barra-de-menu.png" alt="menu-hamburg" />
+                        </button> */}
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+      
+    </div>
+
+  )
+}
+
+export default LandingPage

@@ -8,13 +8,13 @@
 
 :root{
     
-
   --corfundo: #fcf6e8;
   --fundoelementos: #f4e2b4;
   --laranjaenferrujado: #c85b34;
   --fundoDivs: #cb9375;
   --navbar: #fdfaf3;
   --textos: #40454b;
+  
 }
 
 ::-webkit-scrollbar{
