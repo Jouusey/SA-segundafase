@@ -11,7 +11,7 @@ export default function TelaCadastro() {
     const [inputEmail, setInputEmail] = useState()
     const [inputSenha, setInputSenha] = useState()
     const navigate = useNavigate()
-    const {vetorObjetosUsuarios, setVetorObjetosUsuarios} = useContext(GlobalContext)
+    const {vetorObjetosUsuarios, setVetorObjetosUsuarios, usuarioLogado, setUsuarioLogado} = useContext(GlobalContext)
 
     function verificarUsuarioExistente() {
         for (let i = 0; i < vetorObjetosUsuarios.length; i++) {
@@ -37,6 +37,7 @@ export default function TelaCadastro() {
 
     function verificarCadastro() {
 
+
         if (verificarInputsRegistrados()) {
 
             alert(`Verifique se todos os campos estão preenchidos.`)
@@ -55,6 +56,7 @@ export default function TelaCadastro() {
             }
             setVetorObjetosUsuarios([...vetorObjetosUsuarios, novoUsuario])
 
+            setUsuarioLogado(true)
             alert('Usuário registrado com sucesso =)')
             navigate("/telalogin")
         }
@@ -64,6 +66,17 @@ export default function TelaCadastro() {
     useEffect(() => {
         console.log(vetorObjetosUsuarios)
     }, [vetorObjetosUsuarios])
+
+    useEffect(() => {
+        
+        if(usuarioLogado){
+
+            // alert('Um usuário já está logado nesse computador.')
+           
+
+        }
+
+    }, [])
 
     return (
 
