@@ -39,6 +39,19 @@ function TelaUsuarioConfigs() {
               <label className="lbl-infos" >Email</label>
               <label className="lbl-infos" >Senha</label>
 
+                <input type="text" className="input" placeholder="Edite seu nome completo" />
+                <input type="text" className="input" placeholder="Edite seu email" />
+                <input type="text" className="input" placeholder="Edite sua senha" />
+              </div>
+
+              {/* <div className="usuarioConfigs-bmpc-inputs">
+
+              </div> */}
+
+              <div className="usuarioConfigs-bmpc-buttons">
+
+                <button className="btn">Editar dados</button>
+                <button className="btn btn-delete">Apagar conta</button>
               </div>
 
             </div>
