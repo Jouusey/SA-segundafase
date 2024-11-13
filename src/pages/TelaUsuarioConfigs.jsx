@@ -4,6 +4,7 @@ import "./TelaUsuarioConfigs.css"
 import{ GlobalContext } from '../contexts/GlobalContext'
 import { useContext } from 'react'
 import IconUserCircle from "../components/IconUserCircle"
+import ResenhasConfigs from "../components/ResenhasConfigs"
 
 function TelaUsuarioConfigs() {
   return (
@@ -58,9 +59,19 @@ function TelaUsuarioConfigs() {
 
             <div className="usuarioConfigs-body-meio-papel-resenhas">
 
+              <div className="usuarioConfigs-bmpr-titulo">
+
+                <label className="lbl-titulos">Minha resenhas</label>
+                <label className="lbl-titulos">Minhas resenhas</label>
+
+              </div>
+
+              <div className="usuarioConfigs-bmpr-body">
+                
+              <ResenhasConfigs/>
+              </div>
+
               
-              <label className="lbl-titulos">Minha resenhas</label>
-              <label className="lbl-titulos">Minhas resenhas</label>
 
             </div>
 
