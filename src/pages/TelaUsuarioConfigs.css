@@ -176,6 +176,26 @@
 
                 }
 
+                .usuarioConfigs-bmpr-titulo{
+
+                    background-color: blue;
+                    height: 7%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    border-top-right-radius: 10px;
+                }
+
+                .usuarioConfigs-bmpr-body{
+
+                    background-color: var(--corfundo);
+                    width: 100%;
+                    height: 93.1%;
+                    border-bottom-right-radius: 10px;
+                    overflow: auto;
+                }
+
 
 
 

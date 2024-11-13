@@ -28,9 +28,9 @@
 ::-webkit-scrollbar-thumb{
 
   border-radius: 2px;
-
   
-  background-color: #c85b34;
+  
+  background-color: var(--laranjaenferrujado);
 }
 
 
