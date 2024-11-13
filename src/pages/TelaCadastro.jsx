@@ -58,7 +58,7 @@ export default function TelaCadastro() {
 
             setUsuarioLogado(true)
             alert('Usuário registrado com sucesso =)')
-            navigate("/telalogin")
+            navigate("/telaprincipal")
         }
     }
 

@@ -166,7 +166,21 @@
                     height: 105px;
                     width: 85px;
                     background-color: rgb(189, 142, 142);
+                    transition: 0.3s ease;
                     
+                }
+
+                .div-Fila-livros:hover .div-box-titulo{
+                    filter: blur(5px);
+                    opacity: 0.9;
+                    background-color: #dfdcd9;
+
+                }
+
+                .div-Fila-livros .div-box-titulo:hover{
+                    filter: none;
+                    opacity: 1;
+                    background-color: rgb(189, 142, 142);
                 }
 
                 .titulos-livros{
