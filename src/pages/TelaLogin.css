@@ -5,7 +5,7 @@
     display: flex;
     background-color: #fcf6e8;
     
-    background-image: url(./images/Captura de tela_20-10-2024_19117_localhost.jpeg);
+    background-image: url("./images/Captura de tela_20-10-2024_19117_localhost.jpeg");
 }
 
 .livro-login-container-esquerda {
@@ -137,3 +137,32 @@
     font-weight: bold;
     margin-left: 50%;
 }
+
+dialog{
+    border: solid 3px #000;
+    border-radius: 20px;
+    width: 40%;
+    position: fixed;
+    top: 57%;
+    left: 53.3%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+    .mensagem-login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 90px;
+        margin-right: 100px;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 400px;
+        background-color: #fff;
+        border-radius: 20px;
+        border: solid 2px darkcyan;
+        /* box-shadow: 0 0 8px 10px #c85b34; */
+    }

@@ -12,7 +12,8 @@ function TelaLogin() {
     const [inputSenha, setInputSenha] = useState()
     const {vetorObjetosUsuarios, usuarioLogado, setUsuarioLogado, posicaoUsuario, setPosicaoUsuario} = useContext(GlobalContext)
 
-
+    const [verificacaoLogin, setVerificacaoLogin] = useState(false)
+    const [mensagemLogin, setMensagemLogin] = useState('')
 
     function verificarInputsRegistrados() {
         
@@ -60,16 +61,24 @@ function TelaLogin() {
         switch (true){
 
             case verificarInputsRegistrados():
-                alert('Verifique se todos os campos estão preenchidos.')
+                // alert('Verifique se todos os campos estão preenchidos.')
+                setVerificacaoLogin(true)
+                setMensagemLogin("Verifique se todos os campos estão preenchidos")
                 break;
             case verificarCadastroInexistente():
-                alert('Nome de usuário inexistente.')
+                // alert('Nome de usuário inexistente.')
+                setVerificacaoLogin(true)
+                setMensagemLogin("Nome de usuário inexistente")
                 break;
             case verificarLoginIncorreto():
-                alert('Login Incorreto.')
+                // 'alert('Login Incorreto.')'
+                setVerificacaoLogin(true)
+                setMensagemLogin("Login Incorreto!")
                 break;
             default:
-                alert('Login feito com sucesso!')
+                // alert('Login feito com sucesso!')
+                setVerificacaoLogin(true)
+                setMensagemLogin("Login feito com sucesso!")
                 setUsuarioLogado(true)
 
         }
@@ -87,9 +96,12 @@ function TelaLogin() {
         // }
 
     }
+
+    function fecharCaixa(){
+
+        setVerificacaoLogin(false)
+    }
     
-
-
   return (<div className="container-tela-login">
     <div className="livro-login-container-esquerda">
         <div className="livro-login-primeiraLayer-esquerda">
@@ -124,6 +136,19 @@ function TelaLogin() {
             </div>
         </div>
     </div>
+
+    <dialog open={verificacaoLogin}> 
+
+        <div className='mensagem-login'>
+
+            {mensagemLogin}
+
+            <button className='botao-caixa' onClick={fecharCaixa}>fechar caixa</button>
+
+        </div>
+
+    </dialog>
+
 </div>
 
   )

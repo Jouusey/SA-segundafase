@@ -67,6 +67,7 @@
                 justify-content: start;
                 align-items: start;
                 flex-direction: column;
+                gap: 4px;
                 padding: 25px;
                 height: fit-content;
                 width: 930px;
