@@ -11,7 +11,7 @@ const [usuarioLogado, setUsuarioLogado] = useState(false)
 const [posicaoUsuario, setPosicaoUsuario] = useState()
 
     return(
-        <GlobalContext.Provider value={{usuarioLogado, bairro, setBairro, vetorObjetosUsuarios, setVetorObjetosUsuarios, usuarioLogado, setUsuarioLogado, posicaoUsuario, setPosicaoUsuario}}>
+        <GlobalContext.Provider value={{bairro, setBairro, vetorObjetosUsuarios, setVetorObjetosUsuarios, usuarioLogado, setUsuarioLogado, posicaoUsuario, setPosicaoUsuario}}>
             {children}
         </GlobalContext.Provider>
     )
