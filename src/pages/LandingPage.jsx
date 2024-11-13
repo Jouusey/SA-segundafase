@@ -6,10 +6,6 @@ function LandingPage() {
 
     const navigate = useNavigate()
 
-    // function IrParaCadastro() {
-        
-    // }
-
 
 
   return (
@@ -58,8 +54,8 @@ function LandingPage() {
                             </div>
 
                             <div className="div-btns">
-                                <button className='btns-landing'onClick={() => {navigate("/telacadastro")}}>Cadastrar-se</button>
-                                <button className='btns-landing' onClick={() => {navigate("/telalogin")}}>Entrar</button>
+                                <button className='btn-cadastro'onClick={() => {navigate("/telacadastro")}}>Cadastrar-se</button>
+                                <button className='btn-logar' onClick={() => {navigate("/telalogin")}}>Entrar</button>
                             </div>
 
 
@@ -159,19 +155,9 @@ function LandingPage() {
 
                         <div className="div-home-escrivaninha">
                             
-                            {/* <button className="btns">
-                                <img className='icons' src="../public/icons/ant-design--home-outlined.svg" alt="icon-home" />
-                            </button>
-
-                            <button className="btns">
-                                <img className='icons' src="public/icons/escrita.png" alt="icon-escrivaninha" />
-                            </button> */}
                             
                         </div>
 
-                        {/* <button className="btns">
-                            <img className='icons' src="public/icons/barra-de-menu.png" alt="menu-hamburg" />
-                        </button> */}
 
                     </div>
 

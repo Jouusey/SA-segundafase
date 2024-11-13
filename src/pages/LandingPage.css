@@ -178,7 +178,7 @@
                 
             }
 
-                .btns-landing{
+                .btn-logar{
                     height: 60px;
                     width: 200px;
                     margin: 10px;
@@ -193,7 +193,35 @@
                     font-size: 40px;
                     font-weight: 700;
                     
+                }
 
+                .btn-logar:hover{
+                    transition: 0.05s;
+                    background-color: var(--textos);
+                    color: var(--navbar);
+
+                }
+
+                .btn-cadastro{
+                    height: 60px;
+                    width: 200px;
+                    margin: 10px;
+                    border-radius: 5px;
+                    margin-top: 1%;
+                    border: solid #d7beb1;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    color: var(--navbar);
+                    background-color: var(--fundoDivs);
+                    font-family: "fonte-projeto";
+                    font-size: 40px;
+                    font-weight: 700;
+                }
+
+                .btn-cadastro:hover{
+                    transition: 0.05s;
+                    background-color: var(--textos);
+                    color: var(--navbar);
                 }
 
       .container-contatos{

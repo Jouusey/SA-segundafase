@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./TelaLogin.css"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import{ GlobalContext } from '../contexts/GlobalContext'
 import { useContext } from 'react'
 useState
@@ -10,6 +10,7 @@ function TelaLogin() {
     
     const [inputNomeUsuario, setInputNomeUsuario] = useState()
     const [inputSenha, setInputSenha] = useState()
+    const navigate = useNavigate()
     const {vetorObjetosUsuarios, usuarioLogado, setUsuarioLogado, posicaoUsuario, setPosicaoUsuario} = useContext(GlobalContext)
 
 
@@ -71,6 +72,8 @@ function TelaLogin() {
             default:
                 alert('Login feito com sucesso!')
                 setUsuarioLogado(true)
+                
+                navigate("/telaprincipal")
 
         }
 

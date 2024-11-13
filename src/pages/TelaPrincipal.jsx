@@ -3,19 +3,6 @@ import './TelaPrincipal.css'
 
 function TelaPrincipal() {
 
-    // const [irparacadastro, setIParaCadastro] = useState()
-
-
-//    function name(params) {
-//      function(){
-         
-//      }
-//    }
-
-
-    // useEffect(() => {
-    //     alert("oi")
-    // }, [])
 
 
   return (
