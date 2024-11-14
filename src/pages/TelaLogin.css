@@ -153,16 +153,35 @@ dialog{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-bottom: 90px;
-        margin-right: 100px;
+        margin-bottom: 100px;
+        margin-left: 90px;
         font-size: 25px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 300px;
-        width: 400px;
+        font-weight: bolder;
+        height: 250px;
+        width: 350px;
         background-color: #fff;
         border-radius: 20px;
-        border: solid 2px darkcyan;
-        /* box-shadow: 0 0 8px 10px #c85b34; */
+        border: solid 2px #c85b34;
+        box-shadow: 0 0 8px 6px #c85b34;
+        gap: 50px;
     }
+
+    .botao-caixa{
+        height: 30px;
+        width: 30px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 50px;
+        background-color: #d1c29b;
+        color: #c85b34;
+        cursor: pointer;
+        font-weight: bolder;
+    }
+        .botao-caixa:hover{
+            height: 40px;
+            width: 40px;
+            transition: 0.5ms;
+            background-color: #c85b34;
+            color: #fff;
+            font-weight: bolder;
+        }

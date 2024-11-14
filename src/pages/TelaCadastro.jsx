@@ -11,6 +11,10 @@ export default function TelaCadastro() {
     const [inputEmail, setInputEmail] = useState()
     const [inputSenha, setInputSenha] = useState()
     const navigate = useNavigate()
+
+    const [verificacaoCadastro, setVerificacaoCadastro] = useState(false)
+    const [mensagemCadastro, setMensagemCadastro] = useState('')
+
     const {vetorObjetosUsuarios, setVetorObjetosUsuarios, usuarioLogado, setUsuarioLogado} = useContext(GlobalContext)
 
     function verificarUsuarioExistente() {
@@ -40,11 +44,15 @@ export default function TelaCadastro() {
 
         if (verificarInputsRegistrados()) {
 
-            alert(`Verifique se todos os campos estão preenchidos.`)
+            // alert(`Verifique se todos os campos estão preenchidos.`)
+            setVerificacaoCadastro(true)
+            setMensagemCadastro("Verifique se todos os campos estão preenchidos.")
 
         } else if (verificarUsuarioExistente()) {
 
-            alert('Não foi possível criar sua conta, usuário já existente')
+            // alert('Não foi possível criar sua conta, usuário já existente')
+            setVerificacaoCadastro(true)
+            setMensagemCadastro("Não foi possível criar sua conta, usuário já existente.")
 
         } else {
 
@@ -60,6 +68,10 @@ export default function TelaCadastro() {
             alert('Usuário registrado com sucesso =)')
             navigate("/telalogin")
         }
+    }
+
+    function fecharCaixaCadastro(){
+        setVerificacaoCadastro(false)
     }
 
      //a cada mudança dentro do vetorObjetosUsuarios, acontecera um console.log
@@ -80,11 +92,7 @@ export default function TelaCadastro() {
 
     return (
 
-
         <div className="container-tela-cadastro">
-
-
-
 
             <div className="livro-cadastro-container-esquerda">
                 <div className="livro-cadastro-primeiraLayer-esquerda">
@@ -146,6 +154,19 @@ export default function TelaCadastro() {
 
                 </div>
             </div>
+
+            <dialog open={verificacaoCadastro}> 
+
+                <div className='mensagem-cadastro'>
+
+                    {mensagemCadastro}
+
+                    <button className='botao-caixa' onClick={fecharCaixaCadastro}>Ok!</button>
+
+                </div>
+
+            </dialog>
+
         </div>
     );
 }

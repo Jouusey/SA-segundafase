@@ -143,7 +143,7 @@ function TelaLogin() {
 
             {mensagemLogin}
 
-            <button className='botao-caixa' onClick={fecharCaixa}>fechar caixa</button>
+            <button className='botao-caixa' onClick={fecharCaixa}>Ok!</button>
 
         </div>
 

@@ -6,7 +6,7 @@
     display: flex;
     background-color: #fcf6e8;
 
-    background-image: url(./images/Captura de tela_20-10-2024_19117_localhost.jpeg);
+    background-image: url("./images/Captura de tela_20-10-2024_19117_localhost.jpeg");
 }
 
 .livro-cadastro-container-esquerda{
@@ -193,3 +193,52 @@
     font-weight: bold;
     margin-left: 50%;
 }
+
+dialog{
+    border: solid 3px #000;
+    border-radius: 20px;
+    width: 40%;
+    position: fixed;
+    top: 57%;
+    left: 53.3%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+}
+    .mensagem-cadastro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 100px;
+        margin-left: 90px;
+        font-size: 18px;
+        font-weight: bold;
+        height: 250px;
+        width: 430px;
+        background-color: #fff;
+        border-radius: 20px;
+        border: solid 2px #c85b34;
+        box-shadow: 0 0 8px 6px #c85b34;
+        gap: 50px;
+    }
+
+    .botao-caixa{
+        height: 30px;
+        width: 30px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 50px;
+        background-color: #d1c29b;
+        color: #c85b34;
+        cursor: pointer;
+        font-weight: bolder;
+    }
+        .botao-caixa:hover{
+            height: 40px;
+            width: 40px;
+            transition: 0.5ms;
+            background-color: #c85b34;
+            color: #fff;
+            font-weight: bolder;
+        }
+
