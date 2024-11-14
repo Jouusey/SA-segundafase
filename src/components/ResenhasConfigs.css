@@ -34,6 +34,23 @@
 
         }
 
+            .resenhas-usuario-livro{
+
+                background-color: blueviolet;
+                height: 85%;
+                width: 100%;
+
+            }
+
+            .resenhas-usuario-edicaoRemocao{
+
+                background-color: indianred;
+                height: 15%;
+                width: 100%;
+                border-radius: 10px;
+
+            }
+
         .resenhas-usuario-infos{
 
             background-color: darkgreen;

@@ -14,6 +14,14 @@ function ResenhasConfigs() {
 
             <div className="resenhas-usuario-capa">
 
+                <div className="resenhas-usuario-livro">
+
+                </div>
+
+                <div className="resenhas-usuario-edicaoRemocao">
+                    
+                </div>
+
             </div>
 
             <div className="resenhas-usuario-infos">

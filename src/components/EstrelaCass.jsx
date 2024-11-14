@@ -13,11 +13,11 @@ function EstrelaCass() {
   return (
     <div>
         
-        <button  className='btn-nota'>{notaUm}</button>
+        <button className='btn-nota'>{notaUm}</button>
         <button className='btn-nota'>{notaDois}</button>
-        <button  className='btn-nota'>{notaTres}</button>
+        <button className='btn-nota'>{notaTres}</button>
         <button className='btn-nota'>{notaQuatro}</button>
-        <button  className='btn-nota'>{notaCinco}</button>
+        <button className='btn-nota'>{notaCinco}</button>
       
     </div>
   )

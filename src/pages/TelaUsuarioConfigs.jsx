@@ -68,7 +68,7 @@ function TelaUsuarioConfigs() {
 
               <div className="usuarioConfigs-bmpr-body">
                 
-              <ResenhasConfigs/>
+              <ResenhasConfigs/><ResenhasConfigs/><ResenhasConfigs/><ResenhasConfigs/>
               </div>
 
               
