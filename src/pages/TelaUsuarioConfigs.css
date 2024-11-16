@@ -178,7 +178,7 @@
 
                 .usuarioConfigs-bmpr-titulo{
 
-                    background-color: blue;
+                    background-color: var(--corfundo);
                     height: 7%;
                     width: 100%;
                     display: flex;
@@ -214,5 +214,3 @@
         background-color: var(--navbar)
 
     }
-
-
