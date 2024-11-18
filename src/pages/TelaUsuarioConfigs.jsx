@@ -62,7 +62,7 @@ function TelaUsuarioConfigs() {
               <div className="usuarioConfigs-bmpr-titulo">
 
                 <label className="lbl-titulos">Minha resenhas</label>
-                <label className="lbl-titulos">Minhas resenhas</label>
+                {/* <label className="lbl-titulos">Minhas resenhas</label> */}
 
               </div>
 
