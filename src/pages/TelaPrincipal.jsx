@@ -36,28 +36,35 @@ function TelaPrincipal() {
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-                                    <div className="box"></div>
+
+                                  <Link to="/telalivro">
+                                    <div className="box"></div></Link>
                                     <p className='titulos-livros'>Título 1</p>
                                 </button>
                             </div>
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-                                    <div className="box"></div>
+
+                              <Link to="/telalivro">
+                                    <div className="box"></div></Link>
                                     <p className='titulos-livros'>Título 2</p>
                                 </button>
                             </div>
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-                                    <div className="box"></div>
+
+                                  <Link to="/telalivro">
+                                    <div className="box"></div></Link>
                                     <p className='titulos-livros'>Título 3</p>
                                 </button>
                             </div>
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-                                    <div className="box"></div>
+                                <Link to="/telalivro">
+                                    <div className="box"></div></Link>
                                     <p className='titulos-livros'>Título 4</p>
                                 </button>
                             </div>
@@ -68,28 +75,35 @@ function TelaPrincipal() {
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-                                    <div className="box"></div>
+
+                                  <Link to="/telalivro">
+                                    <div className="box"></div></Link>
                                     <p className='titulos-livros'>Título 5</p>
                                 </button>
                             </div>
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-                                    <div className="box"></div>
+
+                                  <Link to="/telalivro">
+                                    <div className="box"></div></Link>
                                     <p className='titulos-livros'>Título 6</p>
                                 </button>
                             </div>
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-                                    <div className="box"></div>
+                                <Link to="/telalivro">
+                                    <div className="box"></div></Link>
                                     <p className='titulos-livros'>Título 7</p>
                                 </button>
                             </div>
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-                                    <div className="box"></div>
+
+                                  <Link to="/telalivro">
+                                    <div className="box"></div></Link>
                                     <p className='titulos-livros'>Título 8</p>
                                 </button>
                             </div>
@@ -117,8 +131,9 @@ function TelaPrincipal() {
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-                                    <div className="box"></div>
-                                    <p className='titulos-livros'>Título 1</p>
+                                <Link to="/telalivro">
+                                    <div className="box"></div></Link>
+                                    <p className='titulos-livros'>Título 9</p>
                                 </button>
                             </div>
 
@@ -127,7 +142,7 @@ function TelaPrincipal() {
 
                                 <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 2</p>
+                                    <p className='titulos-livros'>Título 10</p>
 
                                 </button>
                             </div>
@@ -136,14 +151,16 @@ function TelaPrincipal() {
                                 <button className="btn-livro-home">
                                 <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 3</p>
+                                    <p className='titulos-livros'>Título 11</p>
                                 </button>
                             </div>
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-                                    <div className="box"></div>
-                                    <p className='titulos-livros'>Título 4</p>
+
+                                  <Link to="/telalivro">
+                                    <div className="box"></div></Link>
+                                    <p className='titulos-livros'>Título 12</p>
                                 </button>
                             </div>
     
@@ -153,29 +170,36 @@ function TelaPrincipal() {
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-                                    <div className="box"></div>
-                                    <p className='titulos-livros'>Título 5</p>
+                                <Link to="/telalivro">
+                                    <div className="box"></div></Link>
+                                    <p className='titulos-livros'>Título 13</p>
                                 </button>
                             </div>
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-                                    <div className="box"></div>
-                                    <p className='titulos-livros'>Título 6</p>
+
+                                  <Link to="/telalivro">
+                                    <div className="box"></div></Link>
+                                    <p className='titulos-livros'>Título 14</p>
                                 </button>
                             </div>
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-                                    <div className="box"></div>
-                                    <p className='titulos-livros'>Título 7</p>
+
+                                  <Link to="/telalivro">
+                                    <div className="box"></div></Link>
+                                    <p className='titulos-livros'>Título 15</p>
                                 </button>
                             </div>
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-                                    <div className="box"></div>
-                                    <p className='titulos-livros'>Título 8</p>
+
+                                  <Link to="/telalivro">
+                                    <div className="box"></div></Link>
+                                    <p className='titulos-livros'>Título 16</p>
                                 </button>
                             </div>
 
@@ -200,23 +224,27 @@ function TelaPrincipal() {
 
                     <div className="div-home-escrivaninha">
                             
-                            
+                            <Link to="/telaprincipal">
                             <button className="btns">
-                                 <Link to="/telaprincipal"><img src="../public/icons/ant-design--home-outlined.svg" alt="" className="icone-botao"/></Link>
+                                <img src="../public/icons/ant-design--home-outlined.svg" alt="" className="icone-botao"/>
                             </button>
+                            </Link>
 
 
+                            <Link to="/telaescrivaninha"> 
                             <button className="btns"> 
-                            <Link to="/telaescrivaninha"><img src="public/icons/escrita.png" alt="" className="icone-botao"/></Link> 
+                            <img src="public/icons/escrita.png" alt="" className="icone-botao"/> 
                             </button>
+                            </Link>
 
                           
                             
                         </div>
-
+                        <Link to="/telausuarioconfigs"> 
                         <button className="btns">  
-                            <Link to="/telausuarioconfigs"> <img src="./public/images/setting.svg" alt="" className="icone-botao"/></Link>
-                             </button>
+                        <img src="./public/images/setting.svg" alt="" className="icone-botao"/>
+                        </button>
+                        </Link>
 
                     </div>
 
