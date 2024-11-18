@@ -6,7 +6,7 @@ function TelaLivro() {
   return (
 
     <div className="container-mae">
-      <Navbar/>
+      
       <LivroParteUm />
       
     </div>

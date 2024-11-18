@@ -214,7 +214,7 @@ function TelaPrincipal() {
                             <div className="div-divisao-dois"></div>
 
                             <div className="div-label-next-page">
-                             <Navbar/>
+                             
                                 
                                 <button className='btn-next-page' onClick={() => {console.log(posicaoUsuario)}}>Next Page</button>
 

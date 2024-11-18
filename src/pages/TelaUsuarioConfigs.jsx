@@ -25,7 +25,7 @@ function TelaUsuarioConfigs() {
 
       <div className="usuarioConfigs-body">
         
-        <Navbar/>
+        
         
 
         <div className="usuarioConfigs-body-cima">

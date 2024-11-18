@@ -30,7 +30,7 @@ function TelaEscrivaninha() {
       <div className="escrivaninha-documento">
                   
            <div className="documento-folha">
-    <Navbar/>
+    
 
 
             <div className="folha-topo">

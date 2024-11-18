@@ -144,7 +144,7 @@ function LandingPage() {
                         </div>
 
                         <div className="div-divisoes-direita">
-                            <Navbar/>
+                            
 
                             <div className="div-divisao-um"></div>
                             <div className="div-divisao-dois"></div>
