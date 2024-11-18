@@ -5,51 +5,73 @@ function EstrelasBtn() {
 
 
 
-    const [notaUm, setNotaUm] = useState(<img className='btn-desfecho-img' src="public\images\streamline--star-2.svg" alt="" />)
-    const [notaDois, setNotaDois] = useState(<img className='btn-desfecho-img' src="public\images\streamline--star-2.svg" alt="" />)
+  const [notaUm, setNotaUm] = useState(<img className='img-btn-desfecho-img' src="public\images\streamline--star-2.svg" alt="" />)
+  const [notaDois, setNotaDois] = useState(<img className='img-btn-desfecho-img' src="public\images\streamline--star-2.svg" alt="" />)
+  const [notaTres, setNotaTres] = useState(<img className='img-btn-desfecho-img' src="public\images\streamline--star-2.svg" alt="" />)
+  const [notaQuatro, setNotaQuatro] = useState(<img className='img-btn-desfecho-img' src="public\images\streamline--star-2.svg" alt="" />)
+  const [notaCinco, setNotaCinco] = useState(<img className='img-btn-desfecho-img' src="public\images\streamline--star-2.svg" alt="" />)
 
+  function livroNotaUm(){
 
-    function mudarNotaUm() {
+    setNotaUm(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2-solid.svg" />)
+    setNotaDois(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2.svg" />)
+    setNotaTres(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2.svg" />)
+    setNotaQuatro(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2.svg" />)
+    setNotaCinco(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2.svg" />)
 
-        setNotaUm(<img className='btn-desfecho-img' src="public\images\streamline--star-2-solid.svg" alt="" />)
-        setNotaDois(<img className='btn-desfecho-img' src="public\images\streamline--star-2.svg" alt="" />)
-        
-    }
+  }
+  function livroNotaDois(){
 
-    function mudarNotaDois() {
+    setNotaUm(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2-solid.svg" />)
+    setNotaDois(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2-solid.svg" />)
+    setNotaTres(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2.svg" />)
+    setNotaQuatro(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2.svg" />)
+    setNotaCinco(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2.svg" />)
 
-        setNotaUm(<img className='btn-desfecho-img' src="public\images\streamline--star-2-solid.svg" alt="" />)
-        setNotaDois(<img className='btn-desfecho-img' src="public\images\streamline--star-2-solid.svg" alt="" />)
-        
-        
-    }
-/* 
-    function mudarNotaTres() {
-        
-    }
+  }
+  function livroNotaTres(){
 
-    function mudarNotaQuatro() {
-        
-    }
-    function mudarNotaCinco() {
-        
-    } */
+    setNotaUm(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2-solid.svg" />)
+    setNotaDois(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2-solid.svg" />)
+    setNotaTres(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2-solid.svg" />)
+    setNotaQuatro(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2.svg" />)
+    setNotaCinco(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2.svg" />)
 
+  }
+  function livroNotaQuatro(){
+
+    setNotaUm(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2-solid.svg" />)
+    setNotaDois(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2-solid.svg" />)
+    setNotaTres(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2-solid.svg" />)
+    setNotaQuatro(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2-solid.svg" />)
+    setNotaCinco(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2.svg" />)
+
+  }
+  function livroNotaCinco(){
+
+    setNotaUm(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2-solid.svg" />)
+    setNotaDois(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2-solid.svg" />)
+    setNotaTres(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2-solid.svg" />)
+    setNotaQuatro(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2-solid.svg" />)
+    setNotaCinco(<img className='img-btn-desfecho-img' src= "public\images\streamline--star-2-solid.svg" />)
+
+  }
 
 
 
   return (
-    <div>
-
-
-
-        <button onClick={mudarNotaUm} className='generoIsbn-desfecho-btn'>{notaUm}</button>
-        <button onClick={mudarNotaDois} className='generoIsbn-desfecho-btn'>{notaDois}</button>
-
-
-      {/*   <button onClick={mudarNotaTres} className='generoIsbn-desfecho-btn'></button>
-        <button onClick={mudarNotaQuatro} className='generoIsbn-desfecho-btn'></button>
-        <button onClick={mudarNotaCinco} className='generoIsbn-desfecho-btn'></button> */}
+    <div className='btnEstrelas'>
+        
+        <button onClick={livroNotaUm} className='
+.generoIsbn-desfecho-btn'>{notaUm}</button>
+        <button onClick={livroNotaDois} className='
+.generoIsbn-desfecho-btn'>{notaDois}</button>
+        <button onClick={livroNotaTres} className='
+.generoIsbn-desfecho-btn'>{notaTres}</button>
+        <button onClick={livroNotaQuatro} className='
+.generoIsbn-desfecho-btn'>{notaQuatro}</button>
+        <button onClick={livroNotaCinco} className='
+.generoIsbn-desfecho-btn'>{notaCinco}</button>
       
     </div>
   )
