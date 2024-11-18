@@ -46,9 +46,10 @@
             .resenhas-usuario-edicaoRemocao{
 
                 background-color: indianred;
-                height: 15%;
-                width: 100%;
-                border-radius: 10px;
+                height: 12%;
+                width: 90%;
+                border-radius: 5px;
+                margin-left: 4%;
 
             }
 

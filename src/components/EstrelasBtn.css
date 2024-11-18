@@ -3,12 +3,12 @@
     display: flex;
     height: 100%;
     flex-direction: row;
+    width: 100%;
 }
 
 
 .generoIsbn-desfecho-btn{
 
-    margin-left: 2%;
     margin-top: 5%;
     height: 48%;
     width: 100%;
@@ -27,6 +27,7 @@
 
 .btn-desfecho-img{
 
+    margin-top: 15%;
     height: 100%;
-    width: 100%;
+    width: 80%;
 }

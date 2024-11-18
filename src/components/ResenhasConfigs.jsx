@@ -3,8 +3,8 @@ import './ResenhasConfigs.css'
 import{ GlobalContext } from '../contexts/GlobalContext'
 import { useContext } from 'react'
 import EstrelasBtn from './EstrelasBtn'
-import EstrelaCass from './EstrelaCass'/* 
-import LivroAleatorio from './LivroAleatorio' */
+import EstrelaCass from './EstrelaCass' 
+import LivroAleatorio from './LivroAleatorio'  
 
 function ResenhasConfigs() {
   return (
