@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./TelaEscrivaninha.css"
 import EstrelasBtn from '../components/EstrelasBtn'
-import Navbar from '../components/Navbar'
+import NavbarVertical from '../components/NavbarVertical'
 
 function TelaEscrivaninha() {
 
@@ -249,12 +249,7 @@ function TelaEscrivaninha() {
 
         <div className="escrivaninha-navbarVertical">
 
-
-            <button className='navbarVertical-btn' > <img className='navbarVertical-img' src="public\images\mynaui--home.svg" alt="" /> </button>
-            
-
-            <button className='navbarVertical-btn'> <img className='navbarVertical-img' src="public\images\healthicons--ui-user-profile.svg" alt="" /></button>
-
+          <NavbarVertical />
 
         </div>
 

@@ -5,7 +5,7 @@ import{ GlobalContext } from '../contexts/GlobalContext'
 import { useContext } from 'react'
 import IconUserCircle from "../components/IconUserCircle"
 import ResenhasConfigs from "../components/ResenhasConfigs"
-import Navbar from "../components/Navbar"
+import NavbarVertical from "../components/NavbarVertical"
 
 function TelaUsuarioConfigs() {
 
@@ -84,7 +84,7 @@ function TelaUsuarioConfigs() {
               <ResenhasConfigs/><ResenhasConfigs/><ResenhasConfigs/><ResenhasConfigs/>
               </div>
 
-              
+          
 
             </div>
 
@@ -99,9 +99,8 @@ function TelaUsuarioConfigs() {
       </div>
 
       <div className="usuarioConfigs-navbar-container">
-
-    
-
+     
+      <NavbarVertical />
       </div>
       
     </div>

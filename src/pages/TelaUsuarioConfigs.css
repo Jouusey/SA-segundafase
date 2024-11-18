@@ -83,7 +83,7 @@
                     .lbl-titulos{
 
                         font-family: "fonte-projeto";
-                        font-size: 30px;
+                        font-size: 45px;
                         color: var(--textos);
                     }
 
@@ -118,12 +118,14 @@
                     .input{
 
                         height: 40px;
-                        width: 170px;
+                        width: 200px;
                         padding: 3px;
                         border-radius: 10px;
                         border-width: 2px;
                         border-color: var(--textos);
                         border-style: solid;
+                        font-family: "fonte-projeto";
+                        font-size: 26px;
 
                     }
 
@@ -154,6 +156,8 @@
                         background-color: var(--fundoDivs);
                         margin: 10px;
                         border-radius: 10px;
+                    
+                    margin-bottom: 40px;
 
                     }
 

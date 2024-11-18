@@ -6,6 +6,8 @@
     flex-direction: column;
     background-color: whitesmoke;
     height: 100vh;
+    font-family: "fonte-projeto";
+    font-size: 24px;
 }
 
 html{

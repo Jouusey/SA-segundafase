@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
     background-color: #c89b7a;
     min-height: 35vh;
     width: 180vh;
@@ -38,8 +39,8 @@
                 display: flex;
                 justify-content: start;
                 align-items: center;
-                gap: 15px;
-                padding: 25px;
+                gap: 18px;
+                padding: 30px;
                 height: 50px;
                 width: 100%;
                 background-color: #fff;
@@ -48,21 +49,22 @@
             }
                 .foto-perfil{
                     margin-bottom: 30px;
-                    height: 60px;
+                    height: 70px;
                     width: 80px;
-                    background-color: #c89b7a;
+                    background-color: #ffffff;
                     border-radius: 50%;
                     margin-bottom: 40px;
                     background-repeat: no-repeat;
                     background-size: cover;
                 }
                     .imagem-perfil{
-                        height: 60px;
+                        height: 70px;
                         width: 80px;
                         border-radius: 50%;
                     }
 
             .parte-resenha{
+                
                 display: flex;
                 justify-content: start;
                 align-items: start;
@@ -72,19 +74,20 @@
                 width: 930px;
                 block-size: fit-content;
                 background-color: #fff;
+                height: 200px;
             }
                 .texto-resenha{
-                    font-size: 18px;
-                    font-family: monospace;
-                    font-style: oblique;
+                    font-size: 25px;
+                    font-family: "fonte-projeto";
                 }
 
             .parte-curtida{
                 display: flex;
                 justify-content: end;
                 align-items: center;
-                gap: 15px;
-                padding-right: 15px;
+                gap: 7px;
+                padding-right: 18px;
+                padding-bottom: 18px;
                 height: 30px;
                 width: 100%;
                 background-color: #fff;
@@ -97,12 +100,8 @@
                     cursor: pointer;
                 }
                 .icone-curtida{
-                    height: 20px;
-                    width: 20px;
+                    width: 30px;
                 }
                 .label-curtidas{
-                    font-size: 15px;
-                    font-weight: bold;
-                    font-family: monospace;
-                    font-style: italic;
+                    font-size: 25px;
                 }
