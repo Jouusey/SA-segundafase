@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "./TelaEscrivaninha.css"
 import EstrelasBtn from '../components/EstrelasBtn'
+import NavbarVertical from '../components/NavbarVertical'
 
 function TelaEscrivaninha() {
 
@@ -235,6 +236,7 @@ function TelaEscrivaninha() {
 
            
               <button className='btn-escrivaninha'>ENVIAR -> </button>
+              
             </div>
 
           </div>
@@ -247,12 +249,7 @@ function TelaEscrivaninha() {
 
         <div className="escrivaninha-navbarVertical">
 
-
-            <button className='navbarVertical-btn' > <img className='navbarVertical-img' src="public\images\mynaui--home.svg" alt="" /> </button>
-            
-
-            <button className='navbarVertical-btn'> <img className='navbarVertical-img' src="public\images\healthicons--ui-user-profile.svg" alt="" /></button>
-
+          <NavbarVertical />
 
         </div>
 

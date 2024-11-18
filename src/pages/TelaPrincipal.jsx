@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './TelaPrincipal.css'
+import { Link } from "react-router-dom"
 
 function TelaPrincipal() {
 
@@ -123,14 +124,18 @@ function TelaPrincipal() {
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-                                    <div className="box"></div>
+
+                                <Link to="/telalivro">
+                                    <div className="box"></div></Link>
                                     <p className='titulos-livros'>Título 2</p>
+
                                 </button>
                             </div>
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-                                    <div className="box"></div>
+                                <Link to="/telalivro">
+                                    <div className="box"></div></Link>
                                     <p className='titulos-livros'>Título 3</p>
                                 </button>
                             </div>
@@ -195,19 +200,23 @@ function TelaPrincipal() {
 
                     <div className="div-home-escrivaninha">
                             
+                            
                             <button className="btns">
-                                <img className='icons' src="../public/icons/ant-design--home-outlined.svg" alt="icon-home" />
+                                 <Link to="/telaprincipal"><img src="../public/icons/ant-design--home-outlined.svg" alt="" className="icone-botao"/></Link>
                             </button>
 
-                            <button className="btns">
-                                <img className='icons' src="public/icons/escrita.png" alt="icon-escrivaninha" />
+
+                            <button className="btns"> 
+                            <Link to="/telaescrivaninha"><img src="public/icons/escrita.png" alt="" className="icone-botao"/></Link> 
                             </button>
+
+                          
                             
                         </div>
 
-                        <button className="btns">
-                            <img className='icons' src="public/icons/barra-de-menu.png" alt="menu-hamburg" />
-                        </button>
+                        <button className="btns">  
+                            <Link to="/telausuarioconfigs"> <img src="./public/images/setting.svg" alt="" className="icone-botao"/></Link>
+                             </button>
 
                     </div>
 
