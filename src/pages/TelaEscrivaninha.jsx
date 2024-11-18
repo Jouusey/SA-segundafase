@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "./TelaEscrivaninha.css"
 import EstrelasBtn from '../components/EstrelasBtn'
+import Navbar from '../components/Navbar'
 
 function TelaEscrivaninha() {
 
@@ -29,6 +30,7 @@ function TelaEscrivaninha() {
       <div className="escrivaninha-documento">
                   
            <div className="documento-folha">
+    <Navbar/>
 
 
             <div className="folha-topo">
@@ -234,7 +236,7 @@ function TelaEscrivaninha() {
               </div>
 
            
-              <button className='btn-escrivaninha'>ENVIAR -> </button>
+              <button className='btn-escrivaninha'>ENVIAR → </button>
             </div>
 
           </div>

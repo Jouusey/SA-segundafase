@@ -11,15 +11,23 @@ export default function TelaCadastro() {
     const [inputEmail, setInputEmail] = useState()
     const [inputSenha, setInputSenha] = useState()
     const navigate = useNavigate()
-    const {vetorObjetosUsuarios, setVetorObjetosUsuarios, usuarioLogado, setUsuarioLogado} = useContext(GlobalContext)
+    const {vetorObjetosUsuarios, setVetorObjetosUsuarios, usuarioLogado, setUsuarioLogado, posicaoUsuario, setPosicaoUsuario} = useContext(GlobalContext)
 
     function verificarUsuarioExistente() {
+        setPosicaoUsuario(0)
         for (let i = 0; i < vetorObjetosUsuarios.length; i++) {
-
+            
             if (inputEmail == vetorObjetosUsuarios[i].email || inputNomeUsuario == vetorObjetosUsuarios[i].usuario) {
                 return true
+            }else{
+
+                setPosicaoUsuario(i+1)
+
             }
         }
+        
+
+
         return false
     }
 
@@ -57,6 +65,7 @@ export default function TelaCadastro() {
             setVetorObjetosUsuarios([...vetorObjetosUsuarios, novoUsuario])
 
             setUsuarioLogado(true)
+            lol()
             alert('Usuário registrado com sucesso =)')
             navigate("/telaprincipal")
         }
@@ -78,6 +87,9 @@ export default function TelaCadastro() {
 
     }, [])
 
+    function lol(){
+        console.log(posicaoUsuario)
+    }
     return (
 
 

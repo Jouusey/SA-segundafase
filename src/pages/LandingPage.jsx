@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, useNavigate } from "react-router-dom"
 import './LandingPage.css'
+import Navbar from '../components/Navbar'
 
 function LandingPage() {
 
@@ -143,6 +144,7 @@ function LandingPage() {
                         </div>
 
                         <div className="div-divisoes-direita">
+                            <Navbar/>
 
                             <div className="div-divisao-um"></div>
                             <div className="div-divisao-dois"></div>

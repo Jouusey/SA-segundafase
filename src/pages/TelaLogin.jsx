@@ -26,23 +26,26 @@ function TelaLogin() {
         return false
     }
 
+    
     function verificarCadastroInexistente(){
-
+        
         // console.log('Antes de iniciar o for')
         for (let i = 0; i < vetorObjetosUsuarios.length; i++){
-
+            
             // console.log('índice número '+ i)
             if(vetorObjetosUsuarios[i].usuario == inputNomeUsuario){
-
+                
+                //!resolver a posicao do usuario no login
                 setPosicaoUsuario(i)
                 // console.log('oi eu passei aqui')
                 return false
             }
-
+            
         }
         return true
         
     }
+    
 
     function verificarLoginIncorreto(){
 

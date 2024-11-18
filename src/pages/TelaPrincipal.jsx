@@ -1,8 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './TelaPrincipal.css'
+import Navbar from '../components/Navbar'
+import { GlobalContext } from '../contexts/GlobalContext'
+
 
 function TelaPrincipal() {
-
+    
+    const {posicaoUsuario}=useContext(GlobalContext)
 
 
   return (
@@ -182,8 +186,9 @@ function TelaPrincipal() {
                             <div className="div-divisao-dois"></div>
 
                             <div className="div-label-next-page">
+                             <Navbar/>
                                 
-                                <button className='btn-next-page'>Next Page</button>
+                                <button className='btn-next-page' onClick={() => {console.log(posicaoUsuario)}}>Next Page</button>
 
                             </div>
 
