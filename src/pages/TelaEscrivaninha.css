@@ -495,11 +495,11 @@
 
     height: 7%;
     width: 20%;
-    font-weight: bold;
-    font-size: 30px;
+    font-size: 33px;
     font-family: "fonte-projeto";
     font-weight: 500;
     color: var(--navbar);
+    margin-bottom: 3.5%;
 }
 
 .generoIsbn-desfecho-btn{
