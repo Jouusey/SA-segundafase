@@ -1,14 +1,32 @@
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import "./TelaEscrivaninha.css"
 import EstrelasBtn from '../components/EstrelasBtn'
 import NavbarVertical from '../components/NavbarVertical'
+import { GlobalContext } from '../contexts/GlobalContext'
+import { useNavigate } from 'react-router-dom'
+
+
+
 
 function TelaEscrivaninha() {
 
 
+  useEffect (() => {
+
+    if(usuarioLogado == false){
+
+      alert('Não há usuário logado, por favor, cadastre-se ou entre na sua conta.')
+      navigate('/landingpage')
+    }
+
+  }, [])
+
+
+  const navigate = useNavigate()
+  const {usuarioLogado} = useContext(GlobalContext)
 
   const[tituloIsbn, setTitutloIsbn] = useState('Titulo')
- 
+
   const[capaIsbn, setCapaIsbn] = useState('')
 
   const[sinopseIsbn, setSinopseIsbn] = useState('"The Adventures of Sherlock Holmes" by Arthur Conan Doyle is a collection of detective stories written during the late 19th century. The book introduces the legendary detective Sherlock Holmes and his loyal companion, Dr. John Watson, as they embark on various intriguing cases, filled with mystery and clever deductions.')

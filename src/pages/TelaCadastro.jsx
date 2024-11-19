@@ -76,16 +76,15 @@ export default function TelaCadastro() {
         console.log(vetorObjetosUsuarios)
     }, [vetorObjetosUsuarios])
 
-    useEffect(() => {
-        
+    useEffect (() => {
+
         if(usuarioLogado){
-
-            // alert('Um usuário já está logado nesse computador.')
-           
-
+    
+          alert('Há um usuário já logado, por favor, deslogue nas configurações de usuário primeiro')
+          navigate('/telaprincipal')
         }
-
-    }, [])
+    
+      }, [])
 
     function lol(){
         console.log(posicaoUsuario)
