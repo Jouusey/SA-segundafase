@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./TelaLogin.css"
 import { Link, useNavigate } from "react-router-dom"
 import{ GlobalContext } from '../contexts/GlobalContext'
@@ -6,13 +6,24 @@ import { useContext } from 'react'
 useState
 
 function TelaLogin() {
-    //! IMPORTANTE -- FAZER O GLOBALCONTEXT PARA OS VETORES
+    let variavel
     
     const [inputNomeUsuario, setInputNomeUsuario] = useState()
     const [inputSenha, setInputSenha] = useState()
     const navigate = useNavigate()
     const {vetorObjetosUsuarios, usuarioLogado, setUsuarioLogado, posicaoUsuario, setPosicaoUsuario} = useContext(GlobalContext)
 
+
+    useEffect (() => {
+
+        if(usuarioLogado){
+    
+          alert('Há um usuário já logado, por favor, deslogue nas configurações de usuário primeiro')
+          navigate('/telaprincipal')
+        }
+    
+      }, [])
+      
 
 
     function verificarInputsRegistrados() {
@@ -36,6 +47,7 @@ function TelaLogin() {
             if(vetorObjetosUsuarios[i].usuario == inputNomeUsuario){
                 
                 //!resolver a posicao do usuario no login
+                variavel = i
                 setPosicaoUsuario(i)
                 // console.log('oi eu passei aqui')
                 return false
@@ -49,7 +61,7 @@ function TelaLogin() {
 
     function verificarLoginIncorreto(){
 
-        if (inputSenha == vetorObjetosUsuarios[posicaoUsuario].senha){
+        if (inputSenha == vetorObjetosUsuarios[variavel].senha){
 
             return false
         }else{

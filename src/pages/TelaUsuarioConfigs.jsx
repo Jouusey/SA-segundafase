@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import "./TelaUsuarioConfigs.css"
 import{ GlobalContext } from '../contexts/GlobalContext'
 import { useContext } from 'react'
@@ -10,6 +10,25 @@ import NavbarVertical from "../components/NavbarVertical"
 function TelaUsuarioConfigs() {
 
   const {posicaoUsuario, setPosicaoUsuario, vetorObjetosUsuarios, setVetorObjetosUsuarios, usuarioLogado, setUsuarioLogado}=useContext(GlobalContext)
+  const navigate = useNavigate()
+
+  useEffect (() => {
+
+    if(usuarioLogado == false){
+
+      alert('Não há usuário logado, por favor, cadastre-se ou entre na sua conta.')
+      navigate('/landingpage')
+    }
+
+  }, [])
+
+  function deslogarUsuario(){
+
+    alert('Até mais!')
+    setUsuarioLogado(false)
+    navigate('/landingpage')
+
+  }
 
 
 
@@ -64,7 +83,7 @@ function TelaUsuarioConfigs() {
               <div className="usuarioConfigs-bmpc-buttons">
 
                 <button className="btn">Editar dados</button>
-                <button className="btn" >Deslogar</button>
+                <button className="btn" onClick={deslogarUsuario} >Deslogar</button>
                 <button className="btn btn-delete">Apagar conta</button>
               </div>
 
