@@ -83,29 +83,37 @@ function LandingPage() {
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-                                    <div className="box"></div>
-                                    <p className='titulos-livros'>Título 1</p>
+                                   
+                                  <Link to="/telalivro">
+                                    <div className="box"></div></Link>
+                                    <p className='titulos-livros'>Título 16</p>
                                 </button>
                             </div>
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-                                    <div className="box"></div>
-                                    <p className='titulos-livros'>Título 2</p>
+                                   
+                                  <Link to="/telalivro">
+                                    <div className="box"></div></Link>
+                                    <p className='titulos-livros'>Título 16</p>
                                 </button>
                             </div>
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-                                    <div className="box"></div>
-                                    <p className='titulos-livros'>Título 3</p>
+                                   
+                                  <Link to="/telalivro">
+                                    <div className="box"></div></Link>
+                                    <p className='titulos-livros'>Título 16</p>
                                 </button>
                             </div>
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-                                    <div className="box"></div>
-                                    <p className='titulos-livros'>Título 4</p>
+                                   
+                                  <Link to="/telalivro">
+                                    <div className="box"></div></Link>
+                                    <p className='titulos-livros'>Título 16</p>
                                 </button>
                             </div>
     
@@ -115,29 +123,37 @@ function LandingPage() {
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-                                    <div className="box"></div>
-                                    <p className='titulos-livros'>Título 5</p>
+                                   
+                                  <Link to="/telalivro">
+                                    <div className="box"></div></Link>
+                                    <p className='titulos-livros'>Título 16</p>
                                 </button>
                             </div>
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-                                    <div className="box"></div>
-                                    <p className='titulos-livros'>Título 6</p>
+                                  
+                                  <Link to="/telalivro">
+                                    <div className="box"></div></Link>
+                                    <p className='titulos-livros'>Título 16</p>
                                 </button>
                             </div>
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-                                    <div className="box"></div>
-                                    <p className='titulos-livros'>Título 7</p>
+                                   
+                                  <Link to="/telalivro">
+                                    <div className="box"></div></Link>
+                                    <p className='titulos-livros'>Título 16</p>
                                 </button>
                             </div>
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-                                    <div className="box"></div>
-                                    <p className='titulos-livros'>Título 8</p>
+                                  
+                                  <Link to="/telalivro">
+                                    <div className="box"></div></Link>
+                                    <p className='titulos-livros'>Título 16</p>
                                 </button>
                             </div>
 
