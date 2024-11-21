@@ -10,6 +10,9 @@ import NavbarVertical from "../components/NavbarVertical"
 function TelaUsuarioConfigs() {
 
   const {posicaoUsuario, setPosicaoUsuario, vetorObjetosUsuarios, setVetorObjetosUsuarios, usuarioLogado, setUsuarioLogado}=useContext(GlobalContext)
+  const [editarNome, setEditarNome] = useState()
+  const [editarEmail, setEditarEmail]= useState()
+  const [editarSenha, setEditarSenha]= useState()
   const navigate = useNavigate()
 
   useEffect (() => {
@@ -71,9 +74,21 @@ function TelaUsuarioConfigs() {
               <label className="lbl-infos" >{vetorObjetosUsuarios[posicaoUsuario].email}</label>
               <label className="lbl-infos" >{vetorObjetosUsuarios[posicaoUsuario].senha}</label>
 
-                <input type="text" className="input" placeholder="Edite seu nome completo" />
-                <input type="text" className="input" placeholder="Edite seu email" />
-                <input type="text" className="input" placeholder="Edite sua senha" />
+                <input type="text" 
+                className="input" 
+                placeholder="Edite seu nome completo"
+                onChange={(event) => setEditarNome(event.target.value)}
+                value={editarNome} />
+                <input type="text" 
+                className="input" 
+                placeholder="Edite seu email"
+                onChange={(event) => setEditarEmail(event.target.value)}
+                value={editarEmail} />
+                <input type="text" 
+                className="input" 
+                placeholder="Edite sua senha"
+                onChange={(event) => setEditarSenha(event.target.value)}
+                value={editarSenha} />
               </div>
 
               {/* <div className="usuarioConfigs-bmpc-inputs">
