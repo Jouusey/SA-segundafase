@@ -1,20 +1,26 @@
 .container-tela{
+
     display: block;
     flex-direction: column;
     background-color: whitesmoke;
     height: 90vh;
     width: 180vh;
+
 }
+
    .parte-cima{
-    display: flex;
-    height: 85%;
-    width: 100%;
-    background-color:#ecd9b1;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+
+        display: flex;
+        height: 85%;
+        width: 100%;
+        background-color:#ecd9b1;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+
    }
 
     .parte-capa-livro{
+
         display: flex;
         justify-content: end;
         align-items: end;
@@ -23,14 +29,12 @@
         float: left;
         width: 30%;
         background-color: transparent;
+        border-radius: 5px;
+
     }
+
         .capa-livro{
-            /* display: block;
-            position: absolute; */
-            /* position: absolute;
-            top: 30px;
-            left: 65px; */
-            /* margin: 10px; */
+
             display: flex;
             justify-content: start;
             align-items: center;
@@ -42,12 +46,19 @@
             background-repeat: no-repeat;
             background-size: cover;
             border-radius: 5px;
+
         }
+
             .imagem-capa-livro{
+
                 height: 54vh;
                 width: 45vh;
+                border-radius: 5px;
+
             }
+
         .parte-classificacao{ 
+
             display: flex;
             justify-content: start;
             align-items: start;
@@ -57,21 +68,29 @@
             margin-bottom: 70px;
             padding-left: 30px;
             gap: 5px;
+
         }
+
             .icone-estrela{
+
                 height: 35px;
                 width: 35px;
                 cursor: pointer;
+
             }
 
     .parte-textos{
+
         display: flex;
         justify-content: center;
         align-items: center;
         width: 66%;
         background-color: transparent;
+
     }
+
         .textos{
+
             display: flex;
             flex-direction: column;
             gap: 6px;
@@ -79,8 +98,11 @@
             width: 100%;
             background-color: transparent;
             padding: 35px 35px 35px 0px;
+
         }
+
             .titulo-livro{
+
                 display: flex;
                 justify-content: start;
                 align-items: center;
@@ -89,8 +111,11 @@
                 width: 74%;
                 background-color: #c85b34;
                 border-radius: 5px;
+
             }
+
             .descricao-livro{
+
                 display: flex;
                 justify-content: start;
                 align-items: center;
@@ -100,8 +125,11 @@
                 width: 75%;
                 background-color: #c69877;
                 border-radius: 5px;
+
             }
+
             .sinopse-livro{
+
                 display: flex;
                 justify-content: start;
                 align-items: start;
@@ -111,9 +139,11 @@
                 width: 100%;
                 background-color:#fcf6e8;
                 border-radius: 5px;
+
             }
 
             .genero-livro{
+
                 display: flex;
                 justify-content: start;
                 align-items: center;
@@ -121,8 +151,11 @@
                 height: 10%;
                 width: 100%;
                 background-color: transparent;
+
             }
+
                 .box-genero{
+
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -130,9 +163,11 @@
                     width: 150px;
                     background-color: #c85b34;
                     border-radius: 5px;
+
                 }
 
     .parte-menus{
+
         display: flex;
         justify-content: start;
         align-items: center;
@@ -141,8 +176,11 @@
         padding-top: 20px;
         width: 4%;
         background-color: transparent;
+
     }
+
         .botao-menu{
+
             height: 40px;
             width: 40px;
             border: none;
@@ -150,26 +188,36 @@
             background-color:#f0e0c0;
             cursor: pointer;
             margin-right: 5px;
+
         }
+
             .botao-menu:hover{
+
                 background-color: #fff;
+
             }
+
         .icone-botao{
+
             height: 30px;
             width: 30px;
             color: #c85b34;
+
         }
 
    .parte-baixo{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 10px;
-    height: 15%;
-    width: 100%;
-    background-color: #c89b7a;
+
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 10px;
+        height: 15%;
+        width: 100%;
+        background-color: #c89b7a;
+
    }
     .botao-resenha{
+
         height: 50px;
         width: 200px;
         border: none;
@@ -180,8 +228,11 @@
         font-weight: bold;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
+
     }
+
     .botao-icone{
+
         height: 50px;
         width: 50px;
         border: none;
@@ -189,21 +240,31 @@
         cursor: pointer;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
+
     }
+
         .botao-icone:hover{
+
             background-color: #ecd9b1;
+
         }
+
         .icone-down{
+
             height: 40px;
             width: 40px;
+
         }
+
 .container-parte-resenhas{
+
     display: flex;
     background-color: whitesmoke;
     height: fit-content;
+
 }
 
-dialog{
+/* dialog{
     border: none;
     border-radius: 20px;
     width: 40%;
@@ -260,4 +321,4 @@ dialog{
             font-weight: bolder;
             transition: 0.5s;
             border: solid 1px #ecd9b1;
-        }
+        } */
