@@ -135,6 +135,8 @@
     align-items: center;
 }
 
+
+
 .lbl-desfecho{
     
     font-family: "fonte-projeto";
@@ -143,9 +145,6 @@
     color: rgb(107, 78, 58);
     font-style: italic;
 }
-
-
-
 
 
 
@@ -175,18 +174,6 @@
 }
 
 
-.generoIsbn-espacoEsquerda{
-    height: 100%;
-    width: 3%;
-}
-
-.generoIsbn-linha{
-    
-    height: 90%;
-    width: 0.4%;
-    background-color: #352c21;
-    border-radius: 4px;
-}
 
 .generoIsbn-topo{
     
@@ -200,7 +187,10 @@
 
 }
 
-.generoIsbn-conteudo{
+.container-informacoesLivro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 2.5%;
     height: 65%;
     width: 95%;
@@ -213,223 +203,80 @@
     box-shadow: 0px 5px 15px rgb(150, 101, 67);
     
 }
-
-.conteudo-titulos{
+.informacoesLivro-esquerda{
     display: flex;
-    flex-direction:row;
-    height: 15%;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.lbl-generoIsbn-titulos{
- 
-    margin-top: 3%;
+    flex-direction: column;
+    height: 90%;
+    width: 28%;
     font-family: "fonte-projeto";
-    font-size: 33px;
-    margin-right: 4%;
-    color: var(--laranjaenferrujado);
-
-}
-
-.conteudo-janela{
-    display: flex;
-    height: 80%;
-    width: 100%;
-}
-
-
-.conteudo-escolhaGenero{
-    height: 100%;
-    width: 50%;
-    display: flex;
-}
-
-.escolhaGenero-colunaEsquerda{
-
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    height: 100%;
-    width: 50%;
-    
-}
-
-
-.colunaEsquerda-generos{
-    height: 100%;
-    width: 80%;
-}
-
-.lbl-escolhaGenero{
-    
-    margin-left: 12%;
-    display: flex;
-    font-family: "fonte-projeto";
-    font-size: 30px;
-    font-weight: bolder;
     margin-top: 10%;
-    height: 9%;
-    
-    color: rgb(107, 78, 58);
-
-}
-    
-
-.colunaEsquerda-Checkbox{
-    height: 100%;
-    width: 15%;
-    margin-top: 7%;
+    font-size: 25px;
 }
 
-
-
-.escolhaGenero-checkbox{
-
-    
-    margin-top: 62%;
-    accent-color: rgb(184, 137, 115);
-    border-radius: 5px;
-    zoom: 1.6;
-
-    cursor: pointer;
-
+.informacoesLivro-esquerda-capa{
+    background: linear-gradient(rgb(194, 144, 116), rgb(116, 74, 54));
+    height: 65%;
+    width: 95%;
 }
-
-
-
-
-.escolhaGenero-colunaDireita{
-
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    height: 100%;
-    width: 50%;
-}
-
-.colunaDireita-generos{
-    
-    height: 100%;
-    width: 80%;
-}
-
-.colunaDireita-checkbox{
-    
-    height: 100%;
-    width: 15%;
-    margin-top: 7%;
-
-}
-
-.conteudo-informacoesIsbn{
-    height: 100%;
-    width: 50%;
-}
-
-.informacoesIsbn-topo{
-    display: flex;
-    height: 15%;
-    width: 100%;
-}
-
-.inpt-codigoIsbn{
-
-    
-
-    text-align: center;
-    margin-top: 2%;
-    margin-left: 5%;
-    margin-right: 3%;
-    height: 55%;
-    width: 80%;
-    font-weight: 400;
-    font-size: 22px;
-    font-family: "fonte-projeto";
-    font-weight: 500;
-    border-radius: 35px;
-    border-style: solid;
-
-}
-
-
-.inpt-codigoIsbn:focus{
-
-    outline-width: 0px;
-
-}
-
-.btnPesquisa-insformacoesIsbn-topo{
-
-    margin-top: 1%;
-    height: 55%;
-    width: 10%;
-    border: none;
-    margin-right: 3%;
-
-}
-
-.informacoesIsbn-topo-lupaImg{
-    width: 100%;
-}
-
-
-.informacoesIsbn-meio{
-    display: flex;
-    height: 60%;
-    width: 100%;
-}
-
-.informacoesIsbn-meio-parteCapa{
-    height: 100%;
-    width: 50%;
-}
-
-
-.parteCapa-divCapa{
-
-    margin-left: 6%;
-    margin-top: 5%;
-    height: 80%;
-    width: 90%;
-    background: linear-gradient(rgb(243, 222, 199), rgb(118, 73, 73));
-    border-radius: 1px;
-}
-
-.informacoesIsbn-meio-bio{
-    height: 100%;
-    width: 80%;
-}
-
-    
-.meio-titulo{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-right: 7%;
-    font-weight: 400;
-    font-size: 30px;
-    font-family: "fonte-projeto";
-    font-weight: 600;
-    font-style: italic;
-    color: var(--laranjaenferrujado
-    );
-
-}
-
 .meio-sinopse{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 5%;
+}
 
-   
-    height: 80%;
-    width: 100%;
 
+.informacoesLivro-direita{
+    display: flex;
+    height: 90%;
+    width: 68%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "fonte-projeto";
+    font-size: 30px;
+}
+
+.informacoesLivro-direita-tituloSinopse{
+    width: 55%;
+    height: 100%;
+}
+
+
+.informacoesLivro-direita-generos{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 100%;
+}
+
+
+.lbl-generos{
+    font-size: 34px;
+    color: var(--laranjaenferrujado);
+}
+
+.btn-generos{
+
+    margin-left: 15%;
+    margin-top: 10%;
+    height: 16%;
+    width: 70%;
+    background-color: var(--laranjaenferrujado);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 28px;
+    font-family: "fonte-projeto";
+
+    color: var(--navbar);
+    
+    box-shadow: 0px 2px 15px rgb(150, 101, 67);
 }
 
 .sinopse-textArea{
     
-    font-size: 19px;
+    font-size: 24px;
     font-family: "fonte-projeto";
     font-style: italic;
     height: 100%;
@@ -445,38 +292,6 @@
     outline-width: 0px;
 }
 
-.informacoesIsbn-lbl{
-    
-    font-weight: bolder;
-    font-size: 25px;
-    font-family: "fonte-projeto";
-    font-weight: 500;
-}
-
-
-.informacoesIsbn-credito{
-    height: 9%;
-    width: 100%;
-    
-     
-    margin-left: 5%;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: "fonte-projeto";
-    font-weight: 500;
-}
-
-
-.informacoesIsbn-desfecho{
-    height: 7%;
-    width: 100%;
-    
-    margin-left: 33%;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: "fonte-projeto";
-    font-weight: 500;
-}
 
 
 .generoIsbn-desfecho{

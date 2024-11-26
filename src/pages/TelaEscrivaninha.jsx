@@ -7,13 +7,13 @@ function TelaEscrivaninha() {
 
 
 
-  const[tituloIsbn, setTitutloIsbn] = useState('Titulo')
+  const[tituloIsbn, setTitutloIsbn] = useState('Memoriums')
  
   const[capaIsbn, setCapaIsbn] = useState('')
 
   const[sinopseIsbn, setSinopseIsbn] = useState('"The Adventures of Sherlock Holmes" by Arthur Conan Doyle is a collection of detective stories written during the late 19th century. The book introduces the legendary detective Sherlock Holmes and his loyal companion, Dr. John Watson, as they embark on various intriguing cases, filled with mystery and clever deductions.')
 
-  const[autorIsbn, setAutorIsbn] = useState('Doyle, Arthur Conan')
+  const[autorIsbn, setAutorIsbn] = useState('Arthur Conan')
 
   const[editoraIsbn, setEditoraIsbn] = useState('Rayzen')
 
@@ -54,11 +54,10 @@ function TelaEscrivaninha() {
               <label className='lbl-desfecho' htmlFor="">Preview</label>
 
             </div>
-
-
             </div>
-
         </div>
+
+
 
 
         <div className="escrivaninha-container-generoIsbn">
@@ -67,158 +66,69 @@ function TelaEscrivaninha() {
 
             <div className="generoIsbn-topo"></div>
 
-            <div className="generoIsbn-conteudo">
+
+            <div className="container-informacoesLivro">
 
 
-              <div className="conteudo-titulos">
-
-                  <label className='lbl-generoIsbn-titulos' htmlFor="">GENEROS</label>
-                  <label className='lbl-generoIsbn-titulos' htmlFor="">ISBN</label>
-              </div>
-
-              <div className="conteudo-janela">
-
-
-                <div className="generoIsbn-espacoEsquerda"></div>
-
-                <div className="generoIsbn-linha"></div>
-
-                  <div className="conteudo-escolhaGenero">
+            <div className="informacoesLivro-esquerda">
 
 
 
-                  <div className="escolhaGenero-colunaEsquerda">
-
-                  <div className="colunaEsquerda-generos">
-                        
-                     <label className='lbl-escolhaGenero' htmlFor="">Aventura</label>
-                     <label className='lbl-escolhaGenero' htmlFor="">Açao</label>
-                     <label className='lbl-escolhaGenero' htmlFor="">Romance</label>
-                     <label className='lbl-escolhaGenero' htmlFor="">Mistério</label>
-                     <label className='lbl-escolhaGenero' htmlFor="">Suspense</label>
-  
-                  </div>
-
-
-
-                      <div className="colunaEsquerda-Checkbox">
-                        
-                    <input className='escolhaGenero-checkbox' type="checkbox" name="" id="" />
-                    <input className='escolhaGenero-checkbox' type="checkbox" name="" id="" />
-                    <input className='escolhaGenero-checkbox' type="checkbox" name="" id="" />
-                    <input className='escolhaGenero-checkbox' type="checkbox" name="" id="" />
-                    <input className='escolhaGenero-checkbox' type="checkbox" name="" id="" />
-                    
-                      </div>
-
-                
-              </div>
-              
-
-                  <div className="escolhaGenero-colunaDireita">
-
-
-                  <div className="colunaDireita-generos">
-
-                  <label className='lbl-escolhaGenero' htmlFor="">Sci-fi</label>
-                  <label className='lbl-escolhaGenero' htmlFor="">Instrução</label>
-                  <label className='lbl-escolhaGenero' htmlFor="">Escolares</label>
-
-                  </div>
-
-                  <div className="colunaDireita-checkbox">
-
-                  <input className='escolhaGenero-checkbox' type="checkbox" name="" id="" />
-                  <input className='escolhaGenero-checkbox' type="checkbox" name="" id="" />
-                  <input className='escolhaGenero-checkbox' type="checkbox" name="" id="" />
-                  </div>
-
-
-                  
-                  </div>
-
-                  
-                <div className="generoIsbn-linha"></div>
-                
-                <div className="generoIsbn-espacoEsquerda"></div>
-
-             
-              </div>
-
-
-
-
-
-                <div className="conteudo-informacoesIsbn">
-
-                  <div className="informacoesIsbn-topo">
-
-                    <input maxLength={40} placeholder='Digite o codigo ISBN' className='inpt-codigoIsbn' type="text" /> 
-                    <button className='btnPesquisa-insformacoesIsbn-topo' >  
-                    <img className='informacoesIsbn-topo-lupaImg' src="public\images\lets-icons--search.svg" alt="" />
-                    </button>
-
-                  </div>
-                  
-                  <div className="informacoesIsbn-meio">
-
-
-                    <div className="informacoesIsbn-meio-parteCapa">
-
-                      <div className="parteCapa-divCapa">
-
-                        {capaIsbn}
-
-                      </div>
-
-
-                    </div>
-
-
-                    <div className="informacoesIsbn-meio-bio">
-
-
-                      <div className="meio-titulo">
-                      {tituloIsbn}
-                      </div>
-
-                      <div className="meio-sinopse">
-
-
-<textarea className='sinopse-textArea' value={sinopseIsbn} name="" id="" cols="30" rows="10" readOnly></textarea>
-                    
-    
-                      </div>
-
-                    
-
-
-                    </div>
-
-                  </div>
-
-                  <div className="informacoesIsbn-credito">
-
-                    <label className='informacoesIsbn-lbl' htmlFor="">AUTOR-</label>  {autorIsbn}
-
-                  </div>
-
-                  <div className="informacoesIsbn-credito">
-                    
-                  <label className='informacoesIsbn-lbl' htmlFor="">EDITORA-</label> {editoraIsbn}
-
-                  </div>
-
-                  <div className="informacoesIsbn-desfecho">
-
-                  <label className='informacoesIsbn-lbl' htmlFor="">Data</label>  {dataIsbn}
-
-                  </div>
-
-
+                <div className="informacoesLivro-esquerda-capa">
+                  {capaIsbn}
                 </div>
 
+                <label className='lbl-DadosLivro'>Autor:  {autorIsbn}</label>
+                <label className='lbl-DadosLivro'>Editora:  {editoraIsbn}</label>
+                <label className='lbl-DadosLivro'>Data:  {dataIsbn}</label>
+                              
+                              
+                 
+
+
+            </div>
+
+
+
+            <div className="informacoesLivro-direita">
+
+
+
+              <div className="informacoesLivro-direita-tituloSinopse">
+
+
+
+                  <div className="meio-sinopse">
+
+                  <label className='lbl-generos' htmlFor="">{tituloIsbn}</label>
+
+                  <textarea className='sinopse-textArea' value={sinopseIsbn} name="" id="" cols="30" rows="10" readOnly></textarea>
+          
+                  </div>
+                    
+
               </div>
+
+
+              <div className="informacoesLivro-direita-generos">
+                <label className='lbl-generos' htmlFor="">Generos</label>
+
+                
+
+          
+              <button className='btn-generos'>Aventura</button>
+              <button className='btn-generos'>Mistério</button>
+              <button className='btn-generos'>Drama</button>
+              </div>
+          
+
+        
+
+
+            </div>
+
+            
+
 
 
 
@@ -264,3 +174,4 @@ function TelaEscrivaninha() {
 }
 
 export default TelaEscrivaninha
+  
