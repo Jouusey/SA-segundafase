@@ -1,11 +1,29 @@
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import "./TelaEscrivaninha.css"
 import EstrelasBtn from '../components/EstrelasBtn'
 import NavbarVertical from '../components/NavbarVertical'
+import { GlobalContext } from '../contexts/GlobalContext'
+import { useNavigate } from 'react-router-dom'
+
+
+
 
 function TelaEscrivaninha() {
 
 
+  useEffect (() => {
+
+    if(usuarioLogado == false){
+
+      alert('Não há usuário logado, por favor, cadastre-se ou entre na sua conta.')
+      navigate('/landingpage')
+    }
+
+  }, [])
+
+
+  const navigate = useNavigate()
+  const {usuarioLogado} = useContext(GlobalContext)
 
   const[tituloIsbn, setTitutloIsbn] = useState('Memoriums')
  
