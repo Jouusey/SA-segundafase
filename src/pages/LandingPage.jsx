@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link, useNavigate } from "react-router-dom"
 import './LandingPage.css'
 import Navbar from '../components/Navbar'
+import { GlobalContext } from '../contexts/GlobalContext'
 
 function LandingPage() {
 
     const navigate = useNavigate()
-
-
+    const {biblioteca}=useContext(GlobalContext)
 
   return (
 
@@ -86,7 +86,7 @@ function LandingPage() {
                                    
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 16</p>
+                                    <p className='titulos-livros'>{biblioteca[18].tituloLivro}</p>
                                 </button>
                             </div>
 
@@ -95,7 +95,7 @@ function LandingPage() {
                                    
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 16</p>
+                                    <p className='titulos-livros'>{biblioteca[19].tituloLivro}</p>
                                 </button>
                             </div>
 
@@ -104,7 +104,7 @@ function LandingPage() {
                                    
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 16</p>
+                                    <p className='titulos-livros'>{biblioteca[0].tituloLivro}</p>
                                 </button>
                             </div>
 
@@ -113,7 +113,7 @@ function LandingPage() {
                                    
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 16</p>
+                                    <p className='titulos-livros'>{biblioteca[2].tituloLivro}</p>
                                 </button>
                             </div>
     
@@ -126,7 +126,7 @@ function LandingPage() {
                                    
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 16</p>
+                                    <p className='titulos-livros'>{biblioteca[4].tituloLivro}</p>
                                 </button>
                             </div>
 
@@ -135,7 +135,7 @@ function LandingPage() {
                                   
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 16</p>
+                                    <p className='titulos-livros'>{biblioteca[1].tituloLivro}</p>
                                 </button>
                             </div>
 
@@ -144,7 +144,7 @@ function LandingPage() {
                                    
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 16</p>
+                                    <p className='titulos-livros'>{biblioteca[6].tituloLivro}</p>
                                 </button>
                             </div>
 
@@ -153,7 +153,7 @@ function LandingPage() {
                                   
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 16</p>
+                                    <p className='titulos-livros'>{biblioteca[7].tituloLivro}</p>
                                 </button>
                             </div>
 

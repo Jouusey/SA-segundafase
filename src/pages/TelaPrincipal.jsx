@@ -7,7 +7,7 @@ import { GlobalContext } from '../contexts/GlobalContext'
 function TelaPrincipal() {
     
     const {posicaoUsuario}=useContext(GlobalContext)
-
+    const {biblioteca}=useContext(GlobalContext)
 
   return (
 
@@ -39,11 +39,11 @@ function TelaPrincipal() {
 
                             <div className="div-box-titulo">
                                 <button className="btn-livro-home">
-
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 1</p>
+                                    <p className='titulos-livros'>{biblioteca[0].tituloLivro}</p>
                                 </button>
+                                
                             </div>
 
                             <div className="div-box-titulo">
@@ -51,7 +51,7 @@ function TelaPrincipal() {
 
                               <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 2</p>
+                                    <p className='titulos-livros'>{biblioteca[1].tituloLivro}</p>
                                 </button>
                             </div>
 
@@ -60,7 +60,7 @@ function TelaPrincipal() {
 
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 3</p>
+                                    <p className='titulos-livros'>{biblioteca[5].tituloLivro}</p>
                                 </button>
                             </div>
 
@@ -68,7 +68,7 @@ function TelaPrincipal() {
                                 <button className="btn-livro-home">
                                 <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 4</p>
+                                    <p className='titulos-livros'>{biblioteca[3].tituloLivro}</p>
                                 </button>
                             </div>
                             
@@ -81,7 +81,7 @@ function TelaPrincipal() {
 
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 5</p>
+                                    <p className='titulos-livros'>{biblioteca[6].tituloLivro}</p>
                                 </button>
                             </div>
 
@@ -90,7 +90,7 @@ function TelaPrincipal() {
 
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 6</p>
+                                    <p className='titulos-livros'>{biblioteca[7].tituloLivro}</p>
                                 </button>
                             </div>
 
@@ -98,7 +98,7 @@ function TelaPrincipal() {
                                 <button className="btn-livro-home">
                                 <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 7</p>
+                                    <p className='titulos-livros'>{biblioteca[8].tituloLivro}</p>
                                 </button>
                             </div>
 
@@ -107,7 +107,7 @@ function TelaPrincipal() {
 
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 8</p>
+                                    <p className='titulos-livros'>{biblioteca[9].tituloLivro}</p>
                                 </button>
                             </div>
 
@@ -136,7 +136,7 @@ function TelaPrincipal() {
                                 <button className="btn-livro-home">
                                 <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 9</p>
+                                    <p className='titulos-livros'>{biblioteca[10].tituloLivro}</p>
                                 </button>
                             </div>
 
@@ -145,7 +145,7 @@ function TelaPrincipal() {
 
                                 <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 10</p>
+                                    <p className='titulos-livros'>{biblioteca[11].tituloLivro}</p>
 
                                 </button>
                             </div>
@@ -154,7 +154,7 @@ function TelaPrincipal() {
                                 <button className="btn-livro-home">
                                 <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 11</p>
+                                    <p className='titulos-livros'>{biblioteca[12].tituloLivro}</p>
                                 </button>
                             </div>
 
@@ -163,7 +163,7 @@ function TelaPrincipal() {
 
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 12</p>
+                                    <p className='titulos-livros'>{biblioteca[13].tituloLivro}</p>
                                 </button>
                             </div>
     
@@ -175,7 +175,7 @@ function TelaPrincipal() {
                                 <button className="btn-livro-home">
                                 <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 13</p>
+                                    <p className='titulos-livros'>{biblioteca[14].tituloLivro}</p>
                                 </button>
                             </div>
 
@@ -184,7 +184,7 @@ function TelaPrincipal() {
 
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 14</p>
+                                    <p className='titulos-livros'>{biblioteca[15].tituloLivro}</p>
                                 </button>
                             </div>
 
@@ -193,7 +193,7 @@ function TelaPrincipal() {
 
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 15</p>
+                                    <p className='titulos-livros'>{biblioteca[16].tituloLivro}</p>
                                 </button>
                             </div>
 
@@ -202,7 +202,7 @@ function TelaPrincipal() {
 
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
-                                    <p className='titulos-livros'>Título 16</p>
+                                    <p className='titulos-livros'>{biblioteca[17].tituloLivro}</p>
                                 </button>
                             </div>
 
