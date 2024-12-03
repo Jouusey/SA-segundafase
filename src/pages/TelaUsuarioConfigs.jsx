@@ -10,6 +10,9 @@ import NavbarVertical from "../components/NavbarVertical"
 function TelaUsuarioConfigs() {
 
   const {posicaoUsuario, setPosicaoUsuario, vetorObjetosUsuarios, setVetorObjetosUsuarios, usuarioLogado, setUsuarioLogado}=useContext(GlobalContext)
+  const [editarNome, setEditarNome]=useState()
+  const [editarEmail, setEditarEmail]=useState()
+  const [editarSenha, setEditarSenha]=useState()
   const navigate = useNavigate()
 
   useEffect (() => {
@@ -27,6 +30,100 @@ function TelaUsuarioConfigs() {
     alert('Até mais!')
     setUsuarioLogado(false)
     navigate('/landingpage')
+
+  }
+
+  function verificarInputsRegistrados(){
+    
+    if (editarNome == `` && editarEmail == `` && editarSenha == ``){
+      
+      return true
+      
+    }else{
+      // alert(`oi`)
+      return false
+    }
+  }
+
+  function verificarInputsIguais(){
+
+    if (editarNome == vetorObjetosUsuarios[posicaoUsuario].nome || editarEmail == vetorObjetosUsuarios[posicaoUsuario].email || editarSenha == vetorObjetosUsuarios[posicaoUsuario].senha){
+      return true
+    }else{
+      return false
+    }
+  }
+
+  function verificarEmailExistente(){
+
+    for(let i = 0; i < vetorObjetosUsuarios.length; i++){
+
+      if (editarEmail == vetorObjetosUsuarios[i].email && posicaoUsuario != i){
+        return true
+      }
+
+    }
+
+    return false
+
+  }
+
+  function editarDados(){
+
+    switch (true) {
+      case verificarInputsRegistrados():
+        alert(`Verifique se ao menos um campo esteja preenchido`)
+        break
+
+      case verificarInputsIguais():
+        alert('Algum dado é idêntico ao que já existe')
+        break
+      
+      case verificarEmailExistente():
+        alert('Não foi possivel alterar os dados: email já existente')
+        break
+
+      default: 
+        alert('Dados alterados!')
+        let usuariosAtualizado = { 
+          ...vetorObjetosUsuarios[posicaoUsuario], 
+          nome: editarNome || vetorObjetosUsuarios[posicaoUsuario].nome, 
+          email: editarEmail || vetorObjetosUsuarios[posicaoUsuario].email, 
+          senha: editarSenha || vetorObjetosUsuarios[posicaoUsuario].senha 
+        }
+
+        const novosUsuarios = [...vetorObjetosUsuarios]
+
+        novosUsuarios[posicaoUsuario] = usuariosAtualizado
+        
+        setVetorObjetosUsuarios(novosUsuarios)
+        setEditarNome('')
+        setEditarEmail('')
+        setEditarSenha('')
+    }
+
+  }
+
+  function deletarUsuario(){
+
+    let promptApagarConta = prompt('ATENÇÃO! Insira a sua senha na caixa abaixo se você realmente deseja deletar sua conta\n *Essa ação será irreversível, e todas as suas resenhas serão deletadas juntas*')
+
+    if(promptApagarConta == vetorObjetosUsuarios[posicaoUsuario].senha){
+
+      let usuariosAtualizado = [...vetorObjetosUsuarios]
+      usuariosAtualizado.splice(posicaoUsuario, 1)
+      setVetorObjetosUsuarios(usuariosAtualizado)
+
+      alert(`Conta deletada com sucesso.`)
+      setUsuarioLogado(false)
+      navigate(`/landingpage`)
+
+
+    }else{
+
+      alert(`Senha incorreta, cancelando operação...`)
+
+    }
 
   }
 
@@ -71,9 +168,21 @@ function TelaUsuarioConfigs() {
               <label className="lbl-infos" >{vetorObjetosUsuarios[posicaoUsuario].email}</label>
               <label className="lbl-infos" >{vetorObjetosUsuarios[posicaoUsuario].senha}</label>
 
-                <input type="text" className="input" placeholder="Edite seu nome completo" />
-                <input type="text" className="input" placeholder="Edite seu email" />
-                <input type="text" className="input" placeholder="Edite sua senha" />
+                <input type="text" 
+                className="input"
+                value={editarNome} 
+                onChange={(event) => setEditarNome(event.target.value)}
+                placeholder="Edite seu nome completo" />
+                <input type="text" 
+                className="input"
+                value={editarEmail} 
+                onChange={(event) => setEditarEmail(event.target.value)}
+                placeholder="Edite seu email" />
+                <input type="text" 
+                className="input"
+                value={editarSenha} 
+                onChange={(event) => setEditarSenha(event.target.value)}
+                placeholder="Edite sua senha" />
               </div>
 
               {/* <div className="usuarioConfigs-bmpc-inputs">
@@ -82,9 +191,9 @@ function TelaUsuarioConfigs() {
 
               <div className="usuarioConfigs-bmpc-buttons">
 
-                <button className="btn">Editar dados</button>
+                <button className="btn" onClick={editarDados}>Editar dados</button>
                 <button className="btn" onClick={deslogarUsuario} >Deslogar</button>
-                <button className="btn btn-delete">Apagar conta</button>
+                <button className="btn btn-delete" onClick={deletarUsuario}>Apagar conta</button>
               </div>
 
             </div>
