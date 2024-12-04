@@ -3,6 +3,7 @@ import './TelaPrincipal.css'
 import { Link } from "react-router-dom"
 import Navbar from '../components/Navbar'
 import { GlobalContext } from '../contexts/GlobalContext'
+import LivroParteUm from '../components/LivroParteUm'
 
 function TelaPrincipal() {
     
@@ -38,7 +39,7 @@ function TelaPrincipal() {
                         <div className="div-Fila-livros">
 
                             <div className="div-box-titulo">
-                                <button className="btn-livro-home">
+                                <button className="btn-livro-home" onClick={() => navigate(<LivroParteUm />)}>
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
                                     <p className='titulos-livros'>{biblioteca[0].tituloLivro}</p>
@@ -47,7 +48,7 @@ function TelaPrincipal() {
                             </div>
 
                             <div className="div-box-titulo">
-                                <button className="btn-livro-home">
+                                <button className="btn-livro-home" onClick={() => navigate(<LivroParteUm />)}>
 
                               <Link to="/telalivro">
                                     <div className="box"></div></Link>
@@ -56,7 +57,7 @@ function TelaPrincipal() {
                             </div>
 
                             <div className="div-box-titulo">
-                                <button className="btn-livro-home">
+                                <button className="btn-livro-home" onClick={() => navigate(<LivroParteUm />)}>
 
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
@@ -65,7 +66,7 @@ function TelaPrincipal() {
                             </div>
 
                             <div className="div-box-titulo">
-                                <button className="btn-livro-home">
+                                <button className="btn-livro-home" onClick={() => navigate(<LivroParteUm />)}>
                                 <Link to="/telalivro">
                                     <div className="box"></div></Link>
                                     <p className='titulos-livros'>{biblioteca[3].tituloLivro}</p>
@@ -77,7 +78,7 @@ function TelaPrincipal() {
                         <div className="div-Fila-livros">
 
                             <div className="div-box-titulo">
-                                <button className="btn-livro-home">
+                                <button className="btn-livro-home" onClick={() => navigate(<LivroParteUm />)}>
 
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
@@ -86,7 +87,7 @@ function TelaPrincipal() {
                             </div>
 
                             <div className="div-box-titulo">
-                                <button className="btn-livro-home">
+                                <button className="btn-livro-home" onClick={() => navigate(<LivroParteUm />)}>
 
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
@@ -95,7 +96,7 @@ function TelaPrincipal() {
                             </div>
 
                             <div className="div-box-titulo">
-                                <button className="btn-livro-home">
+                                <button className="btn-livro-home" onClick={() => navigate(<LivroParteUm />)}>
                                 <Link to="/telalivro">
                                     <div className="box"></div></Link>
                                     <p className='titulos-livros'>{biblioteca[8].tituloLivro}</p>
@@ -103,7 +104,7 @@ function TelaPrincipal() {
                             </div>
 
                             <div className="div-box-titulo">
-                                <button className="btn-livro-home">
+                                <button className="btn-livro-home" onClick={() => navigate(<LivroParteUm />)}>
 
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
@@ -133,7 +134,7 @@ function TelaPrincipal() {
                         <div className="div-Fila-livros">
 
                             <div className="div-box-titulo">
-                                <button className="btn-livro-home">
+                                <button className="btn-livro-home" onClick={() => navigate(<LivroParteUm />)}>
                                 <Link to="/telalivro">
                                     <div className="box"></div></Link>
                                     <p className='titulos-livros'>{biblioteca[10].tituloLivro}</p>
@@ -141,7 +142,7 @@ function TelaPrincipal() {
                             </div>
 
                             <div className="div-box-titulo">
-                                <button className="btn-livro-home">
+                                <button className="btn-livro-home" onClick={() => navigate(<LivroParteUm />)}>
 
                                 <Link to="/telalivro">
                                     <div className="box"></div></Link>
@@ -151,7 +152,7 @@ function TelaPrincipal() {
                             </div>
 
                             <div className="div-box-titulo">
-                                <button className="btn-livro-home">
+                                <button className="btn-livro-home" onClick={() => navigate(<LivroParteUm />)}>
                                 <Link to="/telalivro">
                                     <div className="box"></div></Link>
                                     <p className='titulos-livros'>{biblioteca[12].tituloLivro}</p>
@@ -159,7 +160,7 @@ function TelaPrincipal() {
                             </div>
 
                             <div className="div-box-titulo">
-                                <button className="btn-livro-home">
+                                <button className="btn-livro-home" onClick={() => navigate(<LivroParteUm />)}>
 
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
@@ -172,7 +173,7 @@ function TelaPrincipal() {
                         <div className="div-Fila-livros">
 
                             <div className="div-box-titulo">
-                                <button className="btn-livro-home">
+                                <button className="btn-livro-home" onClick={() => navigate(<LivroParteUm />)}>
                                 <Link to="/telalivro">
                                     <div className="box"></div></Link>
                                     <p className='titulos-livros'>{biblioteca[14].tituloLivro}</p>
@@ -180,7 +181,7 @@ function TelaPrincipal() {
                             </div>
 
                             <div className="div-box-titulo">
-                                <button className="btn-livro-home">
+                                <button className="btn-livro-home" onClick={() => navigate(<LivroParteUm />)}>
 
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
@@ -189,7 +190,7 @@ function TelaPrincipal() {
                             </div>
 
                             <div className="div-box-titulo">
-                                <button className="btn-livro-home">
+                                <button className="btn-livro-home" onClick={() => navigate(<LivroParteUm />)}>
 
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
@@ -198,7 +199,7 @@ function TelaPrincipal() {
                             </div>
 
                             <div className="div-box-titulo">
-                                <button className="btn-livro-home">
+                                <button className="btn-livro-home" onClick={() => navigate(<LivroParteUm />)}>
 
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
@@ -215,7 +216,6 @@ function TelaPrincipal() {
 
                             <div className="div-label-next-page">
                              
-                                
                                 <button className='btn-next-page' onClick={() => {console.log(posicaoUsuario)}}>Next Page</button>
 
                             </div>
@@ -227,6 +227,7 @@ function TelaPrincipal() {
                     <div className="div-elementos">
 
                     <div className="div-home-escrivaninha">
+                        
                             
                             <Link to="/telaprincipal">
                             <button className="btns">
@@ -240,10 +241,9 @@ function TelaPrincipal() {
                             <img src="public/icons/escrita.png" alt="" className="icone-botao"/> 
                             </button>
                             </Link>
-
-                          
                             
                         </div>
+
                         <Link to="/telausuarioconfigs"> 
                         <button className="btns">  
                         <img src="./public/images/setting.svg" alt="" className="icone-botao"/>

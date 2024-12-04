@@ -3,11 +3,17 @@ import { Link, useNavigate } from "react-router-dom"
 import './LandingPage.css'
 import Navbar from '../components/Navbar'
 import { GlobalContext } from '../contexts/GlobalContext'
+import LivroParteUm from '../components/LivroParteUm'
+// import LivroParteUm from '../components/LivroParteUm'
 
 function LandingPage() {
 
     const navigate = useNavigate()
     const {biblioteca}=useContext(GlobalContext)
+
+    // function domcasmurro(){
+    //     <LivroParteUm titulo={biblioteca[0].tituloLivro} isbn={biblioteca[0].isbnLivro} autor={biblioteca[0].editoraLivro} sinopse={biblioteca[0].sinopseLivro}/>
+    // }
 
   return (
 
@@ -82,7 +88,7 @@ function LandingPage() {
                         <div className="div-Fila-livros-landing">
 
                             <div className="div-box-titulo">
-                                <button className="btn-livro-home">
+                                <button className="btn-livro-home" onClick={() => navigate(<LivroParteUm />)}>
                                    
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
@@ -91,7 +97,7 @@ function LandingPage() {
                             </div>
 
                             <div className="div-box-titulo">
-                                <button className="btn-livro-home">
+                                <button className="btn-livro-home" onClick={() => navigate(<LivroParteUm />)}>
                                    
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
@@ -100,16 +106,20 @@ function LandingPage() {
                             </div>
 
                             <div className="div-box-titulo">
-                                <button className="btn-livro-home">
+
+                                <button className="btn-livro-home" onClick={() => navigate(<LivroParteUm titulo={biblioteca[0].tituloLivro}/>)}>
                                    
-                                  <Link to="/telalivro">
-                                    <div className="box"></div></Link>
+                                    <Link to="/telalivro">
+                                    <div className="box"></div>
+                                    </Link>
                                     <p className='titulos-livros'>{biblioteca[0].tituloLivro}</p>
+
                                 </button>
+
                             </div>
 
                             <div className="div-box-titulo">
-                                <button className="btn-livro-home">
+                                <button className="btn-livro-home" onClick={() => navigate(<LivroParteUm />)}>
                                    
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
@@ -122,7 +132,7 @@ function LandingPage() {
                         <div className="div-Fila-livros-landing">
 
                             <div className="div-box-titulo">
-                                <button className="btn-livro-home">
+                                <button className="btn-livro-home" onClick={() => navigate(<LivroParteUm />)}>
                                    
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
@@ -131,7 +141,7 @@ function LandingPage() {
                             </div>
 
                             <div className="div-box-titulo">
-                                <button className="btn-livro-home">
+                                <button className="btn-livro-home" onClick={() => navigate(<LivroParteUm />)}>
                                   
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
@@ -140,7 +150,7 @@ function LandingPage() {
                             </div>
 
                             <div className="div-box-titulo">
-                                <button className="btn-livro-home">
+                                <button className="btn-livro-home" onClick={() => navigate(<LivroParteUm />)}>
                                    
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
@@ -149,7 +159,7 @@ function LandingPage() {
                             </div>
 
                             <div className="div-box-titulo">
-                                <button className="btn-livro-home">
+                                <button className="btn-livro-home" onClick={() => navigate(<LivroParteUm />)}>
                                   
                                   <Link to="/telalivro">
                                     <div className="box"></div></Link>
@@ -171,10 +181,7 @@ function LandingPage() {
 
                     <div className="div-elementos">
 
-                        <div className="div-home-escrivaninha">
-                            
-                            
-                        </div>
+                        <div className="div-home-escrivaninha"></div>
 
                     </div>
 

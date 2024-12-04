@@ -1,10 +1,14 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import "./LivroParteUm.css"
 import LivroParteDois from "./LivroParteDois"
 import EstrelasBtn from "./EstrelasBtn"
 import NavbarVertical from "./NavbarVertical"
+import { GlobalContext } from "../contexts/GlobalContext"
 
-function LivroParteUm() {
+function LivroParteUm(props) {
+
+    const {biblioteca} = useContext(GlobalContext)
+
     // Estado para armazenar a lista de resenhas
     const [resenhasLivro, setResenhasLivro] = useState([])
 
@@ -44,6 +48,7 @@ function LivroParteUm() {
 
                     <div className="capa-livro">
                         <img src="./images/capa-livro.png" alt="" className="imagem-capa-livro"/>
+                        {/* {props.capa} */}
                     </div>
 
                     <div className="parte-classificacao">
@@ -65,25 +70,25 @@ function LivroParteUm() {
                     <div className="textos">
 
                         <div className="titulo-livro">
-                            <h3 className="h3-tituloLivro">Título do livro</h3>
+                            <h6 className="h3-tituloLivro">Título: {props.titulo}</h6>
                         </div>
 
                         <div className="descricao-livro">
-                            <h4 className="h4-descricaoLivro">#isbn</h4>
+                            <h6 className="h4-descricaoLivro">ISBN: {props.isbn}</h6>
                         </div>
 
                         <div className="descricao-livro">
-                            <h4>#autor</h4>   <h4>#editora</h4>
+                            <h6>Autor/a: {props.autor}</h6>   <h6>Editora: {props.editora}</h6>
                         </div>
 
-                        <div className="descricao-livro">
-                            <h4>#ano</h4>
+                        <div className="descricao-livro"> 
+                            <h6>Ano: {props.ano}</h6>
                         </div>
 
                         <div className="sinopse-livro">
 
 
-                            <label className="lbl-sinopseLivro" htmlFor="">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nesciunt accusamus autem vel voluptates animi, libero ea, deserunt esse commodi fugiat maiores non quos accusantium! Hic nihil deleniti totam asperiores?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nesciunt accusamus autem vel voluptates animi, libero ea, deserunt esse commodi fugiat maiores non quos accusantium! Hic nihil deleniti totam asperiores?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nesciunt accusamus autem vel voluptates animi, libero ea, deserunt esse commodi fugiat maiores non quos accusantium!"</label>
+                            <label className="lbl-sinopseLivro" htmlFor="">{props.sinopse}</label>
 
                         </div>
 
