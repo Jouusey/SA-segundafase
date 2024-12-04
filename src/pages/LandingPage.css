@@ -138,8 +138,11 @@
                 align-items: center;
                 font-family: "fonte-projeto";
                 font-size: 30px;
-
             }
+                .logo-site{
+                    height: 100px;
+                    width: 150px;
+                }
 
         .div-informacoes{
             height: 45%;
@@ -149,9 +152,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            font-family: "fonte-projeto";
-            
-            
+            font-family: "fonte-projeto"; 
         }
 
             .div-slogan{
@@ -164,9 +165,11 @@
                 color: #40454b;
                 font-size: 29px;
                 font-weight: 700;
-                padding: 25px;
-                
+                padding: 25px;   
             }
+                .slogan-home{
+                    font-size: 50px;
+                }
 
             .div-btns{
                 height: 40%;
@@ -327,7 +330,7 @@
                 .titulos-livros{
                 text-align: center;
                 margin-top: 6px;
-                font-size: 25px;
+                font-size: 15px;
                 font-weight: 700;
                 font-family: "fonte-projeto";
                 color: #40454b;

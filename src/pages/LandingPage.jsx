@@ -38,10 +38,12 @@ function LandingPage() {
                         <div className="container-logo-nome">
 
                             <div className="div-nome-do-site">
-                                <h1>Nome do site</h1>
+                                <h1>Bem-vindo ao</h1>
                             </div>
 
-                            <div className='div-logo-site'>logo site</div>
+                            <div className='div-logo-site'>
+                                <img className='logo-site' src="./images/logo.png" alt="" />
+                            </div>
 
                             
                         </div>
@@ -49,9 +51,7 @@ function LandingPage() {
                         <div className="div-informacoes">
 
                             <div className="div-slogan">
-                              <p> Gostas de ler e se perder ao navegar na opinião de outros leitores sobre os teus livros preferidos?
-                              </p>
-                              <p>Esse é o espaço ideial para você, leia e compartilhe suas resenhas na nossa plataforma!</p>
+                              <label className='slogan-home'>Compartilhe suas leituras, inspire outros leitores!</label>
                             </div>
 
                             <div className="div-btns">
@@ -175,7 +175,6 @@ function LandingPage() {
                             
                             
                         </div>
-
 
                     </div>
 

@@ -10,7 +10,6 @@ import { useNavigate } from 'react-router-dom'
 
 function TelaEscrivaninha() {
 
-
   useEffect (() => {
 
     if(usuarioLogado == false){
@@ -114,8 +113,6 @@ function TelaEscrivaninha() {
 
               <div className="informacoesLivro-direita-tituloSinopse">
 
-
-
                   <div className="meio-sinopse">
 
                   <label className='lbl-generos' htmlFor="">{tituloIsbn}</label>
@@ -138,17 +135,8 @@ function TelaEscrivaninha() {
               <button className='btn-generos'>Mistério</button>
               <button className='btn-generos'>Drama</button>
               </div>
-          
-
-        
-
 
             </div>
-
-            
-
-
-
 
             </div>
 

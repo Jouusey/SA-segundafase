@@ -19,7 +19,7 @@ const [biblioteca, setBiblioteca] = useState([
         sinopseLivro: 'Dom Casmurro, a obra mais conhecida do escritor Machado de Assis, conta a história de Bentinho e Capitu, que, apaixonados na adolescência, têm que enfrentar um obstáculo à realização de seus anseios amorosos, pois a mãe de Bentinho, D. Glória, fez uma promessa de que seu filho seria padre. Assim, no seminário, Bentinho conhece Escobar, que se torna seu melhor amigo e encontra uma solução para o problema.',
     },
     {
-        tituloLivro: 'Vidas secas - Edição oficial',
+        tituloLivro: 'Vidas secas',
         autorLivro: 'Graciliano Ramos',
         isbnLivro: '9788501114785',
         anoLivro: '2019',

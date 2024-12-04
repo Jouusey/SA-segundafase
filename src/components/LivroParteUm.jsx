@@ -25,8 +25,6 @@ function LivroParteUm() {
 
     const [resenhas, setResenhas] = useState(false) // este serve para chamar o componente da parte dois do livro que contém todas as resenhas do referido livro...
 
-    
-
     const [resenhaNova, setResenhaNova] = useState(false) //este useState é para controlar a caixa de digitar a resenha do livro...
 
 
