@@ -115,7 +115,7 @@ function TelaUsuarioConfigs() {
       setVetorObjetosUsuarios(usuariosAtualizado)
 
       alert(`Conta deletada com sucesso.`)
-      setUsuarioLogado(false)
+      setUsuarioLogado(false) //hi
       navigate(`/landingpage`)
 
 

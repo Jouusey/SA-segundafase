@@ -311,7 +311,7 @@
                     transition: 0.3s ease;
                     
                 }
-
+                
                 .div-Fila-livros-landing:hover .div-box-titulo {
                     filter: blur(5px);
                     opacity: 0.9;
@@ -385,4 +385,6 @@
                     width: 35px;
                     margin: 10%;
                     background-color: #fdfaf3;
-                }   
+                }  
+
+                
