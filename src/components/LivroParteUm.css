@@ -26,15 +26,10 @@
         background-color: transparent;
     }
         .capa-livro{
-            /* display: block;
-            position: absolute; */
-            /* position: absolute;
-            top: 30px;
-            left: 65px; */
             box-shadow: 0px 10px 9px #a07e5c;
              margin: 10px; 
             display: flex;
-            justify-content: start;
+            justify-content: center;
             align-items: center;
             margin-right: 90px;
             flex-direction: column;
@@ -46,8 +41,8 @@
             border-radius: 5px;
         }
             .imagem-capa-livro{
-                height: 54vh;
-                width: 45vh;
+                height: 80vh;
+                width:65vh;
             }
         .parte-classificacao{ 
             display: flex;
@@ -135,6 +130,7 @@
                 background-color:#fcf6e8;
                 border-radius: 5px;
                 box-shadow: 0px 6px 5px #c79a80;
+                font-size: 20px;
             }
 
             .lbl-sinopseLivro{
