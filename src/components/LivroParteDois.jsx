@@ -1,7 +1,10 @@
 import "./LivroParteDois.css"
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { GlobalContext } from '../contexts/GlobalContext'
 
-function LivroParteDois(props) {
+function LivroParteDois() {
+
+    const {biblioteca, livroAcessado} = useContext(GlobalContext)
     
   return (
     <div className="container-mae-resenhas">
@@ -20,13 +23,13 @@ function LivroParteDois(props) {
 
                         </div>
 
-                        <h3>{props.nomeUsuario}</h3>
+                        <h3>{biblioteca[0].resenhasLivro[0].nomeUsuario}</h3>
 
                     </div>
 
                     <div className="parte-resenha">
 
-                        <label htmlFor="" className="texto-resenha">{props.resenhaDoLivro}</label>
+                        <label htmlFor="" className="texto-resenha">{biblioteca[0].resenhasLivro[0].resenhaUsuario}</label>
 
                     </div>
 

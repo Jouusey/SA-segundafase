@@ -8,7 +8,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 function LivroParteUm() {
 
-    const {biblioteca} = useContext(GlobalContext);
+    const {biblioteca, setLivroAcessado} = useContext(GlobalContext);
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -19,7 +19,14 @@ function LivroParteUm() {
     const livro = biblioteca[index]; 
 
     // chama o componente dois do livro
-    const [resenhas, setResenhas] = useState(false) 
+    const [resenhas, setResenhas] = useState(false)
+    
+    function escrivaninha(){
+        
+        // passando o livro para a variável
+        setLivroAcessado(livro)
+        navigate("/telaescrivaninha")
+    }
 
   return (
     <div>
@@ -66,7 +73,6 @@ function LivroParteUm() {
 
                         <div className="sinopse-livro">
 
-
                             <label className="lbl-sinopseLivro" htmlFor="">{livro.sinopseLivro}</label>
 
                         </div>
@@ -89,7 +95,12 @@ function LivroParteUm() {
 
                 <div className="parte-menus">
 
-                    <NavbarVertical />                  
+                    {/* <NavbarVertical />                   */}
+                    <button onClick={() => {navigate("/telaprincipal")}} className="botao-menuUm"> <img src="../public/icons/ant-design--home-outlined.svg" alt="" className="icone-botao"/> </button>
+                    
+                    <button onClick={escrivaninha}  className="botao-menuDois"><img src="public/icons/escrita.png" alt="" className="icone-botao"/> </button>
+
+                    <button onClick={() => {navigate("/telausuarioconfigs")}} className="botao-menuTres"><img src="./public/images/setting.svg" alt="" className="icone-botao"/> </button>
 
                 </div>
 
@@ -97,12 +108,9 @@ function LivroParteUm() {
 
             <div className="parte-baixo">
 
-                <button className="botao-resenha">Resenhas  |  0</button>
-
-
+                <button className="botao-resenha">Resenhas  |  {livro.resenhasLivro.length}</button>
 
                 <button className="botao-icone" onClick={ () => setResenhas(!resenhas)}><img src="./images/down.svg" alt="" className="icone-down"/></button>
-
 
             </div>
 

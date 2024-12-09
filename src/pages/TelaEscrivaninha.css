@@ -16,7 +16,7 @@
     width: 100%;
     
     background-color: var(--fundoDivs);
-    background-image: url(./images/3 Sem Título_20241101231159.png);
+    background-image: url('./images/3 Sem Título_20241101231159.png');
     
         border-radius: 3px;
         border-top: 0px;
@@ -123,10 +123,6 @@
 }
 
 
-
-
-
-
 .folha-desfecho{
     
     display: flex;
@@ -134,8 +130,6 @@
     justify-content: center;
     align-items: center;
 }
-
-
 
 .lbl-desfecho{
     
@@ -145,7 +139,6 @@
     color: rgb(107, 78, 58);
     font-style: italic;
 }
-
 
 
 .escrivaninha-container-generoIsbn{
@@ -163,7 +156,6 @@
 }
 
 
-
 .container-generoIsnb{
 
     height: 95%;
@@ -172,7 +164,6 @@
     
     
 }
-
 
 
 .generoIsbn-topo{
@@ -212,6 +203,7 @@
     margin-top: 10%;
     margin-left: 3%;
     font-size: 25px;
+    gap: 5px;
 }
 
 .informacoesLivro-esquerda-capa{
@@ -255,9 +247,13 @@
 .lbl-generos{
     font-size: 34px;
     color: var(--laranjaenferrujado);
+    margin-left: 60px;
 }
 
 .btn-generos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     margin-left: 15%;
     margin-top: 10%;
@@ -267,7 +263,7 @@
     border: none;
     border-radius: 5px;
     text-align: center;
-    font-size: 28px;
+    font-size: 20px;
     font-family: "fonte-projeto";
 
     color: var(--navbar);
@@ -277,7 +273,7 @@
 
 .sinopse-textArea{
     
-    font-size: 24px;
+    font-size: 20px;
     font-family: "fonte-projeto";
     font-style: italic;
     height: 100%;
@@ -379,3 +375,6 @@
 }
 
 
+.lbl-DadosLivro{
+    font-size: 17px;
+}
